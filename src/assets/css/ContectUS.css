@@ -73,7 +73,12 @@ color: #161616;
 .blogs-text input{
 height: 49.83px;
 }
-
+.cardss{
+    /* background-color: gold; */
+    /* width: 20px; */
+    /* position: relative; */
+ 
+}
 .small_imgs{
     width:310px;
 }
@@ -113,7 +118,6 @@ color: #393939;
     }
     .lable-text{
         /* width: 20px; */
-      background-color: red;
       padding: 0px;
       margin: 0px;
       height: 100%;
