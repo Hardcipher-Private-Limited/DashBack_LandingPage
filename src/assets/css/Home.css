@@ -1,0 +1,589 @@
+.logo_line{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+}
+.ImphoneIco{
+    border: 1px solid #D9D9D9;   
+    border-radius: 40px;
+    
+    
+}
+.ImphoneIco img{
+    padding: 5px 0px 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    /* width: 3px; */
+}
+.icons_three{
+display: flex;
+justify-content: center;
+align-items: center;
+gap:25px;
+}
+
+.King_icon {
+    transition-duration: 0.3s;
+
+}
+.drop_down{
+    display: block;
+    transition: all 0.3 ease;
+    position: absolute;
+    background-color: #161616;
+    height: 250px;
+    width: 200px;
+}
+.King_icon:hover + .drop_down{
+    border: 2px solid red;
+}
+.King_icon img{
+    width: 35px;
+}
+.King_icon:hover{
+        transform: scale(1.2);
+        transition-duration: 0.3s;
+    }
+.ImphoneIcon span{
+    font-size: large;
+    font-family: bolder;
+    padding-left: 0px;
+}
+.rupeeIcon{
+    position: absolute;
+left: 180px;
+}
+@media only screen and (min-width: 600px) {
+    .logo_line{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+  }
+}
+
+/* dash back section start  */
+
+.dash_icon{
+    width:620px;
+    position: relative;
+    top:100px;
+}
+.phone_icon{
+    width: 100%
+}
+.back_icons{
+    width:630px;
+    top:  -89px;
+    position: relative;
+}
+.dash_header{
+    top: 150px;
+   position: relative;
+    
+}
+.dash_header h1{
+font-style: normal;
+font-weight: 700;
+font-size: 49x;
+line-height: 68px;
+color: #161616;
+
+ 
+}
+.secure_text {
+    font-style: normal;
+    font-weight: 650;
+    font-size: 26px;
+    line-height: 39px;
+    color: #161616;
+    
+}
+.shopping_prpoerties{
+}
+.shopping_text {
+  padding-left: 65px;
+  padding-right: 66px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #6D6D6D;
+    
+}
+.downloadButton{
+    padding:5px 25px 5px 25px; 
+    background-color:#161616;
+    color:  #FFFFFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+}
+.downloadButtons{
+    padding:5px 25px 5px 25px; 
+    background-color:#161616;
+    color:  #FFFFFF;
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    width: 55%;
+    border: none;
+    border-radius: 5px;
+}
+@media (max-width: 767px) {
+  .dash_icon{
+    display: none;
+  }
+  .back_icons{
+    display: none;
+  }
+  .phone_icon{
+    width: 100%;
+margin-left: 12px;
+  }
+  .rupeeIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    width: 5%;
+  }
+  .dash_header{
+    position: relative;
+    top: 0;
+  }
+  .order_mbile_reverse{
+    order: 1;
+  }
+  .order_mbile{
+    order: 2;
+  }
+  .dash_header h1{
+  font-weight: 700;
+font-size: 26px;
+line-height: 32px;
+  }
+  .secure_text{
+  font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+  }
+  .shopping_text{
+    padding-left: 30px;
+    padding-right: 30px;
+  font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+  }
+  .downloadButtons{
+    font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 17px;
+width: 181px;
+padding: 8px;
+}
+}
+   
+/* data icon start  */
+.text-width{
+    align-items: center;
+}
+.we_keep_data h1{
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #161616;
+}
+.data_icon{
+    padding: 20px;
+    float: left;
+    gap: 10px;
+    background-color: #FFFFFF;
+}
+
+.data_icon img{
+    margin-left: 33px;
+}
+.width{
+  width: 10%;
+}
+@media (max-width: 767px) {
+  .desktop-tablet{
+    display: none;
+  }
+  .we_keep_data h1{
+    top: 0;
+    font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 32px;
+text-align: center;
+  }
+  .text-width{
+    /* width:; */
+    /* padding-left: 310px; */
+    padding-top: 0 !important;
+}
+.width{
+  width: 20% !important;
+}
+
+}
+
+.waht_phone_icon{
+    width: 100%;
+    position: relative;
+    top: 0;
+    /* left: 25px; */
+}
+.begin_header{
+    /* margin-left: 50px; */
+}
+.begin_header h1{
+    /* font-family: 'Montserrat'; */
+    font-style: normal;
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 67px;
+    text-align: center;
+}
+.digital-text{
+    margin: -2px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 40px;
+    color: #161616;
+}
+.begin_header p{
+font-style: normal;
+font-weight: 300;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #6D6D6D;
+
+}
+.we-do-icon{
+    position: relative;
+    right: 140px;
+}
+.we-do-icon img{
+    width: 125%;
+  
+}
+.brandHeader{
+    padding-top: 90px;
+    padding-bottom: 50px;
+}
+.brandHeader h1{
+  font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 44px;
+    color: #161616;
+    
+}
+.brand_logos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    /* display: flex;
+    flex-wrap: wrap;*/
+    background-color:#FFFFFF;
+    box-shadow: 0px 0px 44px rgba(61, 23, 102, 0.1);
+    /* border-radius: 16px;
+    position: absolute;
+padding: 0px;  */
+}
+.brand-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.brand-img img {
+  max-width: 85% !important;
+  height: auto;
+  margin: -2px;
+
+}
+
+  @media (max-width: 767px) {
+    .we_keep_data h1{
+      margin-top: 60px;
+font-weight: 700;
+font-size: 21px;
+line-height: 24px;
+    }
+    .brand_logos{
+      box-shadow: none;
+    }
+    .brand-img img {
+      width: 36%;
+    
+    }
+    .brandHeader h1 {
+      padding-left: 70px;
+      padding-right: 70px;
+    font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+    } 
+    .begin_header{
+  margin-top: -80px;
+    }
+  }
+  
+/* premimum section start  */
+.premium_header{
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 60px;
+color: #161616;
+}
+.premium_text{
+font-style: normal;
+font-weight: 700;
+font-size: 22px;
+line-height: 60px;
+color: #161616;
+margin-top: -40px;
+}
+
+.brand-img img{
+    padding: 10px 15px 10px 15px;
+    
+}
+.preimium_text img{
+    width: 145%;
+    /* font-weight: 270px; */
+    /* line-height: 329.13px; */
+}
+.preimium_text h1{
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 59.73px;
+    color: #161616;
+    
+}
+.preimium_text h5{
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39.01px;
+    color: #161616;
+}
+.preimium_text p{
+
+    line-height: 24.38px;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: 'Montserrat';
+    color: #6D6D6D;
+    
+}
+.phone-icon_2{
+    position: relative;
+  
+}
+.phone-icon_2 img{
+    width: 100%;
+}
+.premium_testss{
+    margin-left: 15%; 
+    margin-right: 15%; 
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+text-align: center;
+
+color: #6D6D6D;
+}
+.preimium_logo{
+    position: relative;
+    right: 36%;
+    bottom: 160px;
+}
+.preimium_logo img{
+    width: 140%;
+    font-weight: 270px;
+    line-height: 329.13px;
+}
+@media only screen and (max-width: 768px) {
+    .preimium_logo img {
+      display: none;
+    }
+    .preimium_text img{
+        display: none;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .premimun_secrion_start{
+      margin-top: -210px !important;
+    }
+    .row {
+      display: flex;
+      flex-direction: column;
+    }
+    .col-lg-6 {
+      width: 100%;
+    }
+    .preimium_text, .phone-icon_2 {
+      padding: 30px;
+    }
+    .preimium_logo {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .premium_testss{
+      margin-left: 10%;
+      margin-right: 10%;
+      font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+order: 1;
+    }
+    .premium_text{
+      font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+    }
+    .premium_header{
+      font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 32px;
+    }
+.order_button{
+  
+}
+.dash_headers{
+  margin-top: -150px !important;
+}
+  }
+ /* premium model  */
+
+ 
+.containerOk {
+    position: relative;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slide:hover + .King_icon{
+    transform: scale(1.4);
+    transition-duration: 0.3s;
+  }
+  
+  .slide button {
+    cursor: pointer;
+  }
+  
+  .content {
+    position: absolute;
+    top: 100%;
+    margin-left: -100px;
+    padding: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .open {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .myCard {
+    width: 220px;
+    height: auto;
+    border: 1px solid #ffffff;
+    border-radius: 2px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-header {
+    background-color: #ffffff;
+    padding-top: 20px;
+  }
+  
+  .card-header h2 {
+    margin: 7px;
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+
+color: #161616;
+  }
+  
+  .card-header hr {
+    margin: 10px 0;
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+  }
+  
+  .card_body_texts{
+    margin: 0px;
+    display: block;
+    padding: 10px 0;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+color: #3F3F3F;
+  }
+
+  .card-body li:last-child {
+    border: none;
+  }
+  
+  .card-body button {
+    display: block;
+    margin: 2px auto 0;
+    border: 1px solid #000;
+    border-radius: 20px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    width: 170px;
+    height: 35px;
+    margin-bottom:20px;
+  }
+  
+  .card-body button:hover {
+    background-color: #fff;
+    color: #000;
+  }
+
+  @media (max-width: 767px) {
+  .myCard {
+   margin-left: 55%;
+
+  }
+}

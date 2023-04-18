@@ -1,24 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./Components/Pages/HomePage";
+import DownloadPage from "./Components/Pages/DownloadPage";
+import Footer from "./Components/Pages/Footer";
+import ContectUS from "./Components/Pages/ContectUS";
+import BlogsPage from "./Components/Pages/BlogsPage";
+import Career from "./Components/Pages/Career";
+import DigitalPayment from "./Components/Pages/DigitalPayment";
+import PremiumPage from "./Components/Pages/PremiumPage";
+import PrivacyPolicy from "./Components/Pages/PrivacyPolicy";
+import NavBar from "./Components/Pages/NavBar";
+import TermsAndCondition from "./Components/Pages/TermsAndCondition";
+import AboutUS from "./Components/Pages/AboutUS";
+import Tutorial from "./Components/Pages/Tutorial";
+import HomeSecond from "./Components/Pages/HomeSecond";
+import LeavingPopUP from "./Components/PopUp/LeavingPopUP";
+import AppDownloadPopUP from "./Components/PopUp/AppDownloadPopUP";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <AppDownloadPopUP /> */}
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route path="/downloadapp" element={<DownloadPage />} />
+          <Route path="/contect" element={<ContectUS />} />
+          <Route path="/blogs" element={<BlogsPage />} />
+          <Route path="/career" element={<Career />} />
+          <Route path="/digitalPayment" element={<DigitalPayment />} />
+          <Route path="/premium" element={<PremiumPage />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms&condition" element={<TermsAndCondition />} />
+          <Route path="/aboutus" element={<AboutUS />} />
+          <Route path="/tutorial" element={<Tutorial />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 

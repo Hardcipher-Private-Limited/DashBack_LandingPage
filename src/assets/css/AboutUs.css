@@ -1,0 +1,68 @@
+.AboutUs_header{
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+margin-top: 40px;
+color: #161616;
+text-align: center;
+}
+.About_text{
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 44px;
+text-align: center;
+padding-left: 90px;
+padding-right: 90px;
+color: #6C6C6C;
+text-align: center;
+}
+.about_read{
+font-style: normal;
+font-weight: 400;
+font-size: 21.5px;
+line-height: 44px;
+color: #6C6C6C;
+margin-top: 20px;
+}
+.about_last_line{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 200.9%;
+color: #6C6C6C;
+padding-left: 90px;
+padding-right: 90px;
+margin-top: 20px;
+}
+.img_{
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .AboutUs_header{
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 32px;
+    }
+    .About_text{
+        font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 200.9%;
+text-align: center;
+padding-left: 45px;
+padding-right: 45px;
+    }
+    .about_read{
+        font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 200.9%;
+padding: 15px;
+text-align: center;
+margin-top: 8px;
+    }
+}

@@ -1,0 +1,54 @@
+.tutorial_header{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 49px;
+text-align: center;
+color: #161616;
+margin-top: 40px;
+}
+.tutorial_input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+.tutorial_input input{
+    width: 40%;
+height: 49.83px;
+border: 1px solid black;
+border-radius: 7px;
+padding-left: 20px;
+}
+.card_main{
+   
+    display: flex;
+    gap: 26px;
+    margin: 50px;
+}
+.cardss{
+    border-radius: 20px;
+}
+.card__body h5{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+color: #161616;
+}
+.card__body p{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+
+color: #989898;
+}
+@media (max-width: 768px) {
+    .tutorial_input input{
+        width: 80% !important;
+    }  
+}

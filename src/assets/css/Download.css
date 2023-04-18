@@ -1,0 +1,67 @@
+.order_of_left{
+    padding-top: 120px;
+}
+.dash_with_text h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 68px;
+    text-align: center;
+    color: #161616;
+}
+.dash_with_text p{
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+text-align: center;
+
+color: #6D6D6D;
+}
+.logo_play_store{
+    display: flex;
+    gap: 22px;
+    margin-top: 30px;
+}
+.logo_play_store img{
+    width: 150px;
+}
+.playstore_mobile img{
+    width: 100%;
+}
+@media (max-width: 767px) {
+.order_of_left{
+    margin-top: -70px !important;
+    order: 2;
+}
+.order_of_right{
+    order: 1;
+}
+.dash_with_text h1{
+    font-style: normal;
+font-weight: 700;
+font-size: 26px;
+line-height: 32px;
+text-align: center;
+}
+.dash_with_text p{
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 15px;
+text-align: center;
+letter-spacing: -0.333333px;
+}
+.logo_play_store img{
+    /* width: 80%; */
+    width: 122.63px;
+}
+.text_section{
+    order: 1 !important;
+}
+.order____{
+    margin-top: 25px;
+    order: 2 !important;
+}
+
+}

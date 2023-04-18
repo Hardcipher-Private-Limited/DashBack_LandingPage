@@ -1,0 +1,356 @@
+.background_explor{
+    width: 100%;
+    background: linear-gradient(180deg, #09376E 0%, #245FA7 100%);
+    margin-top: -50px;
+  }
+.transaction img{
+    width: 500px;
+}
+.postion{
+    position: relative;
+
+}
+.position_adjust{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+    position: absolute;
+    margin-top: 25% ;
+    padding-left: 70px;
+}
+
+.text_right img{
+ width: 100%;
+}
+.postion h1{
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 50px;
+
+color: #FFFFFF;
+}
+.postion  button{
+    line-height: 31.69px;
+    color:  #0C376A;
+    font-size: 20px ;
+    font-weight: 600;
+    background: #FFFFFF;
+    border-radius: 21px;
+    margin-left: -349px;
+    /* padding: 0px 19px 0px 19px;
+    margin: 20px 0px 0px 0px; */
+    border: none;
+    width: 130px;
+}
+@media (max-width: 767px) {
+  .background_explor{
+    margin-top: 50px;
+  }
+  .text_right img{
+    width: 100%;
+   }
+   .Left_row{
+    margin-top: 30px !important;
+    order: 2;
+   }
+   .Right_row{
+    order: 1;
+   }
+   .position_adjust h1 {
+    font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+/* padding: 50px; */
+   }
+   .postion button{
+    margin-top: 10px;
+    width: 35%;
+    padding-left: 0px;
+    font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+margin-left: -150px;
+
+   }
+   .position_adjust{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+      position: absolute;
+      margin-top: 25% ;
+      padding-left: 40px;
+  }
+}
+
+
+
+/* blogs start  */
+.blogs{
+    padding: 50px;
+    padding-bottom: 50px;
+}
+.card_wrap_section{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.blogs h1{
+
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 49px;
+text-align: center;
+color: #161616;
+margin: 20px 0px 55px 0px;
+}
+.ccardbody h5{
+    /* font-family: 'Montserrat'; */
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #161616;
+}
+.dateofCard{
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 180.4%;
+color: #393939;
+}
+.textss{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 175.4%;
+    color: #7A7A7A;
+    margin-top: -10px;
+}
+.ReadButton{
+padding:5px 25px 5px 25px; 
+background-color:#161616;
+color:  #FFFFFF;
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+border: none;
+border-radius: 5px;
+width: 169px;
+}
+.ccardbody {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+.card {
+    border: none !important;
+
+  }
+  @media (max-width: 767px) {
+  .flex_wrap_section{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center;
+  }
+  .middle_card{
+    width: 50%;
+
+  }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .ccardbody {
+      justify-content: space-between;
+    }
+    
+    .card {
+      width: calc(50% - 20px);
+      margin: 0;
+    }
+    
+    .card.center {
+      width: 100%;
+      max-width: none;
+    }
+  }
+  
+@media (max-width: 767px) {
+    .blogs .col-lg-3 {
+      width: 48%;
+    }
+  }
+  
+ 
+
+
+
+
+/* what our clint say  */
+.clint_section{
+    margin: 50px;
+    margin-bottom: 50px;
+}
+
+.clint_single_cards{
+    border: none;
+    background-color: white;
+}
+.Clint_heading{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 41px;
+    text-align: center;
+    color: #161616;
+}
+.clinets_card{
+    display: flex;   
+    gap: 40px;
+}
+.main__card{
+    display: flex;
+}
+.card_name{
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 180.4%;
+color: #2F2F2F;
+}
+.card_country{
+    font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 17px;
+color: #404040;
+}
+.summery{
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 180.4%;
+color: #2F2F2F;
+}
+/* Frequent_text section start */
+.Frequent_text h1{
+font-style: normal;
+font-weight: 700;
+font-size: 35px;
+line-height: 41px;
+text-align: center;
+
+color: #161616;
+}
+.Frequent_text h6{
+    margin-top: 2%;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+text-align: center;
+
+color: #161616;
+
+}
+@media (max-width: 767px) {
+  .Clint_heading{
+    font-weight: 700;
+font-size: 26px;
+line-height: 35px;
+text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+    .Frequent_text h6 {
+        font-weight: 600;
+font-size: 17px;
+    }
+
+}
+ .control{
+    width: 38%;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    padding: 10px 40px 10px 40px;
+ }
+ @media screen and (max-width: 768px) {
+    .control {
+      width: 80%;
+    }
+  }
+ .Questions_text{
+    border-bottom: 1px solid black;
+ }
+ .flex_direction{
+    margin: 15px 0px 15px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ .Questions_text h5{
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 20px;
+color: #161616;
+ }
+ .Questions_text p{
+    
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 17px;
+
+color: #7A7A7A;
+    width: 61%;
+ }
+ .Questions_text_last{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ .Questions_text-last h5{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+color: #161616;
+ }
+ .Questions_text_last p{
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    
+    color: #7A7A7A;
+        width: 50%;
+    }
+    @media screen and (max-width: 767px) {
+        .col-lg-12 {
+          margin: -11px;
+        }
+       .Questions_text{
+        padding-left: 30px;
+      
+       }
+      }
+      
+
+
+    .swiper-slide-active {
+        transform: scale(0.1); 
+      }
+      .swiper-slide {
+        width: 300px;
+      }
