@@ -14,13 +14,9 @@ import NavBar from "./Components/Pages/NavBar";
 import TermsAndCondition from "./Components/Pages/TermsAndCondition";
 import AboutUS from "./Components/Pages/AboutUS";
 import Tutorial from "./Components/Pages/Tutorial";
-import HomeSecond from "./Components/Pages/HomeSecond";
-import LeavingPopUP from "./Components/PopUp/LeavingPopUP";
-import AppDownloadPopUP from "./Components/PopUp/AppDownloadPopUP";
 function App() {
   return (
     <>
-      {/* <AppDownloadPopUP /> */}
       <BrowserRouter>
         <NavBar />
         <Routes>

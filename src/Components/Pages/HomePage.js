@@ -87,7 +87,7 @@ const HomePage = () => {
   };
   return (
     <>
-      {cashBackModel && <LeavingPopUP cancle={cancle} />}
+      {/* {cashBackModel && <LeavingPopUP cancle={cancle} />} */}
       <div className="container pt-2">
         <div className="rupeeIcon">
           {/* <img
