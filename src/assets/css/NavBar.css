@@ -1,8 +1,17 @@
 
 .navbar--shadow {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    background-color:white;
+    /* position: 0px; */
   }
-  
+.db_logo_icon{
+  width: 20%;
+  }
+ 
+  .cancle_icon{
+    margin-top: 5%;
+    margin-left: 5%;
+  }
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -16,7 +25,6 @@
 
   }
 .king-text{
-    padding-left: 25px !important;
     font-style: normal;
 font-weight: 700;
 font-size: 11px;
@@ -28,8 +36,6 @@ text-align: center;
   .navbar__menu {
     display: none;
   box-shadow: #7d7c7c;
-   
-
   }
   
   .navbar__menu ul {
@@ -38,17 +44,19 @@ text-align: center;
     margin:0;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .navbar__menu a img{
     padding: 1px;
-    width: 27px;
-height: 27px;
+    width: 22px;
+    height: 22px;
   }
   .navbar__menu a span{
-    padding-left: 6px;
+    padding-left: 5px;
     font-style: normal;
-font-weight: 600;
-font-size: 18px;
+font-weight: 500;
+font-size: 13px;
 line-height: 22px;
 text-align: center;
 color: #161616;
@@ -56,7 +64,7 @@ color: #161616;
   .navbar__menu a {
     border: 1px solid black;
 border-radius: 20px;
-    padding: 3px 7px 7px 5px ;
+    padding: 0px 10px 7px 10px ;
     text-decoration: none;
     font-size: 1.5rem;
   }
@@ -89,7 +97,6 @@ color: #FFFFFF;
   .navbar__menu-icon {
     width: 25px;
     height: 3px;
-    /* background-color: green; */
     position: relative;
     transition: all 0.3s ease-in-out;
 
@@ -126,33 +133,41 @@ color: #FFFFFF;
     z-index: 1;
     }
     @media (min-width:769px) {
+      ._ul_alignmate{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        gap: 30px;
+      }
         .king-text{
             display: none;
         }
+       .playStore{
+            width: 40% !important ;
+        }
         .king_icon{
-            width: 60% !important ;
+          width: 40%;
         }
     }
     @media (max-width: 768px) {
         .navbar__menu {
             box-shadow: 0px 0px 10px rgba(121, 121, 121, 0.5);
-            background-color: red;
              width: 100% !important ;
                   left: 0px;
-                  top: 50px !important;
-        padding: 50px;
-        margin-left: 0px !important;    
-          align-items: center;
+                 
               }
 
     }
     @media (min-width: 768px) {
+      .Container_navBar{
+        display: flex !important;
+        justify-content: space-between !important;
+      }
     .navbar__menu {
     display: flex;
-    align-items: center;
-       top: 0;
-  left: 0;
-  right: 400px !important;
+          top: 0;
+      left: 0;
+      right: 20% !important;
 
     }
    
@@ -162,7 +177,7 @@ color: #FFFFFF;
     
     .navbar__menu li {
     margin-right: 1rem;
-    margin-bottom: 0;
+    
     }
     
     .navbar__menu-toggle {
@@ -172,6 +187,15 @@ color: #FFFFFF;
     @media (max-width: 767px) {
       .king_icon{
         width: 10% !important ;
+    }
+    .playStore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 2%; */
+    }
+    .playStore a{
+      width: 35%;
     }
         .navbar__menu li:nth-child(1){
           order: 3;
@@ -185,14 +209,13 @@ color: #FFFFFF;
           order: 1;
         }
         .show-menu{
-          height: 500px;
+          height: 150vh;
+
 
         }
         .navbar__menu ul {
           list-style: none;
-          padding: 0;
-          margin:0;
-          margin-top: 50px;
+          margin-top: 100px;
           display: flex;
           flex-direction: column;
           display: flex;
@@ -201,47 +224,40 @@ color: #FFFFFF;
           align-items: center;
           gap: 50px;
         }
+        .navbar__menu li{
+          width: 100%;
+        }
         .navbar__menu a {
           padding-top: 10px;
           padding-bottom: 10px;
-          padding-left: 5px; 
-          padding-right: 10px;
+          padding-left: 15px; 
+          padding-right: 20px;
           border: 1px solid black;
       border-radius: 9px !important;
           text-decoration: none;
-          font-size: 1.5rem;
+          font-size: 1.1rem;
         }
         .navbar__menu span{
           font-weight: 600;
-          font-size: 12px;
-          line-height: 17px;
+          font-size: 10px;
+          line-height: 15px;
         }
-       .Nav__menu_li_a{
-          width: 300px;
-       }
-       .Nav__menu_li_a a{
-        padding-left: 20px; 
-        padding-right: 148px;
-      }
+       
       .Nav__menu_li_a span{
-        padding-left: 20px !important;
+        padding-left: 1% !important;
          
           }
          .navbar__menu{
           top: 0px !important;
         }
       
-        .navbar__menu a img{
-          padding: 1px;
-          width: 27px;
-      height: 27px;
-        }
+       
         .navbar__menu a span{
-          padding-left: 6px;
+          /* padding-left: 6px; */
           font-style: normal;
       font-weight: 600;
-      font-size: 18px;
-      line-height: 22px;
+      font-size: 15px;
+      line-height: 20px;
       text-align: center;
       color: #161616;
         }
@@ -249,31 +265,4 @@ color: #FFFFFF;
         
       }
 
-
-
-
-
-
-      #container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 200%;
-      }
-      
-      #navBar {
-        position: fixed;
-        width: 100vw;
-        height: 50px;
-        background-color: #DEDEDE;
-        transition: 0.2s;
-        display: flex;
-      }
-      
-      .floatingNav {
-        width: calc(100vh - 100px); 
-        border-radius: 2px;
-        box-shadow: 0px 1px 10px #999;
-      }
       

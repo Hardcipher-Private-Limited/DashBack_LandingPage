@@ -4,52 +4,61 @@
     margin-top: -50px;
   }
 .transaction img{
-    width: 500px;
+    /* width: 500px; */
 }
-.postion{
-    position: relative;
-
-}
-.position_adjust{
-  display: flex;
+.Explore_section{
+  display: flex;  
   justify-content: center;
-  flex-wrap: wrap;
-    position: absolute;
-    margin-top: 25% ;
-    padding-left: 70px;
+  align-items: center;
+  background-image: url("../../../public/Images/HomeSecond/transaction_logo.png");
+  background-size:100% auto;
+ object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 
 .text_right img{
- width: 100%;
+  width: 100%;
+ /* height: 470px; */
+ /* padding-right: 10%; */
 }
-.postion h1{
+.expore_h1 {
 font-style: normal;
 font-weight: 700;
 font-size: 40px;
 line-height: 50px;
-
 color: #FFFFFF;
 }
-.postion  button{
+.botton_Explore {
     line-height: 31.69px;
     color:  #0C376A;
     font-size: 20px ;
     font-weight: 600;
     background: #FFFFFF;
     border-radius: 21px;
-    margin-left: -349px;
-    /* padding: 0px 19px 0px 19px;
-    margin: 20px 0px 0px 0px; */
-    border: none;
-    width: 130px;
+  border: none;
+  padding-left:5%;
+  padding-right:5%;
 }
 @media (max-width: 767px) {
   .background_explor{
     margin-top: 50px;
   }
-  .text_right img{
+  .Explore_section{
+    margin-top: 100px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../public/Images/HomeSecond/transaction_logo.png");
+    background-size:100% auto;
+   object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  /* .text_right img{
     width: 100%;
-   }
+   } */
    .Left_row{
     margin-top: 30px !important;
     order: 2;
@@ -57,55 +66,56 @@ color: #FFFFFF;
    .Right_row{
     order: 1;
    }
-   .position_adjust h1 {
-    font-style: normal;
-font-weight: 700;
-font-size: 20px;
+   .expore_h1{
+
+font-size: 20px; 
 line-height: 24px;
-/* padding: 50px; */
+  margin-top: 50%;
+  margin-bottom:50%;
    }
-   .postion button{
-    margin-top: 10px;
-    width: 35%;
-    padding-left: 0px;
+  
+  .botton_Explore{
+    position: absolute;
+    margin-top: -25%;
+    padding-top: 0px;
     font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 17px;
-margin-left: -150px;
 
    }
-   .position_adjust{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-      position: absolute;
-      margin-top: 25% ;
-      padding-left: 40px;
-  }
+  
 }
 
 
 
 /* blogs start  */
 .blogs{
-    padding: 50px;
-    padding-bottom: 50px;
+  width: 100%;
+     padding-top: 50px;
+    /* padding-bottom: 50px; */
 }
-.card_wrap_section{
-  display: flex;
-  flex-wrap: wrap;
-
+.three_card{
+  padding: 10px;
+ 
 }
-.blogs h1{
+.bolgs_text{
+  padding-top:20px;
+  padding-bottom: 50px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  text-align: center;
+  color: #161616;
+}
+.textssssss{
+  font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 160.4%;
+color: #7A7A7A;
 
-font-style: normal;
-font-weight: 700;
-font-size: 35px;
-line-height: 49px;
-text-align: center;
-color: #161616;
-margin: 20px 0px 55px 0px;
 }
 .ccardbody h5{
     /* font-family: 'Montserrat'; */
@@ -154,19 +164,30 @@ width: 169px;
     border: none !important;
 
   }
-  @media (max-width: 767px) {
+    @media (max-width: 767px) {
+      .three_card{
+        padding: 10px;
+       
+      }
+  .middle_img{
+    /* margin-top: 0px !important;   */
+    /* width: 200px; */
+    /* border: 1px solid red; */
+  }
+}
+  /* @media (max-width: 767px) {
   .flex_wrap_section{
     display: flex !important;
     flex-wrap: wrap !important;
     justify-content: center;
   }
   .middle_card{
-    width: 50%;
+    width: 40%;
 
   }
-  }
+  } */
   
-  @media screen and (min-width: 768px) {
+  /* @media screen and (min-width: 768px) {
     .ccardbody {
       justify-content: space-between;
     }
@@ -180,15 +201,19 @@ width: 169px;
       width: 100%;
       max-width: none;
     }
-  }
+  } */
   
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .blogs .col-lg-3 {
       width: 48%;
     }
-  }
+  } */
   
- 
+ .my-img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+ }
 
 
 
@@ -198,7 +223,9 @@ width: 169px;
     margin: 50px;
     margin-bottom: 50px;
 }
-
+.cards{
+  border: 2px solid red;
+}
 .clint_single_cards{
     border: none;
     background-color: white;

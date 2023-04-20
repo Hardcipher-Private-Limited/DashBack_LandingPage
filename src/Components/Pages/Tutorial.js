@@ -3,6 +3,7 @@ import "../../assets/css/Tutorial.css";
 import { IMAGES_PATH_TUTOEIAL } from "../../Constants/ImagesConst";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Helmet } from "react-helmet";
 
 const Tutorial = () => {
   //   const responsive = {
@@ -27,7 +28,7 @@ const Tutorial = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 300 },
-      items: 5,
+      items: 4,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
@@ -35,15 +36,25 @@ const Tutorial = () => {
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 1,
+      items: 3,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
+      items: 2,
     },
   };
   return (
     <>
+      <Helmet>
+        <title>
+          DashBack Tutorials | Learn How to Maximize Your Savings and Earnings
+          with Our Cashback App
+        </title>
+        <meta
+          name="description"
+          content="Learn how to maximize your cashback and savings with DashBack tutorials! Our comprehensive tutorials cover everything from getting started with the app to advanced tips and tricks for earning more rewards. Get the most out of your shopping with DashBack - start learning now!"
+        />
+      </Helmet>
       <div>
         <div className="tutorial_header"> Tutorials</div>
         <div className="tutorial_input">
@@ -58,7 +69,7 @@ const Tutorial = () => {
             className="container"
             style={{ width: "100%" }}
           >
-            <div class="card cardss" style={{ width: 250 }}>
+            <div class="card cardss auto" style={{ width: "100%" }}>
               <img
                 class="card-img-top p-3"
                 src={IMAGES_PATH_TUTOEIAL + "/Rectangle 340 (1).png"}
@@ -75,7 +86,7 @@ const Tutorial = () => {
               </a> */}
               </div>
             </div>
-            <div class="card cardss" style={{ width: 250 }}>
+            <div class="card cardss" style={{ width: "100%" }}>
               <img
                 class="card-img-top p-3"
                 src={IMAGES_PATH_TUTOEIAL + "/Rectangle 340 (1).png"}
@@ -92,7 +103,7 @@ const Tutorial = () => {
               </a> */}
               </div>
             </div>
-            <div class="card cardss" style={{ width: 250 }}>
+            <div class="card cardss" style={{ width: "100%" }}>
               <img
                 class="card-img-top p-3"
                 src={IMAGES_PATH_TUTOEIAL + "/Rectangle 340 (1).png"}
@@ -109,7 +120,7 @@ const Tutorial = () => {
               </a> */}
               </div>
             </div>
-            <div class="card cardss" style={{ width: 250 }}>
+            <div class="card cardss" style={{ width: "100%" }}>
               <img
                 class="card-img-top p-3"
                 src={IMAGES_PATH_TUTOEIAL + "/Rectangle 340 (1).png"}
@@ -126,7 +137,7 @@ const Tutorial = () => {
               </a> */}
               </div>
             </div>
-            <div class="card cardss" style={{ width: 250 }}>
+            <div class="card cardss" style={{ width: "100%" }}>
               <img
                 class="card-img-top p-3"
                 src={IMAGES_PATH_TUTOEIAL + "/Rectangle 340 (1).png"}
@@ -143,7 +154,7 @@ const Tutorial = () => {
               </a> */}
               </div>
             </div>
-            <div class="card cardss" style={{ width: 250 }}>
+            <div class="card cardss" style={{ width: "100%" }}>
               <img
                 class="card-img-top p-3"
                 src={IMAGES_PATH_TUTOEIAL + "/Rectangle 340 (1).png"}
@@ -160,7 +171,7 @@ const Tutorial = () => {
               </a> */}
               </div>
             </div>
-            <div class="card cardss" style={{ width: 250 }}>
+            <div class="card cardss" style={{ width: "100%" }}>
               <img
                 class="card-img-top p-3"
                 src={IMAGES_PATH_TUTOEIAL + "/Rectangle 340 (1).png"}
@@ -177,7 +188,7 @@ const Tutorial = () => {
               </a> */}
               </div>
             </div>
-            <div class="card cardss" style={{ width: 250 }}>
+            <div class="card cardss" style={{ width: "100%" }}>
               <img
                 class="card-img-top p-3"
                 src={IMAGES_PATH_TUTOEIAL + "/Rectangle 340 (1).png"}

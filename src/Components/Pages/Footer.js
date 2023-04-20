@@ -5,28 +5,43 @@ import { useNavigate } from "react-router-dom";
 const Footer = () => {
   const Navigate = useNavigate();
   function handleContect() {
+    window.scrollTo(0, 0);
     Navigate("./Contect");
   }
   function handleCareer() {
+    window.scrollTo(0, 0);
     Navigate("/career");
   }
   function handlePrivancy() {
+    window.scrollTo(0, 0);
     Navigate("/privacy");
   }
   function handleTerms() {
+    window.scrollTo(0, 0);
     Navigate("/terms&condition");
   }
   function handleAbout() {
+    window.scrollTo(0, 0);
     Navigate("/aboutus");
   }
   function handleTutorial() {
+    window.scrollTo(0, 0);
     Navigate("/tutorial");
   }
   function handleBlogs() {
+    window.scrollTo(0, 0);
     Navigate("/blogs");
   }
   function handleHome() {
+    window.scrollTo(0, 0);
     Navigate("/");
+  }
+  function handlesecond() {
+    // Navigate("/SecondHome");
+  }
+  function handlepartners() {
+    window.scrollTo(0, 0);
+    Navigate("/ourpartners");
   }
   return (
     <>
@@ -77,20 +92,21 @@ const Footer = () => {
               <div class="">
                 <h3>Company</h3>
                 <p onClick={handleAbout}>About Us</p>
-                <p>Our Partners</p>
+                <p onClick={handlepartners}>Our Partners</p>
                 <p onClick={handleContect}>Contact Us</p>
               </div>
               <div class="">
                 <h3>Tools</h3>
-                <p>Contact Us</p>
+                {/* <p>Contact Us</p> */}
                 <p>Cashback Calculator</p>
-                <p onClick={handleCareer}>Prosperity Plans</p>
+                <p>Prosperity Plans</p>
               </div>
               <div class="">
                 <h3>Resources</h3>
+                <p onClick={handleCareer}>Careers</p>
                 <p onClick={handleBlogs}>Blogs</p>
                 <p onClick={handleTutorial}>Tutorials</p>
-                <p>FAQs</p>
+                <p onClick={handlesecond}>FAQs</p>
               </div>
               <div class="">
                 <h3>Legal</h3>

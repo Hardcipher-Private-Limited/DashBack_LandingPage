@@ -1,11 +1,19 @@
 import React from "react";
 import "../../assets/css/Privacy.css";
+import { Helmet } from "react-helmet";
 
 const TermsAndCondition = () => {
   return (
     <>
-      <div className="container text-center">
-        <div className="privacy_header">Terms & Conditions</div>
+      <Helmet>
+        <title>Terms & Conditions</title>
+        <meta
+          name="description"
+          content=" Learn about DashBack's terms & conditions and the use of our top-rated cashback app. Stay informed and understand your rights and responsibilities as a user. Check out our terms & conditions page now!"
+        />
+      </Helmet>
+      <div className="container ">
+        <div className="privacy_header text-center">Terms & Conditions</div>
 
         <div className="privacy_text_header">Demat Account</div>
         <div className="privacy_text">

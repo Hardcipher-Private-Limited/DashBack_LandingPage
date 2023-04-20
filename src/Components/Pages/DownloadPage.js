@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../../assets/css/Download.css";
 import { IMAGES_PATH_DOWNLOAD } from "../../Constants/ImagesConst";
 import DowloadTheApp from "../PopUp/DowloadTheApp";
+import { Helmet } from "react-helmet";
 
 const DownloadPage = () => {
   const [displayModal, setDisplayModal] = useState(true);
@@ -16,6 +17,16 @@ const DownloadPage = () => {
   }, []);
   return (
     <>
+      <Helmet>
+        <title>
+          Title - Get the DashBack App - Start Earning Cashback and Saving Money
+          Today!
+        </title>
+        <meta
+          name="description"
+          content=" Get cashback on all your purchases with our easy-to-use app. Shop at your favorite stores and earn real cashback. Download our app today."
+        />
+      </Helmet>
       {displayModal && <DowloadTheApp hideModal={hideModal} />}
       <div className="container pt-5" style={{ marginBottom: 150 }}>
         <div className="col-lg-12 row ">

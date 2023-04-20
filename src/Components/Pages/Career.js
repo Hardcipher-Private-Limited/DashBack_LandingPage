@@ -2,10 +2,20 @@ import React from "react";
 import "../../assets/css/ContectUS.css";
 import "../../assets/css/Slider.css";
 import { IMAGES_PATH } from "../../Constants/ImagesConst";
+import { Helmet } from "react-helmet";
 
 const Career = () => {
   return (
     <>
+      <Helmet>
+        <title>
+          Join the DashBack Team | Explore Exciting Career Opportunities Today
+        </title>
+        <meta
+          name="description"
+          content="Join the DashBack team and help us revolutionize the world of cashback and rewards! Our growing company is seeking talented individuals to join our team and drive innovation. Explore our career opportunities now and take the first step towards a rewarding career with DashBack."
+        />
+      </Helmet>
       <div className="container">
         <div className="contect-text text-center">
           <h1>Careers</h1>
@@ -78,14 +88,14 @@ const Career = () => {
                   Upload file<span>*</span>
                 </label>
                 <div class="file file--upload">
-                  <label for="input-file " className="UploadFilr">
+                  <label for="file " className="UploadFilr">
                     Upload
                     <img
                       src={IMAGES_PATH + "/Vector (3).png"}
                       class="material-icons"
                     />
                   </label>
-                  <input id="input-file" type="file" className="form-control" />
+                  <input id="file" type="file" className="form-control" />
                 </div>
               </div>
               <div className="col-lg-12 mt-4">

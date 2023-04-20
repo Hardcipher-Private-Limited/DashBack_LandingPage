@@ -1,7 +1,7 @@
 .AboutUs_header{
 font-style: normal;
 font-weight: 700;
-font-size: 40px;
+font-size: 36px;
 line-height: 49px;
 margin-top: 40px;
 color: #161616;
@@ -10,8 +10,8 @@ text-align: center;
 .About_text{
 font-style: normal;
 font-weight: 400;
-font-size: 20px;
-line-height: 44px;
+font-size: 18px;
+line-height: 28px;
 text-align: center;
 padding-left: 90px;
 padding-right: 90px;
@@ -21,8 +21,8 @@ text-align: center;
 .about_read{
 font-style: normal;
 font-weight: 400;
-font-size: 21.5px;
-line-height: 44px;
+font-size: 18px;
+line-height: 25px;
 color: #6C6C6C;
 margin-top: 20px;
 }
@@ -38,7 +38,7 @@ padding-right: 90px;
 margin-top: 20px;
 }
 .img_{
-    width: 40%;
+    width: 35%;
 }
 
 @media (max-width: 768px) {

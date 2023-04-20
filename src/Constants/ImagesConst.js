@@ -8,3 +8,5 @@ export const IMAGES_PATH_DIGITAL_PAYMENT =
   process.env.PUBLIC_URL + "/Images/DigitalPayment";
 export const IMAGES_PATH_TUTOEIAL = process.env.PUBLIC_URL + "/Images/Tutorial";
 export const IMAGES_PATH_NAVBAR = process.env.PUBLIC_URL + "/Images/NavBar";
+export const IMAGES_PATH_OURPARTNERS =
+  process.env.PUBLIC_URL + "/Images/OurPartners";

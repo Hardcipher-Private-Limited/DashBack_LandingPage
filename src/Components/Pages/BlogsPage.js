@@ -2,10 +2,21 @@ import React from "react";
 import NavBar from "./NavBar";
 import "../../assets/css/ContectUS.css";
 import { IMAGES_PATH_BLOGS } from "../../Constants/ImagesConst";
+import { Helmet } from "react-helmet";
 
 const BlogsPage = () => {
   return (
     <>
+      <Helmet>
+        <title>
+          DashBack Blog | Expert Tips and Insights for Saving Money and Earning
+          Cashback
+        </title>
+        <meta
+          name="description"
+          content="Stay up-to-date with the latest trends in saving money and earning cashback with DashBack's insightful and informative blogs! Our top-rated app offers exclusive cashback at hundreds of stores, and our blogs provide tips and tricks to help you get the most out of your earnings. Check out our blogs now."
+        />
+      </Helmet>
       <div className="container p-5 mb-5">
         <div className="col-lg-12 row">
           <div className="col-lg-3"></div>

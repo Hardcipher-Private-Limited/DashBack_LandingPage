@@ -2,10 +2,20 @@ import React from "react";
 import NavBar from "./NavBar";
 import "../../assets/css/AboutUs.css";
 import { IMAGES_PATH_DIGITAL_PAYMENT } from "../../Constants/ImagesConst";
+import { Helmet } from "react-helmet";
 
 const AboutUS = () => {
   return (
     <>
+      <Helmet>
+        <title>
+          Learn About DashBack - Your Go-To Destination for Cashback and Savings
+        </title>
+        <meta
+          name="description"
+          content="Learn more about DashBack - the top-rated cashback app that helps you save money and earn rewards while you shop! Our mission is to help consumers make smarter financial decisions and build wealth through cashback, and exclusive investment opportunities. Discover the story behind our app and get started with DashBack today."
+        />
+      </Helmet>
       <div className="container ">
         <div className="AboutUs_header">About Us</div>
         <div className="About_text">

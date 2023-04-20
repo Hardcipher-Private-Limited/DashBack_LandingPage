@@ -14,11 +14,24 @@ import NavBar from "./Components/Pages/NavBar";
 import TermsAndCondition from "./Components/Pages/TermsAndCondition";
 import AboutUS from "./Components/Pages/AboutUS";
 import Tutorial from "./Components/Pages/Tutorial";
+import { Helmet } from "react-helmet";
+import HomeSecond from "./Components/Pages/HomeSecond";
+import OurPartner from "./Components/Pages/OurPartner";
 function App() {
   return (
     <>
       <BrowserRouter>
         <NavBar />
+        <Helmet>
+          <title>
+            Shop Smarter and Save More with DashBack: The Cashback App
+          </title>
+
+          <meta
+            name="description"
+            content=" Maximize your savings with Dash Back, the top-rated cashback app. Shop at hundreds of your favorite stores and earn cashback on every purchase."
+          />
+        </Helmet>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/downloadapp" element={<DownloadPage />} />
@@ -31,6 +44,7 @@ function App() {
           <Route path="/terms&condition" element={<TermsAndCondition />} />
           <Route path="/aboutus" element={<AboutUS />} />
           <Route path="/tutorial" element={<Tutorial />} />
+          <Route path="/ourpartners" element={<OurPartner />} />
         </Routes>
         <Footer />
       </BrowserRouter>

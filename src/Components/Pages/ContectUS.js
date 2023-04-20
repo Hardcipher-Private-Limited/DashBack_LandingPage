@@ -1,8 +1,18 @@
 import React from "react";
 import "../../assets/css/ContectUS.css";
+import { Helmet } from "react-helmet";
 const ContectUS = () => {
   return (
     <>
+      <Helmet>
+        <title>
+          Contact DashBack - Your Ultimate Cashback App Customer Support Team
+        </title>
+        <meta
+          name="description"
+          content="Need help or have a question about DashBack? Contact us today for quick and reliable support! Our friendly team is always here to assist you with any inquiries about our top-rated cashback app. Don't hesitate - get in touch now!"
+        />
+      </Helmet>
       <div className="container">
         <div className="contect-text text-center">
           <h1>Let’s have a talk!</h1>

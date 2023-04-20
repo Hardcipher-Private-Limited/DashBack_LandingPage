@@ -1,10 +1,21 @@
 import React from "react";
 import "../../assets/css/DigitalPayment.css";
 import { IMAGES_PATH_DIGITAL_PAYMENT } from "../../Constants/ImagesConst";
+import { Helmet } from "react-helmet";
 
 const DigitalPayment = () => {
   return (
     <>
+      <Helmet>
+        <title>
+          DashBack | The Ultimate Digital Payments and Online Shopping Wealth
+          Building Solution
+        </title>
+        <meta
+          name="description"
+          content="DashBack is the ultimate digital payment, online shopping, and wealth-building solution. Our top-rated app offers cashback at hundreds of stores and lucrative investment plans, helping you save money and build wealth while you shop. Discover the power of DashBack now!"
+        />
+      </Helmet>
       <div className="container mb-5">
         <div className="digital_header text-center p-5">
           <h1>Digital Payments. Online Shopping. Wealth Building</h1>
@@ -21,7 +32,7 @@ const DigitalPayment = () => {
               <img
                 src={IMAGES_PATH_DIGITAL_PAYMENT + "/Group 956.png"}
                 style={{ width: "60%" }}
-                className="arrow_marks"
+                className="arrow_marks d-none d-lg-block"
               />
             </div>
           </div>
@@ -87,6 +98,7 @@ const DigitalPayment = () => {
                 src={IMAGES_PATH_DIGITAL_PAYMENT + "/Online card payment.png"}
                 style={{ width: "100%" }}
                 // className="arrow_marks"
+                className=""
               />
             </div>
           </div>
@@ -101,7 +113,7 @@ const DigitalPayment = () => {
               <img
                 src={IMAGES_PATH_DIGITAL_PAYMENT + "/Group 956 (1).png"}
                 style={{ width: "60%" }}
-                className="arrow_marks"
+                className="arrow_marks d-none d-lg-block"
               />
             </div>
           </div>
@@ -146,7 +158,7 @@ const DigitalPayment = () => {
                   IMAGES_PATH_DIGITAL_PAYMENT + "/Online shopping discount.png"
                 }
                 style={{ width: "100%" }}
-                className="arrow_marks"
+                className="arrow_marks "
               />
             </div>
           </div>
@@ -180,7 +192,7 @@ const DigitalPayment = () => {
               <img
                 src={IMAGES_PATH_DIGITAL_PAYMENT + "/Group 961.png"}
                 style={{ width: "60%" }}
-                className="arrow_marks"
+                className="arrow_marks d-none d-lg-block"
               />
             </div>
           </div>
@@ -189,7 +201,7 @@ const DigitalPayment = () => {
               <img
                 src={IMAGES_PATH_DIGITAL_PAYMENT + "/13 1.png"}
                 style={{ width: "100%" }}
-                className="arrow_marks"
+                className="arrow_marks "
               />
             </div>
           </div>
@@ -246,7 +258,7 @@ const DigitalPayment = () => {
                 investment decisions. For detailed information on these plans,
                 visit
                 <br />
-                <b>Prosperity Plans T&Cs.</b>
+                <b className="text-primary">Prosperity Plans T&Cs.</b>
               </p>
             </div>
           </div>

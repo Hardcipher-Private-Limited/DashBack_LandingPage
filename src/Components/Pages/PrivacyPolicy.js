@@ -1,9 +1,17 @@
 import React from "react";
 import "../../assets/css/Privacy.css";
+import { Helmet } from "react-helmet";
 
 const PrivacyPolicy = () => {
   return (
     <>
+      <Helmet>
+        <title>Privacy Policy | DashBack - Your Trusted Cashback App</title>
+        <meta
+          name="description"
+          content="At DashBack, we take your privacy seriously. Our privacy policy outlines how we collect, use, and protect your personal information, so you can shop and earn with confidence. Learn more about our commitment to your privacy today."
+        />
+      </Helmet>
       <div className="container " style={{ paddingTop: 10 }}>
         <div className="privacy_header text-center ">Privacy Policy</div>
         <div className="privacy_text">

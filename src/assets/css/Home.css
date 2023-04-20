@@ -38,11 +38,12 @@ gap:25px;
     width: 200px;
 }
 .King_icon:hover + .drop_down{
-    border: 2px solid red;
+    border: 1px solid black;
 }
-.King_icon img{
-    width: 35px;
-}
+.King_icon, .playStore img{
+    width: 100%;
+
+  }
 .King_icon:hover{
         transform: scale(1.2);
         transition-duration: 0.3s;
@@ -54,7 +55,11 @@ gap:25px;
 }
 .rupeeIcon{
     position: absolute;
-left: 180px;
+left: 15%;
+top: 0px;
+}
+.rupeeIcon img{
+  width: 65%;
 }
 @media only screen and (min-width: 600px) {
     .logo_line{
@@ -68,20 +73,21 @@ left: 180px;
 /* dash back section start  */
 
 .dash_icon{
-    width:620px;
+    width:100%;
     position: relative;
-    top:100px;
+    /* top:100px; */
+    /* margin-left: 10%; */
 }
 .phone_icon{
-    width: 100%
+    width: 70%
 }
 .back_icons{
-    width:630px;
+    width:85%;
     top:  -89px;
     position: relative;
 }
 .dash_header{
-    top: 150px;
+    margin-top: 5% !important;
    position: relative;
     
 }
@@ -102,7 +108,16 @@ color: #161616;
     color: #161616;
     
 }
-.shopping_prpoerties{
+@media (min-width: 767px) {
+  .order_mbile_reverse img{
+ margin-left: 14%;
+}
+.waht_phone_icon{
+  /* width: 90%;
+  position: relative;
+  margin-top: -24%; */
+  left: 7%;
+}
 }
 .shopping_text {
   padding-left: 65px;
@@ -141,6 +156,17 @@ color: #161616;
     border-radius: 5px;
 }
 @media (max-width: 767px) {
+  content {
+
+    margin-left: -50%;
+    background-color: red;
+  }
+  .padding_for_div{
+    padding-top: 90px;
+  }
+  .rupeeIcon img{
+    width: 80%;
+  }
   .dash_icon{
     display: none;
   }
@@ -155,8 +181,8 @@ margin-left: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    left: 0px;
-    width: 5%;
+    left: 20%;
+    width: 70%;
   }
   .dash_header{
     position: relative;
@@ -244,20 +270,18 @@ text-align: center;
 }
 
 .waht_phone_icon{
-    width: 100%;
+    width: 90%;
     position: relative;
-    top: 0;
-    /* left: 25px; */
+    margin-top: -24%;
+    /* left: 7%; */
 }
 .begin_header{
-    /* margin-left: 50px; */
 }
 .begin_header h1{
-    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 700;
     font-size: 49px;
-    line-height: 67px;
+    line-height: 50px;
     text-align: center;
 }
 .digital-text{
@@ -279,10 +303,10 @@ color: #6D6D6D;
 }
 .we-do-icon{
     position: relative;
-    right: 140px;
+    right:0%;
 }
 .we-do-icon img{
-    width: 125%;
+    width: 100%;
   
 }
 .brandHeader{
@@ -297,28 +321,24 @@ line-height: 44px;
     color: #161616;
     
 }
-.brand_logos{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-    /* display: flex;
-    flex-wrap: wrap;*/
-    background-color:#FFFFFF;
-    box-shadow: 0px 0px 44px rgba(61, 23, 102, 0.1);
-    /* border-radius: 16px;
-    position: absolute;
-padding: 0px;  */
-}
+
+
+
+
 .brand-img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  background-color: white;
+    box-shadow: 0px 0px 44px rgb(230, 230, 230);
+   /* margin: 20px; */
+
 }
 .brand-img img {
-  max-width: 85% !important;
+  max-width: 80% !important;
   height: auto;
-  margin: -2px;
+  /* margin: -2px; */
 
 }
 
@@ -329,7 +349,7 @@ font-weight: 700;
 font-size: 21px;
 line-height: 24px;
     }
-    .brand_logos{
+    .brand-img{
       box-shadow: none;
     }
     .brand-img img {
@@ -346,6 +366,7 @@ line-height: 24px;
     .begin_header{
   margin-top: -80px;
     }
+  
   }
   
 /* premimum section start  */
@@ -366,13 +387,17 @@ margin-top: -40px;
 }
 
 .brand-img img{
-    padding: 10px 15px 10px 15px;
+    padding: 10px 10px 10px  10px;
     
 }
-.preimium_text img{
-    width: 145%;
-    /* font-weight: 270px; */
-    /* line-height: 329.13px; */
+.premium_first img{
+  width: 120%;
+}
+.preimium_last img{
+  margin-top: -30%;
+     width: 130%;
+     margin-left: -28%;
+    
 }
 .preimium_text h1{
     font-family: "Montserrat";
@@ -395,6 +420,7 @@ margin-top: -40px;
     font-size: 18px;
     font-weight: 300;
     font-family: 'Montserrat';
+    
     color: #6D6D6D;
     
 }
@@ -403,11 +429,11 @@ margin-top: -40px;
   
 }
 .phone-icon_2 img{
-    width: 100%;
+    width: 77%;
 }
 .premium_testss{
-    margin-left: 15%; 
-    margin-right: 15%; 
+    margin-left: 14%; 
+    margin-right: 14%; 
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -418,8 +444,8 @@ color: #6D6D6D;
 }
 .preimium_logo{
     position: relative;
-    right: 36%;
-    bottom: 160px;
+    right: 40%;
+    bottom: 130px;
 }
 .preimium_logo img{
     width: 140%;
@@ -427,6 +453,10 @@ color: #6D6D6D;
     line-height: 329.13px;
 }
 @media only screen and (max-width: 768px) {
+  .phone-icon_2 img{
+    width: 100%;
+    
+}
     .preimium_logo img {
       display: none;
     }
@@ -443,7 +473,7 @@ color: #6D6D6D;
       flex-direction: column;
     }
     .col-lg-6 {
-      width: 100%;
+      /* width: 100%; */
     }
     .preimium_text, .phone-icon_2 {
       padding: 30px;
@@ -477,11 +507,11 @@ line-height: 32px;
 .order_button{
   
 }
-.dash_headers{
-  margin-top: -150px !important;
-}
+
   }
  /* premium model  */
+
+ 
 
  
 .containerOk {
@@ -503,6 +533,7 @@ line-height: 32px;
   .content {
     position: absolute;
     top: 100%;
+    /* margin-right:500px; */
     margin-left: -100px;
     padding: 10px;
     opacity: 0;
@@ -583,7 +614,8 @@ color: #3F3F3F;
 
   @media (max-width: 767px) {
   .myCard {
-   margin-left: 55%;
+   margin-left: 50%;
 
   }
+ 
 }
