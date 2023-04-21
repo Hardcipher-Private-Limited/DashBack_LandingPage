@@ -5,7 +5,7 @@ const OurPartner = () => {
   return (
     <>
       <div className="">
-        <div className="our_partenrs_text">OurPartner</div>
+        <div className="our_partenrs_text">Our Partners</div>
         <div className="icons">
           <img src={IMAGES_PATH_OURPARTNERS + "/Group 575.png"} />
           <img src={IMAGES_PATH_OURPARTNERS + "/Group 572.png"} />

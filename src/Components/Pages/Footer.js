@@ -117,13 +117,13 @@ const Footer = () => {
           </div>
         </div>
         <div className="lineWidth"></div>
-        <div className="d-flex  justify-content-between   mt-0">
-          <div className="d-flex text-center Footer_bottom">
+        <div className="d-flex  justify-content-between  mt-0 footer_iconssss">
+          <div className="d-flex text-center Footer_bottom ">
             <div className="footer_responsive">
               <img src={IMAGES_PATH_FOOTER + "/Group.png"} />
-              <span>HardCipher Pvt. Ltd. 2020-23,</span>
+              <span>HardCipher Pvt. Ltd. 2020-23, </span>
               <div>
-                <p>All Rights Reserved</p>
+                <p className="ps-1"> All Rights Reserved</p>
               </div>
             </div>
           </div>

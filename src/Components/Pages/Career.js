@@ -48,7 +48,7 @@ const Career = () => {
                   </label>
                   <input
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Your name"
                     className="form-control "
                   />
                 </div>
@@ -58,7 +58,7 @@ const Career = () => {
                   </label>
                   <input
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Your name"
                     className="form-control"
                   />
                 </div>
@@ -69,7 +69,7 @@ const Career = () => {
                 </label>
                 <input
                   type="email"
-                  placeholder="Enter Your Email"
+                  placeholder="Enter your email"
                   className="form-control"
                 />
               </div>

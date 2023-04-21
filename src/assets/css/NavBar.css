@@ -64,7 +64,7 @@ color: #161616;
   .navbar__menu a {
     border: 1px solid black;
 border-radius: 20px;
-    padding: 0px 10px 7px 10px ;
+    padding: 0px 5px 5px 5px ;
     text-decoration: none;
     font-size: 1.5rem;
   }
@@ -143,10 +143,19 @@ color: #FFFFFF;
             display: none;
         }
        .playStore{
-            width: 40% !important ;
+            width: 39% !important ;
+        }
+        .playStore a{
+          padding-top: 0px;
+          padding-bottom: 8px;
+          padding-right: 12px;
+          padding-left: 12px;
+        }
+        .playStore a img{
+          width: 20%;
         }
         .king_icon{
-          width: 40%;
+          width: 50%;
         }
     }
     @media (max-width: 768px) {
@@ -165,7 +174,7 @@ color: #FFFFFF;
       }
     .navbar__menu {
     display: flex;
-          top: 0;
+     top: 0;
       left: 0;
       right: 20% !important;
 
@@ -176,7 +185,7 @@ color: #FFFFFF;
     }
     
     .navbar__menu li {
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
     
     }
     
@@ -195,7 +204,8 @@ color: #FFFFFF;
     /* margin-right: 2%; */
     }
     .playStore a{
-      width: 35%;
+      width:250px;
+
     }
         .navbar__menu li:nth-child(1){
           order: 3;
@@ -239,7 +249,7 @@ color: #FFFFFF;
         }
         .navbar__menu span{
           font-weight: 600;
-          font-size: 10px;
+          font-size: 12px;
           line-height: 15px;
         }
        

@@ -10,25 +10,25 @@
   outline: 0;
   user-select: none;
   border-style: solid;
-  border-radius: 4px;
+  border-radius: 10px;
   border-width: 1px;
   background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 29%);
+  color: hsl(0, 3%, 87%);
   padding-left: 16px;
   padding-right: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .file > label:hover {
-  border-color: hsl(0, 0%, 21%);
+  border-color: hsl(0, 0%, 100%);
 }
 
 .file > label:active {
-  background-color: hsl(0, 0%, 96%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 .file > label > i {
@@ -38,7 +38,6 @@
 .UploadFilr{
   display: flex;
   justify-content: space-around;
-  background-color: red;
 
 }
 .file--upload > label:hover {

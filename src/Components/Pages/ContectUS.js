@@ -42,17 +42,17 @@ const ContectUS = () => {
                 </label>
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Your name"
                   className="form-control "
                 />
               </div>
               <div className=" col-lg-6 mt-4 " style={{}}>
                 <label>
-                  Contect No.<span>*</span>
+                  Conteat No.<span>*</span>
                 </label>
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="your name"
                   className="form-control"
                 />
               </div>
@@ -63,7 +63,7 @@ const ContectUS = () => {
               </label>
               <input
                 type="email"
-                placeholder="Enter Your Email"
+                placeholder="Enter your email"
                 className="form-control"
               />
             </div>

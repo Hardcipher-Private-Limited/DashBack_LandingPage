@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./NavBar";
 import "../../assets/css/ContectUS.css";
-import { IMAGES_PATH_BLOGS } from "../../Constants/ImagesConst";
+import { IMAGES_PATHTWO, IMAGES_PATH_BLOGS } from "../../Constants/ImagesConst";
 import { Helmet } from "react-helmet";
 
 const BlogsPage = () => {
@@ -36,16 +36,113 @@ const BlogsPage = () => {
         </div>
         <div className="col-lg-12 row">
           <div className="col-lg-12">
-            <div>
-              <span>
-                <img
-                  src={IMAGES_PATH_BLOGS + "/Group 106.png"}
-                  style={{ width: "98%" }}
-                />
-              </span>
+            <span>
+              <img
+                src={IMAGES_PATH_BLOGS + "/Group 106.png"}
+                style={{ width: "100%" }}
+              />
+            </span>
+          </div>
+
+          <div
+            class="container-fluid mt-3"
+            style={{
+              // width: "100%",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            <div
+              className=""
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                // alignItems: "center",
+                flexWrap: "wrap",
+                gap: "0px",
+              }}
+            >
+              <div class="col-lg-4 col-6 three_card mt-0">
+                <div class="card mx-auto">
+                  <img
+                    src={IMAGES_PATHTWO + "/Rectangle22.png"}
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body ps-0">
+                    <div className="blog_text_head  d-flex justify-content-between">
+                      Digital Payment
+                      <span>
+                        <img
+                          src={IMAGES_PATH_BLOGS + "/Line 4.png"}
+                          className="arrow_img"
+                        />
+                      </span>
+                    </div>
+                    {/* <p>January 9, 2021</p> */}
+                    <p class="card-text textssssss">
+                      In recent years, digital payment options have become
+                      increasingly popular in India, with many providers
+                      offering users a variety of services. In this article
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6 mt-0  three_card ">
+                <div class="card mx-auto">
+                  <img
+                    src={IMAGES_PATHTWO + "/Rectangle22.png"}
+                    class="card-img-top middle_img"
+                    alt="..."
+                  />
+                  <div class="card-body ps-0  ">
+                    <div className="blog_text_head d-flex justify-content-between">
+                      E Commerce
+                      <span>
+                        <img
+                          src={IMAGES_PATH_BLOGS + "/Line 4.png"}
+                          className="arrow_img"
+                        />
+                      </span>
+                    </div>
+                    {/* <p>January 9, 2021</p> */}
+                    <p class="card-text textssssss">
+                      In today's digital age, eCommerce has become an
+                      increasingly popular way for businesses to reach a wider
+                      audience and boost sales. However
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6 three_card ">
+                <div class="card mx-auto">
+                  <img
+                    src={IMAGES_PATHTWO + "/Rectangle 23.png"}
+                    class="card-img-top"
+                    alt="..."
+                  />
+                  <div class="card-body ps-0">
+                    <div className="blog_text_head  d-flex justify-content-between">
+                      Investing
+                      <span>
+                        <img
+                          src={IMAGES_PATH_BLOGS + "/Line 4.png"}
+                          className="arrow_img"
+                        />
+                      </span>
+                    </div>
+                    {/* <p>January 9, 2021</p> */}
+                    <p class="card-text textssssss">
+                      Investing some of your earnings is a crucial aspect of
+                      achieving financial success. However
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div className="Small_card">
+          {/* <div className="Small_card">
             <div className=" col-lg-4 col-md-4 col-sm-4 col-12  ">
               <div class="cardss">
                 <img
@@ -121,7 +218,7 @@ const BlogsPage = () => {
                 </div>
               </div>
             </div>{" "}
-          </div>
+          </div> */}
         </div>
       </div>
     </>

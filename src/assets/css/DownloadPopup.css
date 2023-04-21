@@ -78,11 +78,11 @@ font-size: 17px;
 line-height: 24px;
 text-align: center;
 }
-..moadl-content{
+/* ..moadl-content{
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
   @keyframes slide-down {
     0% {
@@ -121,13 +121,15 @@ text-align: center;
    padding:0px;
   }
   .moadl-content{
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    /* margin-top: 20%; */
+    align-items: center; */
+    margin-top: 20%;
     /* padding: 0px;  */
   }
   .moadl-content h1{
+    padding-left: 30px;
+    padding-right: 30px;
     font-weight: 700;
     font-size: 18px;
     line-height: 22px;
@@ -135,12 +137,12 @@ text-align: center;
     letter-spacing: -0.333333px;
   }
   .INputs_responsive input{
-    width: 85%;
-    margin-left: 20px;
+    width: 55%;
+    margin-left: 20%;
   }
   .Send_button {
-    width:50%;
-    margin-left: 80px !important ;
+    width:75%;
+    margin-left: 13% !important ;
    }  
    .cancle{
     left: 80%;

@@ -42,6 +42,7 @@ margin-left: 10px 10px 10px 10px;
     border-radius: 9px;
 }
 @media (max-width: 767px) {
+  
     .form-controls{
         display: flex;
         justify-content: center;
@@ -64,6 +65,12 @@ margin-left: 10px 10px 10px 10px;
     .detsilsFooter{
         padding: 40px;
     }
+    /* .footer_iconssss{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    } */
 
   }
   .detsilsFooter{
@@ -148,7 +155,7 @@ color: #626060;
         display: flex;
     }
     .social_medai{
-        bottom: 80px;
+        bottom: 100px;
      display: flex;
      left: -30px;
         position: relative;
@@ -158,7 +165,7 @@ color: #626060;
       position: absolute;
       text-align: center;
       justify-content: center;
-      padding-left: 40px;
+      padding-left: 20%;
     }
     .fotter_detailsss{
         display: flex;

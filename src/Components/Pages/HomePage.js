@@ -3,12 +3,19 @@ import { IMAGES_PATH } from "../../Constants/ImagesConst";
 import "../../assets/css/Home.css";
 import HomeSecond from "./HomeSecond";
 import { useNavigate } from "react-router-dom";
-// import Carousel from "react-multi-carousel";
-// import "react-multi-carousel/lib/styles.css";
 
-import Slider from "react-slick";
+import { FreeMode, Navigation, Thumbs } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
+
+// import "./styles.css";
 
 const HomePage = () => {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
   const Navigate = useNavigate();
   function handleDowload() {
     window.scrollTo(0, 0);
@@ -73,19 +80,19 @@ const HomePage = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 300 },
-      items: 8,
+      items: 10,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 7,
+      items: 10,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 6,
+      items: 10,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 5,
+      items: 10,
     },
   };
   return (
@@ -229,33 +236,23 @@ const HomePage = () => {
           <h1>Special offers from brands you love</h1>
         </div>
         <div>
-          {/* <Carousel
-            swipeable={false}
-            draggable={false}
-            infinite={true}
-            responsive={responsive}
-            className="container"
-            style={{ width: "5%" }}
-          > */}
           <div className="container" style={{ marginBottom: "100px" }}>
-            <div className="brand-img">
-              {/* <img src={IMAGES_PATH + "/Vector 13.jpg"} /> */}
-              <img
-                src={IMAGES_PATH + "/Group 575.png"}
-                className="img-fluid width "
-              />
+            <div className="brand-img " style={{ width: "" }}>
+              {/* <img
+                src={IMAGES_PATH + "/Rectangle 8.png"}
+                className=" desktop-tablet"
+              /> */}
+              <img src={IMAGES_PATH + "/Group 575.png"} className=" width " />
               <img
                 src={IMAGES_PATH + "/Rectangle 8.png"}
                 className="img-fluid desktop-tablet"
               />
-              <img
-                src={IMAGES_PATH + "/Group 572.png"}
-                className="img-fluid width"
-              />
+              <img src={IMAGES_PATH + "/Group 572.png"} className=" width" />
               <img
                 src={IMAGES_PATH + "/Rectangle 8.png"}
                 className="img-fluid desktop-tablet"
               />
+
               <img
                 src={IMAGES_PATH + "/Group 576.png"}
                 className="img-fluid width "
@@ -264,6 +261,7 @@ const HomePage = () => {
                 src={IMAGES_PATH + "/Rectangle 8.png"}
                 className="img-fluid desktop-tablet"
               />
+
               <img
                 src={IMAGES_PATH + "/Group 574.png"}
                 className="img-fluid width"
@@ -272,6 +270,7 @@ const HomePage = () => {
                 src={IMAGES_PATH + "/Rectangle 8.png"}
                 className="img-fluid desktop-tablet"
               />
+
               <img
                 src={IMAGES_PATH + "/Group 573.png"}
                 className="img-fluid width"
@@ -288,6 +287,7 @@ const HomePage = () => {
                 src={IMAGES_PATH + "/Rectangle 8.png"}
                 className="img-fluid desktop-tablet"
               />
+
               <img
                 src={IMAGES_PATH + "/Group (1).png"}
                 className="img-fluid width"
@@ -296,13 +296,13 @@ const HomePage = () => {
                 src={IMAGES_PATH + "/Rectangle 8.png"}
                 className="img-fluid desktop-tablet"
               />
+
               <img
                 src={IMAGES_PATH + "/Group.png"}
                 className="img-fluid width"
               />
             </div>
           </div>
-          {/* </Carousel> */}
         </div>
       </div>
       {/* premium section start  */}

@@ -36,6 +36,10 @@ const NavBar = () => {
     window.scrollTo(0, 0);
     Navigate("/");
   }
+  function handlePremium() {
+    window.scrollTo(0, 0);
+    Navigate("/premium");
+  }
 
   return (
     <>
@@ -75,7 +79,7 @@ const NavBar = () => {
               <ul className="_ul_alignmate">
                 <div className="containerOk ">
                   <div className="slide">
-                    <li className="King_icon ">
+                    <li className="King_icon  me-2">
                       <a
                         href="#"
                         className=""
@@ -85,7 +89,7 @@ const NavBar = () => {
                         <img
                           src={IMAGES_PATH + "/Group 850.png"}
                           alt="icon"
-                          className="king_icon "
+                          // className="king_icon "
                         />
                         <span
                           className="king-text"
@@ -108,9 +112,9 @@ const NavBar = () => {
                                 </div>
                                 <button
                                   className="model_button"
-                                  onClick={() => alert()}
+                                  onClick={handlePremium}
                                 >
-                                  Try Now
+                                  Try now
                                 </button>
                               </div>
                             </div>

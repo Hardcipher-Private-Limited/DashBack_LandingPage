@@ -96,7 +96,7 @@ const HomeSecond = () => {
   return (
     <>
       <div className="background_explor p-5">
-        <div className="row" style={{ height: "500px" }}>
+        <div className="row row_between">
           <div className="col-lg-6 col-sm-6  d-flex justify-content-center align-items-center Left_row">
             <div className="text_right ">
               <img src={IMAGES_PATHTWO + "/Shopping online.png"} />
@@ -117,7 +117,8 @@ const HomeSecond = () => {
       {/* Blogs start  */}
 
       <div className=" blogs">
-        <div className="bolgs_text">blogs</div>
+        <div className="bolgs_text">Blogs</div>
+        {/* <Slider {...settings}> */}
         <div
           class="container-fluid "
           style={{
@@ -136,7 +137,7 @@ const HomeSecond = () => {
               flexWrap: "wrap",
             }}
           >
-            <div class="col-lg-3 col-6 three_card mt-0">
+            <div class="col-lg-3 col-10 three_card mt-0">
               <div class="card mx-auto">
                 <img
                   src={IMAGES_PATHTWO + "/Rectangle22.png"}
@@ -144,7 +145,7 @@ const HomeSecond = () => {
                   alt="..."
                 />
                 <div class="card-body ps-0">
-                  <div className="blog_text_head">Digital Payment</div>
+                  <div className="blog_text_head"> Digital Payment Options</div>
                   {/* <p>January 9, 2021</p> */}
                   <p class="card-text textssssss">
                     In recent years, digital payment options have become
@@ -158,7 +159,8 @@ const HomeSecond = () => {
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-6 mt-0  three_card ">
+
+            <div class="col-lg-6 col-10 mt-0  three_card ">
               <div class="card mx-auto">
                 <img
                   src={IMAGES_PATHTWO + "/Rectangle22.png"}
@@ -166,20 +168,20 @@ const HomeSecond = () => {
                   alt="..."
                 />
                 <div class="card-body ps-0">
-                  <div className="blog_text_head">E Commerce</div>
+                  <div className="blog_text_head">
+                    Why Digital Payments Are the Future
+                  </div>
                   {/* <p>January 9, 2021</p> */}
                   <p class="card-text textssssss">
-                    In today's digital age, eCommerce has become an increasingly
-                    popular way for businesses to reach a wider audience and
-                    boost sales. However, with so many online stores competing
-                    for a customer’s attention, it's essential to follow best
-                    practices to stand out from the crowd and transform your
-                    online store into a profitable business
+                    Digital payments offer numerous advantages over traditional
+                    payment methods. This makes them the future of payments all
+                    over the world.
                   </p>
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-6 three_card ">
+
+            <div class="col-lg-3 col-10 three_card ">
               <div class="card mx-auto">
                 <img
                   src={IMAGES_PATHTWO + "/Rectangle 23.png"}
@@ -187,119 +189,25 @@ const HomeSecond = () => {
                   alt="..."
                 />
                 <div class="card-body ps-0">
-                  <div className="blog_text_head">Investing</div>
+                  <div className="blog_text_head">
+                    Transform Your Online Store into a Profitable
+                  </div>
                   {/* <p>January 9, 2021</p> */}
                   <p class="card-text textssssss">
-                    Investing some of your earnings is a crucial aspect of
-                    achieving financial success. However, with so many
-                    investment strategies available, it can be overwhelming to
-                    determine which one is the best for you.
+                    In today's digital age, eCommerce has become an increasingly
+                    popular way for businesses to reach a wider audience and
+                    boost sales. However, with so many online stores competing
+                    for a customer’s attention, it's essential to follow best
+                    practices to stand out from the crowd and transform your
+                    online store into a profitable business.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        {/* <div
-          className="col-lg-12 col-sm-12 col-xs-12"
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "10  ",
-          }}
-        >
-          <div
-            style={{ height: "50%", width: "20%", border: "1px solid red" }}
-            className="col-xs-4"
-          >
-            <div>
-              <img src={IMAGES_PATHTWO + "/Rectangle22.png"} />
-            </div>
-          </div>
-          <div
-            style={{ height: "20%", width: "50%", border: "1px solid red" }}
-            className="col-xs-4"
-          >
-            <img src={IMAGES_PATHTWO + "/Rectangle 20.png"} />
-          </div>
-          <div
-            style={{ height: "20%", width: "20%", border: "1px solid red" }}
-            className="col-xs-4"
-          >
-            <img src={IMAGES_PATHTWO + "/Rectangle 23.png"} />
-          </div> */}
+        {/* </Slider> */}
 
-        {/* <div className="col-lg-3 col-sm-3 col-xs-3">
-              <div class="cards">
-                <img
-                  class="card-img-top"
-                  src={IMAGES_PATHTWO + "/Rectangle22.png"}
-                  alt="Card image cap"
-                />
-                <div class="card-body mt-1 cardbody">
-                  <h5 class="card-title ">Lorem ipsum</h5>
-                  <p className="dateofCard">January 9, 2021</p>
-                  <p class="card-text text-muted textss">
-                    Lorem ipsum dolor sit amet consectetur. Sit nisi et
-                    curabitur amet sit bibendum. Nulla eget nibh donec integer
-                    viverra sapien pretium porta in. Mi adipiscing felis mattis
-                    ipsum molestie dolor. Ut tristique justo sit morbi et
-                    tincidunt vel gravida nisl. Lorem ipsum dolor sit amet
-                    consectetur. Sit nisi et curabitur amet sit bibendum. Nulla
-                    eget nib.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-6 col-sm-3 col-xs-3">
-              <div class="cards middle_card">
-                <img
-                  class="card-img-top"
-                  src={IMAGES_PATHTWO + "/Rectangle 20.png"}
-                  alt="Card image cap"
-                />
-                <div class="card-body mt-1 cardbody">
-                  <h5 class="card-title ">Lorem ipsum</h5>
-                  <p className="dateofCard">January 9, 2021</p>
-                  <p class="card-text text-muted textss">
-                    Lorem ipsum dolor sit amet consectetur. Sit nisi et
-                    curabitur amet sit bibendum. Nulla eget nibh donec integer
-                    viverra sapien pretium porta in. Mi adipiscing felis mattis
-                    ipsum molestie dolor. Ut tristique justo sit morbi et
-                    tincidunt vel gravida nisl. Lorem ipsum dolor sit amet
-                    consectetur. Sit nisi et curabitur amet sit bibendum. Nulla
-                    eget nib amet sit bibendum. Nulla eget nib.
-                  </p>
-                </div>
-              </div>
-            </div> */}
-        {/* <div>
-            <div className="col-lg-3 col-sm-3 col-xs-3">
-              <div class="cards">
-                <img
-                  class="card-img-top"
-                  src={IMAGES_PATHTWO + "/Rectangle 23.png"}
-                  alt="Card image cap"
-                />
-                <div class="card-body mt-1 cardbody">
-                  <h5 class="card-title ">Lorem ipsum</h5>
-                  <p className="dateofCard">January 9, 2021</p>
-                  <p class="card-text text-muted textss">
-                    Lorem ipsum dolor sit amet consectetur. Sit nisi et
-                    curabitur amet sit bibendum. Nulla eget nibh donec integer
-                    viverra sapien pretium porta in. Mi adipiscing felis mattis
-                    ipsum molestie dolor. Ut tristique justo sit morbi et
-                    tincidunt vel gravida nisl. Lorem ipsum dolor sit amet
-                    consectetur. Sit nisi et curabitur amet sit bibendum. Nulla
-                    eget nib.
-                  </p>
-                </div>
-              </div>
-            </div> */}
-        {/* </div> */}
         <div className="text-center mt-5">
           <button className="ReadButton" onClick={handleBlogs}>
             Read more
@@ -310,7 +218,9 @@ const HomeSecond = () => {
           </button>
         </div>
       </div>
+
       {/* what our clint say */}
+
       <div className="container mb-5">
         <div className="clint_section">
           <div className="Clint_heading">What Our Clients Say</div>
@@ -434,7 +344,7 @@ const HomeSecond = () => {
           <h6>Have questions? We’re here to help.</h6>
         </div>
         <div className="text-center p-4">
-          <input type="text" placeholder="search" className="control" />
+          <input type="text" placeholder="Search" className="control" />
         </div>
         <div className="col-lg-12">
           <div className="Questions_text pt-2">
@@ -461,8 +371,8 @@ const HomeSecond = () => {
                 </div>
               </div>
               <p style={{ display: showAnswer1 ? "block" : "none" }}>
-                Any person residing in India can use DashBack. Some of its
-                features will be available only to those who complete their KYC.
+                Unlike our competitors, DashBack offers its users real, usable
+                cashback. So yes, the cashback is real.
               </p>
             </div>
           </div>
@@ -476,8 +386,8 @@ const HomeSecond = () => {
                 </div>
               </div>
               <p style={{ display: showAnswer2 ? "block" : "none" }}>
-                Any person residing in India can use DashBack. Some of its
-                features will be available only to those who complete their KYC.
+                Any person above the age of 18, residing in India with completed
+                KYC may become a DashBack Premium Member.
               </p>
             </div>
           </div>
@@ -490,8 +400,8 @@ const HomeSecond = () => {
                 </div>
               </div>
               <p style={{ display: showAnswer3 ? "block" : "none" }}>
-                Any person residing in India can use DashBack. Some of its
-                features will be available only to those who complete their KYC.
+                As a DashBack user, you are entitled to up to 100% cashback on
+                their transactions. Pretty cool, right?
               </p>
             </div>
           </div>
@@ -504,8 +414,8 @@ const HomeSecond = () => {
                 </div>
               </div>
               <p style={{ display: showAnswer4 ? "block" : "none" }}>
-                Any person residing in India can use DashBack. Some of its
-                features will be available only to those who complete their KYC.
+                Bill payments, recharges, FASTag payments and so much more!
+                Learn more here.
               </p>
             </div>
           </div>
