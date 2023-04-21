@@ -42,8 +42,7 @@ color: #FFFFFF;
   padding-left:5%;
   padding-right:5%;
 }
-@media (max-width: 767px) {
-
+  @media only screen and (min-width: 300px) and (max-width: 767px) {
   .background_explor{
     margin-top: 50px;
   }
@@ -169,10 +168,10 @@ width: 169px;
     border: none !important;
 
   }
-    @media (max-width: 767px) {
+  @media only screen and (min-width: 300px) and (max-width: 767px) {
+
       .three_card{
         padding: 10px;
-       
       }
   .middle_img{
     /* margin-top: 0px !important;   */
@@ -243,10 +242,10 @@ width: 169px;
     text-align: center;
     color: #161616;
 }
-.clinets_card{
+/* .clinets_card{
     display: flex;   
-    gap: 40px;
-}
+    gap: 40%;
+} */
 .main__card{
     display: flex;
 }
@@ -292,7 +291,7 @@ text-align: center;
 color: #161616;
 
 }
-@media (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
   .Clint_heading{
     font-weight: 700;
 font-size: 26px;
@@ -300,7 +299,7 @@ line-height: 35px;
 text-align: center;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
     .Frequent_text h6 {
         font-weight: 600;
 font-size: 17px;
@@ -313,7 +312,7 @@ font-size: 17px;
     border-radius: 8px;
     padding: 10px 40px 10px 40px;
  }
- @media screen and (max-width: 768px) {
+ @media only screen and (min-width: 300px) and (max-width: 767px) {
     .control {
       width: 80%;
     }
@@ -368,7 +367,7 @@ color: #161616;
     color: #7A7A7A;
         width: 50%;
     }
-    @media screen and (max-width: 767px) {
+    @media only screen and (min-width: 300px) and (max-width: 767px) {
         .col-lg-12 {
           margin: -11px;
         }

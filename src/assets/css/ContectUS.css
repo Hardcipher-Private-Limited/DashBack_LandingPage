@@ -114,7 +114,7 @@ color: #393939;
     padding-top: 25px;
     /* gap: 1px; */
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
     .form-control {
       /* width: 80%; */
     }

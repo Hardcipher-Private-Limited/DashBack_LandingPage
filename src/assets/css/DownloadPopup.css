@@ -113,7 +113,7 @@ text-align: center;
   width: 70%;
   margin-left: 80px;
 }
-  @media (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
     .modal-box,
     .modal-boxs{ 
       height: 51%;
@@ -290,8 +290,7 @@ color: #5B5B5B;
 }
 
 
-
-@media (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
 .no_thanks{
   font-weight: 500;
   font-size: 12px;
@@ -363,7 +362,7 @@ color: #6D6D6D;
     gap: 10px;
     margin: 10px;
   }
-  @media (max-width: 767px) {
+  @media only screen and (min-width: 300px) and (max-width: 767px) {
   .left_order_icon{
     order: 2;
   }

@@ -237,11 +237,7 @@ const HomePage = () => {
         </div>
         <div>
           <div className="container" style={{ marginBottom: "100px" }}>
-            <div className="brand-img " style={{ width: "" }}>
-              {/* <img
-                src={IMAGES_PATH + "/Rectangle 8.png"}
-                className=" desktop-tablet"
-              /> */}
+            <div className="brand-img_all " style={{ width: "" }}>
               <img src={IMAGES_PATH + "/Group 575.png"} className=" width " />
               <img
                 src={IMAGES_PATH + "/Rectangle 8.png"}
@@ -308,7 +304,7 @@ const HomePage = () => {
       {/* premium section start  */}
       <div className="padding_for_div">
         <div
-          className=" col-xl-12 row premimun_secrion_start"
+          className=" col-xl-12 row premimun_secrion_start d-flex align-items-center justify-content-center "
           style={{ marginBottom: "10%" }}
         >
           <div className="col-lg-6 order-lg-1 order-2">
@@ -336,7 +332,7 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6  mt-5 order-lg-2 order-1">
+          <div className="col-lg-6 text-center  mt-5 order-lg-2 order-1">
             <div className="phone-icon_2">
               <img src={IMAGES_PATH + "/1 673388.png"} />
             </div>

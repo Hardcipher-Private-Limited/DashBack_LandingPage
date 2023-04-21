@@ -29,7 +29,7 @@ color: #6D6D6D;
 .playstore_mobile img{
     width: 100%;
 }
-@media (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
 .order_of_left{
     margin-top: -70px !important;
     order: 2;

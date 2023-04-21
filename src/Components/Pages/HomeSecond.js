@@ -79,7 +79,7 @@ const HomeSecond = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           centerPadding: "0%",
         },
       },
@@ -97,7 +97,7 @@ const HomeSecond = () => {
     <>
       <div className="background_explor p-5">
         <div className="row row_between">
-          <div className="col-lg-6 col-sm-6  d-flex justify-content-center align-items-center Left_row">
+          <div className="col-lg-6  col-md-6  d-flex justify-content-center align-items-center Left_row">
             <div className="text_right ">
               <img src={IMAGES_PATHTWO + "/Shopping online.png"} />
             </div>
@@ -116,7 +116,7 @@ const HomeSecond = () => {
 
       {/* Blogs start  */}
 
-      <div className=" blogs">
+      <div className="container blogs">
         <div className="bolgs_text">Blogs</div>
         {/* <Slider {...settings}> */}
         <div
@@ -221,16 +221,16 @@ const HomeSecond = () => {
 
       {/* what our clint say */}
 
-      <div className="container mb-5">
+      <div className=" container mb-5">
         <div className="clint_section">
           <div className="Clint_heading">What Our Clients Say</div>
         </div>
-        <div class="container">
-          <div class="row  row-cols-md-12">
+        <div class="container ">
+          <div class="row  row-cols-md-10">
             <Slider {...settings}>
               <div>
                 <div class="col mb-4">
-                  <div class="card" style={{ width: "100%" }}>
+                  <div class="card" style={{ width: "90%" }}>
                     <div className="main__card  pt-4 ps-5">
                       <img
                         class="card-img-top"
@@ -263,10 +263,8 @@ const HomeSecond = () => {
                 </div>
               </div>
               <div>
-                {/* </Slider> */}
-                {/* <Slider {...settings}> */}
                 <div class="col mb-4">
-                  <div class="card shadow" style={{ width: "100%" }}>
+                  <div class="card shadow" style={{ width: "90%" }}>
                     <div className="d-flex pt-4 ps-5">
                       <img
                         class="card-img-top"
@@ -297,11 +295,9 @@ const HomeSecond = () => {
                   </div>
                 </div>
               </div>
-              {/* </Slider> */}
-              {/* <Slider {...settings}> */}
               <div>
                 <div class="col mb-4">
-                  <div class="card" style={{ width: "100%" }}>
+                  <div class="card" style={{ width: "90%" }}>
                     <div className="d-flex pt-4 ps-5">
                       <img
                         class="card-img-top"

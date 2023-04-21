@@ -44,7 +44,7 @@ line-height: 22px;
 
 color: #989898;
 }
-@media (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
     .tutorial_input input{
         width: 80% !important;
     }  

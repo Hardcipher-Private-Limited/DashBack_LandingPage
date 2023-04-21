@@ -41,7 +41,7 @@ margin-top: 20px;
     width: 35%;
 }
 
-@media (max-width: 768px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
     .AboutUs_header{
         font-weight: 700;
         font-size: 26px;
