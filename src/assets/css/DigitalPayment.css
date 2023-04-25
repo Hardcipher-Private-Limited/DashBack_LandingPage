@@ -43,7 +43,13 @@ font-weight: 400;
 font-size: 17px;
 line-height: 24px;
 color: #6C6C6C;
-
+}
+.sub_pargram{
+    font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+color: #504f4f;
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {
     .arrow_marks{

@@ -17,6 +17,7 @@ import Tutorial from "./Components/Pages/Tutorial";
 import { Helmet } from "react-helmet";
 import HomeSecond from "./Components/Pages/HomeSecond";
 import OurPartner from "./Components/Pages/OurPartner";
+import Card from "./Components/Pages/Card";
 function App() {
   return (
     <>
@@ -37,6 +38,7 @@ function App() {
           <Route path="/downloadapp" element={<DownloadPage />} />
           <Route path="/contect" element={<ContectUS />} />
           <Route path="/blogs" element={<BlogsPage />} />
+          <Route path="/card/:index" element={<Card />} />
           <Route path="/career" element={<Career />} />
           <Route path="/digitalPayment" element={<DigitalPayment />} />
           <Route path="/premium" element={<PremiumPage />} />

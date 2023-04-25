@@ -12,11 +12,11 @@ font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 28px;
-text-align: center;
+/* text-align: center; */
 padding-left: 90px;
 padding-right: 90px;
 color: #6C6C6C;
-text-align: center;
+/* text-align: center; */
 }
 .about_read{
 font-style: normal;
@@ -27,14 +27,12 @@ color: #6C6C6C;
 margin-top: 20px;
 }
 .about_last_line{
-    font-family: 'Montserrat';
 font-style: normal;
 font-weight: 600;
-font-size: 20px;
-line-height: 200.9%;
+font-size: 19px;
+line-height: 170.9%;
 color: #6C6C6C;
-padding-left: 90px;
-padding-right: 90px;
+
 margin-top: 20px;
 }
 .img_{

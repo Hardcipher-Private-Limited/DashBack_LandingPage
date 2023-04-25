@@ -48,17 +48,17 @@ const Career = () => {
                   </label>
                   <input
                     type="text"
-                    placeholder="Your name"
+                    placeholder="Enter your name"
                     className="form-control "
                   />
                 </div>
                 <div className=" col-lg-6 mt-4 " style={{}}>
                   <label>
-                    Contect No.<span>*</span>
+                    Contact no<span>*</span>
                   </label>
                   <input
                     type="text"
-                    placeholder="Your name"
+                    placeholder="Enter your contact number"
                     className="form-control"
                   />
                 </div>
@@ -79,7 +79,7 @@ const Career = () => {
                 </label>
                 <input
                   type="email"
-                  placeholder="Subject"
+                  placeholder="Add subject"
                   className="form-control"
                 />
               </div>
@@ -104,12 +104,12 @@ const Career = () => {
                 </label>
                 <textarea
                   type="email"
-                  placeholder="Subject"
+                  placeholder="Type your message..."
                   className="form-control"
                 />
               </div>
               <div className="col-lg-12 contect_button mt-4">
-                <button className="">send</button>
+                <button className="">Send</button>
               </div>
             </div>
 

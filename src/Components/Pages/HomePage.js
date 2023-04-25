@@ -4,6 +4,9 @@ import "../../assets/css/Home.css";
 import HomeSecond from "./HomeSecond";
 import { useNavigate } from "react-router-dom";
 
+import Slider from "react-slick";
+// import "react-slick/dist/react-slick.css";
+
 import { FreeMode, Navigation, Thumbs } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,6 +14,8 @@ import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
+import Carousel from "react-multi-carousel";
+import AppDownloadPopUP from "../PopUp/AppDownloadPopUP";
 
 // import "./styles.css";
 
@@ -95,8 +100,52 @@ const HomePage = () => {
       items: 10,
     },
   };
+
+  const images = [
+    { src: "/Group 575.png", class: "img-small" },
+    { src: "/Rectangle 8.png", class: "img-large" },
+    { src: "/Group 572.png", class: "img-small" },
+    { src: "/Rectangle 8.png", class: "img-large" },
+    { src: "/Group 576.png", class: "img-small" },
+    { src: "/Rectangle 8.png", class: "img-large" },
+    { src: "/Group 574.png", class: "img-small" },
+    { src: "/Rectangle 8.png", class: "img-large" },
+    { src: "/Group 573.png", class: "img-small" },
+    { src: "/Rectangle 8.png", class: "img-large" },
+    { src: "/Group (2).png", class: "img-small" },
+    { src: "/Rectangle 8.png", class: "img-large" },
+    { src: "/Group (1).png", class: "img-small" },
+    { src: "/Rectangle 8.png", class: "img-large" },
+    { src: "/Group.png", class: "img-small" },
+    { src: "/Rectangle 8.png", class: "img-large" },
+  ];
+
+  const desktopSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 15,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    cssEase: "linear",
+  };
+
+  const mobileSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  };
+  const isMobile = window.innerWidth <= 768;
+  const settings = isMobile ? mobileSettings : desktopSettings;
+  // const settings = window.innerWidth < 768 ? mobileSettings : desktopSettings;
   return (
     <>
+      <AppDownloadPopUP />
       {/* {cashBackModel && <LeavingPopUP cancle={cancle} />} */}
       <div className="container pt-2">
         <div className="rupeeIcon">
@@ -108,7 +157,7 @@ const HomePage = () => {
 
       <div
         className="col-xl-12 row d-flex align-items-center justify-content-center "
-        style={{}}
+        style={{ marginBottom: "70px" }}
       >
         <div className="col-lg-6 col-md-6 order_mbile  ">
           <div className="dash_text d-none d-lg-block">
@@ -143,7 +192,7 @@ const HomePage = () => {
 
       {/* we keep your data secure section start  */}
 
-      <div style={{ paddingBottom: 50 }}>
+      <div style={{ paddingBottom: 90 }}>
         <div className="text-center pb-5">
           <div className="we_keep_data">
             <h1>We keep your data secure</h1>
@@ -204,20 +253,23 @@ const HomePage = () => {
           </div>
         </div>
         <div className="col-lg-6 col-md-5 text-center padding_for_div">
-          <div className="begin_header text-center  pt-lg-5 ">
+          <div className="begin_header text-center  pt-lg-2 ">
             <h1>
               Begin your journey
               <br /> today
             </h1>
             <h5 className="digital-text">Digital Payments</h5>
             <h5 className="digital-text"> Online Shopping </h5>
-            <h5 className="digital-text">Wealth-Building</h5>
-            <p>
-              Use DashBack to pay your bills, get access to exclusive
-              <br /> products and profitable financial solutions.
-            </p>
+            <h5 className="digital-text mb-3">Wealth-Building</h5>
+            <p>Use DashBack to pay your bills. </p>
+            <p>Get access to exclusive products.</p>
+            <p> Invest in profitable financial solutions.</p>
+
             <div>
-              <button className="downloadButton" onClick={handleDigitalPage}>
+              <button
+                className="downloadButton mt-3"
+                onClick={handleDigitalPage}
+              >
                 Learn more
               </button>
             </div>
@@ -231,76 +283,89 @@ const HomePage = () => {
       </div>
 
       {/* Special offers from brands you love start   ++++  */}
-      <div>
+      <div style={{ marginTop: "4%" }}>
         <div className="text-center brandHeader">
           <h1>Special offers from brands you love</h1>
         </div>
         <div>
           <div className="container" style={{ marginBottom: "100px" }}>
-            <div className="brand-img_all " style={{ width: "" }}>
-              <img src={IMAGES_PATH + "/Group 575.png"} className=" width " />
-              <img
-                src={IMAGES_PATH + "/Rectangle 8.png"}
-                className="img-fluid desktop-tablet"
-              />
-              <img src={IMAGES_PATH + "/Group 572.png"} className=" width" />
-              <img
-                src={IMAGES_PATH + "/Rectangle 8.png"}
-                className="img-fluid desktop-tablet"
-              />
-
-              <img
-                src={IMAGES_PATH + "/Group 576.png"}
-                className="img-fluid width "
-              />
-              <img
-                src={IMAGES_PATH + "/Rectangle 8.png"}
-                className="img-fluid desktop-tablet"
-              />
-
-              <img
-                src={IMAGES_PATH + "/Group 574.png"}
-                className="img-fluid width"
-              />
-              <img
-                src={IMAGES_PATH + "/Rectangle 8.png"}
-                className="img-fluid desktop-tablet"
-              />
-
-              <img
-                src={IMAGES_PATH + "/Group 573.png"}
-                className="img-fluid width"
-              />
-              <img
-                src={IMAGES_PATH + "/Rectangle 8.png"}
-                className="img-fluid desktop-tablet "
-              />
-              <img
-                src={IMAGES_PATH + "/Group (2).png"}
-                className="img-fluid width "
-              />
-              <img
-                src={IMAGES_PATH + "/Rectangle 8.png"}
-                className="img-fluid desktop-tablet"
-              />
-
-              <img
-                src={IMAGES_PATH + "/Group (1).png"}
-                className="img-fluid width"
-              />
-              <img
-                src={IMAGES_PATH + "/Rectangle 8.png"}
-                className="img-fluid desktop-tablet"
-              />
-
-              <img
-                src={IMAGES_PATH + "/Group.png"}
-                className="img-fluid width"
-              />
+            <div className="slider_new">
+              <Slider {...settings}>
+                {images.map((img, index) => (
+                  <div key={index} className={`slider-image ${img.class}`}>
+                    <img src={IMAGES_PATH + img.src} alt={`img-${index}`} />
+                  </div>
+                ))}
+              </Slider>
             </div>
+
+            {/* <div className="brand-img_all " style={{ width: "" }}>
+              <Slider {...settings}>
+                <img src={IMAGES_PATH + "/Group 575.png"} className=" width " />
+                <img
+                  src={IMAGES_PATH + "/Rectangle 8.png"}
+                  className="img-fluid desktop-tablet"
+                />
+                <img src={IMAGES_PATH + "/Group 572.png"} className=" width" />
+                <img
+                  src={IMAGES_PATH + "/Rectangle 8.png"}
+                  className="img-fluid desktop-tablet"
+                />
+
+                <img
+                  src={IMAGES_PATH + "/Group 576.png"}
+                  className="img-fluid width "
+                />
+                <img
+                  src={IMAGES_PATH + "/Rectangle 8.png"}
+                  className="img-fluid desktop-tablet"
+                />
+
+                <img
+                  src={IMAGES_PATH + "/Group 574.png"}
+                  className="img-fluid width"
+                />
+                <img
+                  src={IMAGES_PATH + "/Rectangle 8.png"}
+                  className="img-fluid desktop-tablet"
+                />
+
+                <img
+                  src={IMAGES_PATH + "/Group 573.png"}
+                  className="img-fluid width"
+                />
+                <img
+                  src={IMAGES_PATH + "/Rectangle 8.png"}
+                  className="img-fluid desktop-tablet "
+                />
+                <img
+                  src={IMAGES_PATH + "/Group (2).png"}
+                  className="img-fluid width "
+                />
+                <img
+                  src={IMAGES_PATH + "/Rectangle 8.png"}
+                  className="img-fluid desktop-tablet"
+                />
+
+                <img
+                  src={IMAGES_PATH + "/Group (1).png"}
+                  className="img-fluid width"
+                />
+                <img
+                  src={IMAGES_PATH + "/Rectangle 8.png"}
+                  className="img-fluid desktop-tablet"
+                />
+
+                <img
+                  src={IMAGES_PATH + "/Group.png"}
+                  className="img-fluid width"
+                />
+              </Slider>
+            </div> */}
           </div>
         </div>
       </div>
+
       {/* premium section start  */}
       <div className="padding_for_div">
         <div
@@ -324,7 +389,7 @@ const HomePage = () => {
               </div>
               <div>
                 <button
-                  className="downloadButton order_button"
+                  className="downloadButton order_button mt-3"
                   onClick={handlePremium}
                 >
                   Unlock Premium

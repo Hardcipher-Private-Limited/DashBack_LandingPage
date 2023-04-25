@@ -79,13 +79,16 @@ top: 0px;
     /* margin-left: 10%; */
 }
 .phone_icon{
+  margin-top: 5%;
     width: 70%
 }
-.back_icons{
+.back_icons {
+  left:10px;
     width:85%;
     top:  -89px;
     position: relative;
 }
+
 .dash_header{
     margin-top: 5% !important;
    position: relative;
@@ -134,19 +137,19 @@ color: #161616;
     
 }
 .downloadButton{
-    padding:5px 25px 5px 25px; 
+    padding:5px 20px 5px 20px; 
     background-color:#161616;
     color:  #FFFFFF;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
     line-height: 32px;
-    width: 200px;
+    width: 38%;
     border: none;
     border-radius: 5px;
 }
 .downloadButtons{
-    padding:5px 25px 5px 25px; 
+    padding:5px 20px 5px 20px; 
     background-color:#161616;
     color:  #FFFFFF;
     /* font-family: 'Montserrat'; */
@@ -154,7 +157,7 @@ color: #161616;
     font-weight: 500;
     font-size: 18px;
     line-height: 32px;
-    width: 55%;
+    width: 40%;
     border: none;
     border-radius: 5px;
 }
@@ -250,19 +253,11 @@ padding: 8px;
 .data_icon img{
     margin-left: 33px;
 }
-.width{
-  /* margin-top: 30px; */
-  width: 12%;
-}
-.vertical_line {
-  /* border: 1px solid red;
-  width: 90%;
-/* background: linear-gradient(90deg, rgba(175, 109, 234, 0.12) 2.33%, rgba(197, 76, 71, 0.12) 100%);
-border-radius: 100px;; */
-/* transform: rotate(90deg);  */
-}
+
 .desktop-tablet{
-  margin: 0px !important;
+/* height: 105px !important; */
+  margin-top: 1% !important;
+  margin-bottom: 1%;
   padding: 0px !important;
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {
@@ -292,7 +287,7 @@ text-align: center;
 }
 
 .waht_phone_icon{
-    width: 90%;
+    width: 92%;
     position: relative;
     margin-top: -24%;
     /* left: 7%; */
@@ -302,29 +297,32 @@ text-align: center;
 .begin_header h1{
     font-style: normal;
     font-weight: 700;
-    font-size: 49px;
-    line-height: 50px;
+    font-size: 45px;
+    line-height: 45px;
     text-align: center;
+    margin-bottom: 5%;
 }
 .digital-text{
-    margin: -2px;
+
+    margin-top: -8px;
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 22px;
+    line-height: 35px;
     color: #161616;
 }
 .begin_header p{
+  margin-top: 3%;
 font-style: normal;
 font-weight: 300;
 font-size: 16px;
-line-height: 24px;
+line-height: 5px;
 text-align: center;
 color: #6D6D6D;
 }
 .we-do-icon{
     position: relative;
-    right:0%;
+    right:-2%;
 }
 .we-do-icon img{
     width: 100%;
@@ -342,18 +340,93 @@ line-height: 44px;
     color: #161616;
     
 }
+.slider_new{
+  box-shadow: 0px 0px 40px rgba(230, 230, 230, 0.893);
+  border-radius: 20px;
+}
+.slider___ {
+/* display: flex;  */
+justify-content: center;
+align-items: center;
+padding-top: 20px;
+}
+
+.slider-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px; 
+  transition: transform 0.5s ease-out;
+}
+
+.img-small {
+  width: 50px;
+  padding-top: 45px; 
+  padding-right: 0px !important;
+}
+
+.img-large {
+  /* display: none; */
+  width: 40px !important; 
+  padding: 10px;
+  padding-left: 40px;
+}
+@media (max-width: 768px) {
+  .img-large img{
+    display: none !important;
+   
+  }
+  .slider-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; 
+  }
+  
+  .img-small {
+    width: 10px !important;
+    padding-top: 30px;
+    /* padding-right: 0px !important; */
+    /* padding: 20px; */
+  }
+  
+}
 
 
 
+.img-small{
+  /* padding-top: 20px; */
+    /* padding: 50px;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-bottom: 50px; */
+}
+/* .img-large{
+  background-color: green;
+  padding: 0px;
+   width: 0px;
+  height: 0px;
+  margin: 0px;
+} */
 
+.slider___ img{
+  /* padding-top: 10px; */
+  /* gap: 20px; */
+
+}
+
+.slider___ img{
+  /* width: 100%; */
+} 
 .brand-img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   background-color: white;
+  border-radius: 20px;
   gap: 10px;
-    box-shadow: 0px 0px 40px rgba(244, 244, 244, 0.893);
+    box-shadow: 0px 0px 40px rgba(230, 230, 230, 0.893);
    /* margin: 20px; */
 
 }
@@ -364,13 +437,14 @@ line-height: 44px;
   /* margin: -2px; */
 }
 .brand-img_all {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
   justify-content: center;
   align-items: center;
   background-color: white;
   gap: 0px;
-    box-shadow: 0px 0px 40px rgba(244, 244, 244, 0.893);
+  border-radius: 20px;
+    box-shadow: 0px 0px 40px rgba(231, 231, 231, 0.893);
    /* margin: 20px; */
 
 }
@@ -461,9 +535,9 @@ margin-top: -40px;
   width: 120%;
 }
 .preimium_last img{
-  margin-top: -30%;
+  margin-top: -21%;
      width: 130%;
-     margin-left: -28%;
+     margin-left: -27%;
     
 }
 .preimium_text h1{
@@ -496,7 +570,7 @@ margin-top: -40px;
   
 }
 .phone-icon_2 img{
-    width: 70%;
+    width: 75%;
 }
 .premium_testss{
     margin-left: 14%; 

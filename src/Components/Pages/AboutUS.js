@@ -38,13 +38,13 @@ const AboutUS = () => {
         <div className="about_read">
           Apart from aiding in growing your savings, we're committed to
           providing you with the best possible user experience. Our designers,
-          developers, and marketers work behind the scenes to constantly improve
+          developers, and marketers constantly work behind the scenes to improve
           DashBack, and our customer support team is always available to assist
           you with any questions or concerns.
         </div>
         <div className="about_read">At DashBack, we take care of our own.</div>
         <div className="about_read">
-          So why wait? Download DashBack today and start filling your dash with
+          So, why wait? Download DashBack today and start filling your dash with
           real, usable cash.
         </div>
         <div className="AboutUs_header">Our Story</div>
@@ -76,14 +76,14 @@ const AboutUS = () => {
           first place. 
         </div>
         <div className="about_read">
-          And so, the all-new DashBack was born. We now offer cashback on every
+          Thus, the all-new DashBack was born. We now offer cashback on every
           transaction conducted on our app, be it a bill payment, a purchase, or
           even an investment. Every drop counts, and a decrease in expenditure
           means our customers can spend that “extra” cash where they’d like. 
         </div>
         <div className="about_last_line">
           We are committed to providing easier eCommerce, transparent cashback,
-          and lucrative investment options for our customers.
+          and lucrative investment options to our customers.
         </div>
       </div>
     </>

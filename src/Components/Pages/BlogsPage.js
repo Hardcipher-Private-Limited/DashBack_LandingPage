@@ -1,10 +1,16 @@
-import React from "react";
-import NavBar from "./NavBar";
+import React, { useState } from "react";
 import "../../assets/css/ContectUS.css";
-import { IMAGES_PATHTWO, IMAGES_PATH_BLOGS } from "../../Constants/ImagesConst";
+import { IMAGES_PATH_BLOGS } from "../../Constants/ImagesConst";
 import { Helmet } from "react-helmet";
+import { Data } from "../MockData/Blogs";
+import { useNavigate } from "react-router-dom";
 
 const BlogsPage = () => {
+  const Navigate = useNavigate();
+  function handleCard(index) {
+    window.scrollTo(0, 0);
+    Navigate(`/card/${index}`);
+  }
   return (
     <>
       <Helmet>
@@ -26,7 +32,7 @@ const BlogsPage = () => {
               <div className="input_responsive">
                 <input
                   type="search"
-                  placeholder="Serach"
+                  placeholder="Search"
                   className="form-control controlss"
                 />
               </div>
@@ -34,7 +40,46 @@ const BlogsPage = () => {
           </div>
           <div className="col-lg-3"></div>
         </div>
-        <div className="col-lg-12 row">
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "3%",
+          }}
+        >
+          {Data.map((Data, index) => (
+            <div
+              key={index}
+              className="card"
+              style={{ width: "31%", marginBottom: "60px" }}
+              onClick={() => handleCard(index)}
+            >
+              <img src={Data.imgSrc} />
+              <div>
+                <span className="pt-0 pb-0 ">{Data.date}</span>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    paddingTop: "5px",
+                  }}
+                >
+                  <p className="card_head_text p-0">{Data.text}</p>
+                  <p>
+                    <img
+                      src={IMAGES_PATH_BLOGS + "/Line 4 (1).png"}
+                      style={{ width: "25px" }}
+                    />
+                  </p>
+                </div>
+                <span>{Data.paragraph}</span>
+              </div>
+            </div>
+          ))}
+        </div>
+        {/* <div>{Data.paragraph}</div> */}
+
+        {/* <div className="col-lg-12 row">
           <div className="col-lg-12">
             <span>
               <img
@@ -47,7 +92,6 @@ const BlogsPage = () => {
           <div
             class="container-fluid mt-3"
             style={{
-              // width: "100%",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -58,7 +102,6 @@ const BlogsPage = () => {
               style={{
                 display: "flex",
                 justifyContent: "center",
-                // alignItems: "center",
                 flexWrap: "wrap",
                 gap: "0px",
               }}
@@ -80,7 +123,6 @@ const BlogsPage = () => {
                         />
                       </span>
                     </div>
-                    {/* <p>January 9, 2021</p> */}
                     <p class="card-text textssssss">
                       In recent years, digital payment options have become
                       increasingly popular in India, with many providers
@@ -106,7 +148,6 @@ const BlogsPage = () => {
                         />
                       </span>
                     </div>
-                    {/* <p>January 9, 2021</p> */}
                     <p class="card-text textssssss">
                       In today's digital age, eCommerce has become an
                       increasingly popular way for businesses to reach a wider
@@ -132,7 +173,6 @@ const BlogsPage = () => {
                         />
                       </span>
                     </div>
-                    {/* <p>January 9, 2021</p> */}
                     <p class="card-text textssssss">
                       Investing some of your earnings is a crucial aspect of
                       achieving financial success. However
@@ -142,84 +182,8 @@ const BlogsPage = () => {
               </div>
             </div>
           </div>
-          {/* <div className="Small_card">
-            <div className=" col-lg-4 col-md-4 col-sm-4 col-12  ">
-              <div class="cardss">
-                <img
-                  class="card-img-top"
-                  src={IMAGES_PATH_BLOGS + "/Rectangle 38.png"}
-                  alt="Card image cap"
-                />
-                <div class="card-body carddys">
-                  <p className="dateofCards">January 9, 2021</p>
-                  <div className="d-flex justify-content-between">
-                    <h5 class="card-title ">Lorem ipsum</h5>
-                    <span>
-                      <img
-                        src={IMAGES_PATH_BLOGS + "/Line 4.png"}
-                        className="arrow_img"
-                      />
-                    </span>
-                  </div>
-                  <p class="card-text textsss">
-                    Lorem ipsum dolor sit amet consectetur. Aliquet imperdiet
-                    facilisi neque aliquam quis enim egestas gravida.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-4 col-sm-4 col-12">
-              <div class="cardss">
-                <img
-                  class="card-img-top"
-                  src={IMAGES_PATH_BLOGS + "/Rectangle 38.png"}
-                  alt="Card image cap"
-                />
-                <div class="card-body cardbodys">
-                  <p className="dateofCards">January 9, 2021</p>
-                  <div className="d-flex justify-content-between">
-                    <h5 class="card-title ">Lorem ipsum</h5>
-                    <span>
-                      <img
-                        src={IMAGES_PATH_BLOGS + "/Line 4.png"}
-                        className="arrow_img"
-                      />
-                    </span>
-                  </div>
-                  <p class="card-text  textsss">
-                    Lorem ipsum dolor sit amet consectetur. Aliquet imperdiet
-                    facilisi neque aliquam quis enim egestas gravida.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-4 col-sm-4 col-12 cards_below">
-              <div class="cardss">
-                <img
-                  class="card-img-top"
-                  src={IMAGES_PATH_BLOGS + "/Rectangle 38.png"}
-                  alt="Card image cap"
-                />
-                <div class="card-body cardbodys">
-                  <p className="dateofCards">January 9, 2021</p>
-                  <div className="d-flex justify-content-between">
-                    <h5 class="card-title ">Lorem ipsum</h5>
-                    <span>
-                      <img
-                        src={IMAGES_PATH_BLOGS + "/Line 4.png"}
-                        className="arrow_img"
-                      />
-                    </span>
-                  </div>
-                  <p class="card-text  textsss">
-                    Lorem ipsum dolor sit amet consectetur. Aliquet imperdiet
-                    facilisi neque aliquam quis enim egestas gravida.
-                  </p>
-                </div>
-              </div>
-            </div>{" "}
-          </div> */}
-        </div>
+          
+        </div> */}
       </div>
     </>
   );

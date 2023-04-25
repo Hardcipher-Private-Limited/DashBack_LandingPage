@@ -28,19 +28,19 @@ const Tutorial = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 300 },
-      items: 4,
+      items: 2,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 4,
+      items: 2,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 3,
+      items: 1,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2,
+      items: 1,
     },
   };
   return (
@@ -68,6 +68,8 @@ const Tutorial = () => {
             responsive={responsive}
             className="container"
             style={{ width: "100%" }}
+            // centerMode={true}
+            centerPadding="20px"
           >
             <div class="card cardss auto" style={{ width: "100%" }}>
               <img

@@ -137,7 +137,7 @@ color: #FFFFFF;
         display: flex;
         justify-content: center;
         align-content: center;
-        gap: 30px;
+        gap: 45px;
       }
         .king-text{
             display: none;
@@ -155,7 +155,11 @@ color: #FFFFFF;
           width: 20%;
         }
         .king_icon{
-          width: 50%;
+
+          width: 50% !important;
+        }
+        .King_icon a img{
+          width: 60%;
         }
     }
     @media only screen and (min-width: 300px) and (max-width: 767px) {
@@ -186,6 +190,7 @@ color: #FFFFFF;
     
     .navbar__menu li {
     /* margin-right: 1rem; */
+    
     
     }
     

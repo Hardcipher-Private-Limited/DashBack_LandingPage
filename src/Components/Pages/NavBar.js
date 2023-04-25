@@ -80,7 +80,7 @@ const NavBar = () => {
             <ul className="_ul_alignmate">
               <div className="containerOk ">
                 <div className="slide">
-                  <li className="King_icon  me-2">
+                  <li className="King_icon  m-2">
                     <a
                       href="#"
                       className=""
@@ -90,7 +90,7 @@ const NavBar = () => {
                       <img
                         src={IMAGES_PATH + "/Group 850.png"}
                         alt="icon"
-                        // className="king_icon "
+                        // className="premimum_icon "
                       />
                       <span
                         className="king-text"

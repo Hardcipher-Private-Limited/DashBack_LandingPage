@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { IMAGES_PATHTWO, IMAGES_PATH } from "../../Constants/ImagesConst";
+import {
+  IMAGES_PATHTWO,
+  IMAGES_PATH,
+  IMAGES_PATH_BLOGS,
+} from "../../Constants/ImagesConst";
 import "../../assets/css/HomeSecond.css";
 import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
@@ -93,6 +97,10 @@ const HomeSecond = () => {
     ],
   };
 
+  function handleDigital() {
+    window.scrollTo(0, 0);
+    Navigate("/digitalPayment");
+  }
   return (
     <>
       <div className="background_explor p-5">
@@ -106,7 +114,7 @@ const HomeSecond = () => {
             <div className=" ">
               <h1 className="expore_h1">
                 We offer cashback on <br />
-                every transaction
+                every transaction.
               </h1>
               {/* <button className="botton_Explore">Explore</button> */}
             </div>
@@ -116,99 +124,92 @@ const HomeSecond = () => {
 
       {/* Blogs start  */}
 
-      <div className="container blogs">
-        <div className="bolgs_text">Blogs</div>
-        {/* <Slider {...settings}> */}
-        <div
-          class="container-fluid "
-          style={{
-            // width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <div
-            className=""
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              // alignItems: "center",
-              flexWrap: "wrap",
-            }}
-          >
-            <div class="col-lg-3 col-10 three_card mt-0">
-              <div class="card mx-auto">
-                <img
-                  src={IMAGES_PATHTWO + "/Rectangle22.png"}
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body ps-0">
-                  <div className="blog_text_head"> Digital Payment Options</div>
-                  {/* <p>January 9, 2021</p> */}
-                  <p class="card-text textssssss">
-                    In recent years, digital payment options have become
-                    increasingly popular in India, with many providers offering
-                    users a variety of services. In this article, we will
-                    compare some of the top digital payment providers in India
-                    and explore their features, advantages, and disadvantages.
-                    The features we explore will be broadly categorized under
-                    digital payment, cashback, and eCommerce.
-                  </p>
-                </div>
+      <div className="container">
+        <div className="bolgs_text text-center">Blogs</div>
+        <div className="home_blogss">
+          <div className="card p-0 cardssss pb-4">
+            <img src={IMAGES_PATH_BLOGS + "/Rectangle 40 (1).png"} />
+            <div>
+              <span className="pt-2 pb-2 p-1">Name, 23 Feb, 2023</span>
+              <div
+                className="p-1"
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  paddingTop: "10px",
+                }}
+              >
+                <p className="card_head_text p-0">Lorem ipsum </p>
+                <p>
+                  <img
+                    src={IMAGES_PATH_BLOGS + "/Line 4 (1).png"}
+                    style={{ width: "25px" }}
+                  />
+                </p>
               </div>
+              <span className="p-1">
+                In recent years, digital payment options have become
+                increasingly popular in India, with many providers offering
+                users a variety of services.
+              </span>
             </div>
-
-            <div class="col-lg-6 col-10 mt-0  three_card ">
-              <div class="card mx-auto">
-                <img
-                  src={IMAGES_PATHTWO + "/Rectangle22.png"}
-                  class="card-img-top middle_img"
-                  alt="..."
-                />
-                <div class="card-body ps-0">
-                  <div className="blog_text_head">
-                    Why Digital Payments Are the Future
-                  </div>
-                  {/* <p>January 9, 2021</p> */}
-                  <p class="card-text textssssss">
-                    Digital payments offer numerous advantages over traditional
-                    payment methods. This makes them the future of payments all
-                    over the world.
-                  </p>
-                </div>
+          </div>
+          <div className="card cardssss pb-4">
+            <img src={IMAGES_PATH_BLOGS + "/Rectangle 40 (1).png"} />
+            <div>
+              <span className="pt-2 pb-2 p-1">Name, 23 Feb, 2023</span>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  paddingTop: "10px",
+                }}
+              >
+                <p className="card_head_text p-1">Lorem ipsum </p>
+                <p>
+                  <img
+                    src={IMAGES_PATH_BLOGS + "/Line 4 (1).png"}
+                    style={{ width: "25px" }}
+                  />
+                </p>
               </div>
+              <span className="p-1">
+                {" "}
+                In recent years, digital payment options have become
+                increasingly popular in India, with many providers offering
+                users a variety of services.
+              </span>
             </div>
-
-            <div class="col-lg-3 col-10 three_card ">
-              <div class="card mx-auto">
-                <img
-                  src={IMAGES_PATHTWO + "/Rectangle 23.png"}
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body ps-0">
-                  <div className="blog_text_head">
-                    Transform Your Online Store into a Profitable
-                  </div>
-                  {/* <p>January 9, 2021</p> */}
-                  <p class="card-text textssssss">
-                    In today's digital age, eCommerce has become an increasingly
-                    popular way for businesses to reach a wider audience and
-                    boost sales. However, with so many online stores competing
-                    for a customer’s attention, it's essential to follow best
-                    practices to stand out from the crowd and transform your
-                    online store into a profitable business.
-                  </p>
-                </div>
+          </div>
+          <div className="card cardssss pb-4">
+            <img src={IMAGES_PATH_BLOGS + "/Rectangle 40 (1).png"} />
+            <div>
+              <span className="pt-2 pb-2 p-1">Name, 23 Feb, 2023</span>
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  paddingTop: "10px",
+                }}
+              >
+                <p className="card_head_text p-1">Lorem ipsum </p>
+                <p>
+                  <img
+                    src={IMAGES_PATH_BLOGS + "/Line 4 (1).png"}
+                    style={{ width: "25px" }}
+                  />
+                </p>
               </div>
+              <span className="p-1">
+                {" "}
+                In recent years, digital payment options have become
+                increasingly popular in India, with many providers offering
+                users a variety of services.
+              </span>
             </div>
           </div>
         </div>
-        {/* </Slider> */}
-
-        <div className="text-center mt-5">
+        <div className="text-center" style={{ margin: "90px" }}>
           <button className="ReadButton" onClick={handleBlogs}>
             Read more
             <img
@@ -221,16 +222,19 @@ const HomeSecond = () => {
 
       {/* what our clint say */}
 
-      <div className=" container mb-5">
+      <div className=" container-fluid mb-5" style={{ marginTop: "8%" }}>
         <div className="clint_section">
           <div className="Clint_heading">What Our Clients Say</div>
         </div>
-        <div class="container ">
-          <div class="row  row-cols-md-10">
+        <div class="container-fluid ">
+          <div
+            class="row  row-cols-md-12"
+            // style={{ display: "flex", gap: "20px" }}
+          >
             <Slider {...settings}>
               <div>
-                <div class="col mb-4">
-                  <div class="card" style={{ width: "90%" }}>
+                <div class="col mb-4 mt-1 ms-1">
+                  <div class="card hover " style={{ width: "96%" }}>
                     <div className="main__card  pt-4 ps-5">
                       <img
                         class="card-img-top"
@@ -263,8 +267,8 @@ const HomeSecond = () => {
                 </div>
               </div>
               <div>
-                <div class="col mb-4">
-                  <div class="card shadow" style={{ width: "90%" }}>
+                <div class="col mb-4 mt-1">
+                  <div class="card  shadow" style={{ width: "96%" }}>
                     <div className="d-flex pt-4 ps-5">
                       <img
                         class="card-img-top"
@@ -296,8 +300,8 @@ const HomeSecond = () => {
                 </div>
               </div>
               <div>
-                <div class="col mb-4">
-                  <div class="card" style={{ width: "90%" }}>
+                <div class="col mb-4 mt-1">
+                  <div class="card hover " style={{ width: "96%" }}>
                     <div className="d-flex pt-4 ps-5">
                       <img
                         class="card-img-top"
@@ -397,7 +401,7 @@ const HomeSecond = () => {
               </div>
               <p style={{ display: showAnswer3 ? "block" : "none" }}>
                 As a DashBack user, you are entitled to up to 100% cashback on
-                their transactions. Pretty cool, right?
+                your transactions. Pretty cool, right?
               </p>
             </div>
           </div>
@@ -411,7 +415,9 @@ const HomeSecond = () => {
               </div>
               <p style={{ display: showAnswer4 ? "block" : "none" }}>
                 Bill payments, recharges, FASTag payments and so much more!
-                Learn more here.
+                <b className="learn_more_btn" onClick={handleDigital}>
+                  Learn more here.
+                </b>
               </p>
             </div>
           </div>

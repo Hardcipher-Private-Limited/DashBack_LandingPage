@@ -20,7 +20,7 @@ const DowloadTheApp = ({ hideModal }) => {
             <div className="mt-4 INputs_responsive">
               <input
                 type="text"
-                placeholder="Enter Your NUmber"
+                placeholder="Enter your number"
                 className="form-control"
               />
             </div>
