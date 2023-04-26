@@ -10,6 +10,7 @@ import Slider from "react-slick";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { Data } from "../MockData/Blogs";
 // import "./styles.css";
 
 const HomeSecond = () => {
@@ -101,6 +102,11 @@ const HomeSecond = () => {
     window.scrollTo(0, 0);
     Navigate("/digitalPayment");
   }
+
+  function handleCardss(index) {
+    window.scrollTo(0, 0);
+    Navigate(`/card/${index}`);
+  }
   return (
     <>
       <div className="background_explor p-5">
@@ -127,87 +133,35 @@ const HomeSecond = () => {
       <div className="container">
         <div className="bolgs_text text-center">Blogs</div>
         <div className="home_blogss">
-          <div className="card p-0 cardssss pb-4">
-            <img src={IMAGES_PATH_BLOGS + "/Rectangle 40 (1).png"} />
-            <div>
-              <span className="pt-2 pb-2 p-1">Name, 23 Feb, 2023</span>
-              <div
-                className="p-1"
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  paddingTop: "10px",
-                }}
-              >
-                <p className="card_head_text p-0">Lorem ipsum </p>
-                <p>
-                  <img
-                    src={IMAGES_PATH_BLOGS + "/Line 4 (1).png"}
-                    style={{ width: "25px" }}
-                  />
-                </p>
+          {Data.slice(0, 3).map((Data, index) => (
+            <div
+              className="card p-0 cardssss pb-4"
+              onClick={() => handleCardss(index)}
+            >
+              <img src={Data.imgSrc} className="images__Card__top" />
+              <div className="p-3">
+                <span className="pt-2 pb-2 p-1">{Data.date}</span>
+                <div
+                  className="p-1"
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    paddingTop: "10px",
+                  }}
+                >
+                  <p className="card_head_text p-0">{Data.name} </p>
+                  <p className="arrow_mark">
+                    <img
+                      src={IMAGES_PATH_BLOGS + "/Line 4 (1).png"}
+                      style={{ width: "25px" }}
+                      onClick={() => handleCardss(index)}
+                    />
+                  </p>
+                </div>
+                <span className="p-1">{Data.paragraph}</span>
               </div>
-              <span className="p-1">
-                In recent years, digital payment options have become
-                increasingly popular in India, with many providers offering
-                users a variety of services.
-              </span>
             </div>
-          </div>
-          <div className="card cardssss pb-4">
-            <img src={IMAGES_PATH_BLOGS + "/Rectangle 40 (1).png"} />
-            <div>
-              <span className="pt-2 pb-2 p-1">Name, 23 Feb, 2023</span>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  paddingTop: "10px",
-                }}
-              >
-                <p className="card_head_text p-1">Lorem ipsum </p>
-                <p>
-                  <img
-                    src={IMAGES_PATH_BLOGS + "/Line 4 (1).png"}
-                    style={{ width: "25px" }}
-                  />
-                </p>
-              </div>
-              <span className="p-1">
-                {" "}
-                In recent years, digital payment options have become
-                increasingly popular in India, with many providers offering
-                users a variety of services.
-              </span>
-            </div>
-          </div>
-          <div className="card cardssss pb-4">
-            <img src={IMAGES_PATH_BLOGS + "/Rectangle 40 (1).png"} />
-            <div>
-              <span className="pt-2 pb-2 p-1">Name, 23 Feb, 2023</span>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  paddingTop: "10px",
-                }}
-              >
-                <p className="card_head_text p-1">Lorem ipsum </p>
-                <p>
-                  <img
-                    src={IMAGES_PATH_BLOGS + "/Line 4 (1).png"}
-                    style={{ width: "25px" }}
-                  />
-                </p>
-              </div>
-              <span className="p-1">
-                {" "}
-                In recent years, digital payment options have become
-                increasingly popular in India, with many providers offering
-                users a variety of services.
-              </span>
-            </div>
-          </div>
+          ))}
         </div>
         <div className="text-center" style={{ margin: "90px" }}>
           <button className="ReadButton" onClick={handleBlogs}>
@@ -227,13 +181,10 @@ const HomeSecond = () => {
           <div className="Clint_heading">What Our Clients Say</div>
         </div>
         <div class="container-fluid ">
-          <div
-            class="row  row-cols-md-12"
-            // style={{ display: "flex", gap: "20px" }}
-          >
+          <div class="row " style={{ display: "flex", gap: "0px" }}>
             <Slider {...settings}>
               <div>
-                <div class="col mb-4 mt-1 ms-1">
+                <div class="col mb-4 ">
                   <div class="card hover " style={{ width: "96%" }}>
                     <div className="main__card  pt-4 ps-5">
                       <img

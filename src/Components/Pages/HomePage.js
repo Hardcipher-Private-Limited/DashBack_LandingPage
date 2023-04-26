@@ -3,21 +3,11 @@ import { IMAGES_PATH } from "../../Constants/ImagesConst";
 import "../../assets/css/Home.css";
 import HomeSecond from "./HomeSecond";
 import { useNavigate } from "react-router-dom";
-
 import Slider from "react-slick";
-// import "react-slick/dist/react-slick.css";
-
-import { FreeMode, Navigation, Thumbs } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/navigation";
-import "swiper/css/thumbs";
-import Carousel from "react-multi-carousel";
 import AppDownloadPopUP from "../PopUp/AppDownloadPopUP";
 
-// import "./styles.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const HomePage = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -82,25 +72,6 @@ const HomePage = () => {
     setIsOpen(false);
   };
 
-  const responsive = {
-    superLargeDesktop: {
-      breakpoint: { max: 4000, min: 300 },
-      items: 10,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 10,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 10,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 10,
-    },
-  };
-
   const images = [
     { src: "/Group 575.png", class: "img-small" },
     { src: "/Rectangle 8.png", class: "img-large" },
@@ -120,14 +91,48 @@ const HomePage = () => {
     { src: "/Rectangle 8.png", class: "img-large" },
   ];
 
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 768) {
+        setIsMobile(true);
+      } else if (window.innerWidth < 1024) {
+        setIsMobile(false);
+        setIsTablet(true);
+      } else {
+        setIsMobile(false);
+        setIsTablet(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    handleResize();
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const desktopSettings = {
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 15,
+    infiniteLoop: true,
     slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 1000,
+    interval: 1000,
+    cssEase: "linear",
+  };
+  const tabletSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 10,
+    infiniteLoop: true,
+    slidesToScroll: 2,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    interval: 1000,
     cssEase: "linear",
   };
 
@@ -140,9 +145,12 @@ const HomePage = () => {
     autoplay: true,
     autoplaySpeed: 1000,
   };
-  const isMobile = window.innerWidth <= 768;
-  const settings = isMobile ? mobileSettings : desktopSettings;
-  // const settings = window.innerWidth < 768 ? mobileSettings : desktopSettings;
+
+  const settings = isMobile
+    ? mobileSettings
+    : isTablet
+    ? tabletSettings
+    : desktopSettings;
   return (
     <>
       <AppDownloadPopUP />

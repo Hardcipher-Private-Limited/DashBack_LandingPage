@@ -5,12 +5,25 @@ import { Helmet } from "react-helmet";
 import { Data } from "../MockData/Blogs";
 import { useNavigate } from "react-router-dom";
 
+const ITEMS_PER_PAGE = 6;
+const totalPages = Math.ceil(Data.length / ITEMS_PER_PAGE);
 const BlogsPage = () => {
   const Navigate = useNavigate();
   function handleCard(index) {
     window.scrollTo(0, 0);
     Navigate(`/card/${index}`);
   }
+  const [currentPage, setCurrentPage] = useState(1);
+  const [displayData, setDisplayData] = useState(Data.slice(0, ITEMS_PER_PAGE));
+
+  // console.log(totalPages);
+
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber);
+    const startIndex = (pageNumber - 1) * ITEMS_PER_PAGE;
+    const endIndex = startIndex + ITEMS_PER_PAGE;
+    setDisplayData(Data.slice(startIndex, endIndex));
+  };
   return (
     <>
       <Helmet>
@@ -40,18 +53,11 @@ const BlogsPage = () => {
           </div>
           <div className="col-lg-3"></div>
         </div>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "3%",
-          }}
-        >
-          {Data.map((Data, index) => (
+        <div className="main_handle">
+          {displayData.map((Data, index) => (
             <div
               key={index}
-              className="card"
-              style={{ width: "31%", marginBottom: "60px" }}
+              className="card all_card_blogs"
               onClick={() => handleCard(index)}
             >
               <img src={Data.imgSrc} />
@@ -78,112 +84,18 @@ const BlogsPage = () => {
           ))}
         </div>
         {/* <div>{Data.paragraph}</div> */}
-
-        {/* <div className="col-lg-12 row">
-          <div className="col-lg-12">
-            <span>
-              <img
-                src={IMAGES_PATH_BLOGS + "/Group 106.png"}
-                style={{ width: "100%" }}
-              />
-            </span>
-          </div>
-
-          <div
-            class="container-fluid mt-3"
-            style={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
+      </div>
+      <div className="text-center">
+        {Array.from({ length: totalPages }).map((_, index) => (
+          <button
+            className="page-number-button "
+            key={index}
+            onClick={() => handlePageChange(index + 1)}
+            disabled={currentPage === index + 1}
           >
-            <div
-              className=""
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                flexWrap: "wrap",
-                gap: "0px",
-              }}
-            >
-              <div class="col-lg-4 col-6 three_card mt-0">
-                <div class="card mx-auto">
-                  <img
-                    src={IMAGES_PATHTWO + "/Rectangle22.png"}
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body ps-0">
-                    <div className="blog_text_head  d-flex justify-content-between">
-                      Digital Payment
-                      <span>
-                        <img
-                          src={IMAGES_PATH_BLOGS + "/Line 4.png"}
-                          className="arrow_img"
-                        />
-                      </span>
-                    </div>
-                    <p class="card-text textssssss">
-                      In recent years, digital payment options have become
-                      increasingly popular in India, with many providers
-                      offering users a variety of services. In this article
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-6 mt-0  three_card ">
-                <div class="card mx-auto">
-                  <img
-                    src={IMAGES_PATHTWO + "/Rectangle22.png"}
-                    class="card-img-top middle_img"
-                    alt="..."
-                  />
-                  <div class="card-body ps-0  ">
-                    <div className="blog_text_head d-flex justify-content-between">
-                      E Commerce
-                      <span>
-                        <img
-                          src={IMAGES_PATH_BLOGS + "/Line 4.png"}
-                          className="arrow_img"
-                        />
-                      </span>
-                    </div>
-                    <p class="card-text textssssss">
-                      In today's digital age, eCommerce has become an
-                      increasingly popular way for businesses to reach a wider
-                      audience and boost sales. However
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-6 three_card ">
-                <div class="card mx-auto">
-                  <img
-                    src={IMAGES_PATHTWO + "/Rectangle 23.png"}
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body ps-0">
-                    <div className="blog_text_head  d-flex justify-content-between">
-                      Investing
-                      <span>
-                        <img
-                          src={IMAGES_PATH_BLOGS + "/Line 4.png"}
-                          className="arrow_img"
-                        />
-                      </span>
-                    </div>
-                    <p class="card-text textssssss">
-                      Investing some of your earnings is a crucial aspect of
-                      achieving financial success. However
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div> */}
+            {index + 1}
+          </button>
+        ))}
       </div>
     </>
   );

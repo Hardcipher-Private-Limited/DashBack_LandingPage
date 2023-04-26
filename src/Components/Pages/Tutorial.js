@@ -28,11 +28,11 @@ const Tutorial = () => {
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 300 },
-      items: 2,
+      items: 3,
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 2,
+      items: 3,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },

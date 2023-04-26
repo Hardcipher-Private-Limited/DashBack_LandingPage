@@ -75,11 +75,14 @@ color: #161616;
 .blogs-text input{
 height: 49.83px;
 }
-.cardss{
-    /* background-color: gold; */
-    /* width: 20px; */
-    /* position: relative; */
+.main_handle{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
  
+}
+.all_card_blogs{
+    width: 31%;
 }
 .small_imgs{
     width:310px;
@@ -112,11 +115,15 @@ color: #393939;
 .Small_card{
     display: flex !important;
     padding-top: 25px;
-    /* gap: 1px; */
+}
+
+.page-number-button{
+    border: none;
+    background-color: white;
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {
-    .form-control {
-      /* width: 80%; */
+    .all_card_blogs{
+        width: 100%;
     }
     .lable-text{
         /* width: 20px; */
