@@ -366,6 +366,157 @@ export const Data = [
       </div>
     ),
   },
+  {
+    name: " Ankit Kumar",
+    date: "  15 April, 2023",
+    text: " Ankit Kumar",
+    paragraph:
+      "Looking to achieve financial success through investments? Here are 10 investment strategies that you should know.",
+    imgSrc: IMAGES_PATH_BLOGS + "/financial success.png",
+    main_head: " Investment Strategies You Need to Know for Financial Success",
+    Introduction_text:
+      "Investing some of your earnings is a crucial aspect of achieving financial success. However, with so many investment strategies available, it can be overwhelming to determine which one is the best for you.",
+    Paytm:
+      "Here are 10 investment strategies that you need to know for financial success:",
+    payment_text1: (
+      <div className="blogs_3_text">
+        <h5>1. Diversification: </h5>
+        <p>
+          This strategy involves investing your money in a variety of different
+          assets, such as stocks, bonds, and real estate. By diversifying your
+          investment portfolio, you can reduce the risk of losing money if one
+          asset class performs poorly. This is the best way to ensure that a
+          portion of your income remains secure despite market fluctuations.
+        </p>
+      </div>
+    ),
+    payment_text2: (
+      <div className="blogs_3_text">
+        <h5>2. Dollar-Cost Averaging:</h5>
+        <p>
+          This method consists of investing a fixed amount of money at regular
+          intervals, regardless of whether the market is up or down. Over time,
+          this can help you take advantage of market fluctuations and
+          potentially increase your returns.
+          <br /> Remember, this strategy is a marathon, not a sprint. Results
+          will not be seen immediately.
+        </p>
+      </div>
+    ),
+    payment_text3: (
+      <div className="blogs_3_text">
+        <h5>3. Buy and Hold:</h5>
+        <p>
+          In this type of investing, you place money in stocks for the long
+          term, typically 5 to 10 years or more. By holding onto your
+          investments for an extended period, you can potentially ride out
+          market volatility and benefit from long-term growth.
+        </p>
+        <div>
+          <span style={{ color: "blue", textDecoration: "underline" }}>
+            CashBack -
+          </span>{" "}
+          "Join the thousands of shoppers already earning cashback with us. Sign
+          up now!"
+        </div>
+      </div>
+    ),
+    payment_text4: (
+      <div className="blogs_3_text">
+        <h5>4. Value Investing:</h5>
+        <p>
+          Value investing consists of investing in companies that are
+          undervalued by the market but have strong fundamentals. By buying
+          these stocks at a discount, you can potentially benefit from their
+          eventual increase in value.
+        </p>
+      </div>
+    ),
+    payment_text5: (
+      <div className="blogs_3_text">
+        <h5>5. Growth Investing:</h5>
+        <p>
+          This one is not for everyone. It involves investing in companies that
+          are expected to grow at a faster rate than the market as a whole.
+          While these investments can be more volatile, they can also provide
+          higher returns over the long term. Such investments are not for the
+          faint-hearted
+        </p>
+      </div>
+    ),
+    payment_text6: (
+      <div className="blogs_3_text">
+        <h5>6. Income Investing: </h5>
+        <p>
+          This technique involves investing in assets that generate a regular
+          income stream, such as dividend-paying stocks or bonds. While the
+          returns may be lower than other strategies, the regular income
+          generated can provide stability to your portfolio.
+        </p>
+      </div>
+    ),
+    payment_text7: (
+      <div className="blogs_3_text">
+        <h5>7. Index Investing:</h5>
+        <p>
+          Index investing targets a broad market index, such as the S&P 500, to
+          capture the overall performance of the market. This can be a low-cost
+          way to achieve diversified exposure to the market.
+        </p>
+      </div>
+    ),
+    blog_summery: (
+      <div className="">
+        <span style={{ color: "blue", textDecoration: "underline" }}>
+          Visit Our Website -
+        </span>
+        Don't miss out on this opportunity to save big and get rewarded for your
+        everyday spending. Join now and experience the benefits of our cashback
+        program!"
+      </div>
+    ),
+    payment_text8: (
+      <div className="blogs_3_text">
+        <h5>8. Momentum Investing</h5>
+        <p>
+          This strategy involves investing in stocks that have been performing
+          well in the recent past. While this strategy can be profitable, it can
+          also be risky if the market shifts and the momentum reverses.
+        </p>
+      </div>
+    ),
+    payment_text9: (
+      <div className="blogs_3_text">
+        <h5>9. Contrarian Investing:</h5>
+        <p>
+          Contrarian investing is an interesting way of investing: investors
+          place their bets on stocks that are out of favor with the market. By
+          buying low and selling high, you can potentially benefit from a
+          turnaround in the stock's performance.
+        </p>
+      </div>
+    ),
+    payment_text10: (
+      <div className="blogs_3_text">
+        <h5>10. Socially Responsible Investing: </h5>
+        <p>
+          This strategy involves investing in companies that align with your
+          personal values, such as those that prioritize environmental, social,
+          and governance issues. By investing in socially responsible companies,
+          you can potentially make a positive impact on the world while also
+          achieving financial returns.
+        </p>
+
+        <p>
+          There are many investment strategies available, and the best one for
+          you will depend on your goals, risk tolerance, and personal values. By
+          understanding these different strategies, you can make informed
+          decisions and create a diversified investment portfolio that aligns
+          with your financial goals.
+        </p>
+      </div>
+    ),
+  },
   // card 4 start
   {
     name: "Card 3",
