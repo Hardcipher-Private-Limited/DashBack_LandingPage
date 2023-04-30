@@ -164,7 +164,7 @@ const HomePage = () => {
       {/* dash back start  */}
 
       <div
-        className="col-xl-12 row d-flex align-items-center justify-content-center "
+        className="col-xl-12 row row_padding   d-flex align-items-center justify-content-center "
         style={{ marginBottom: "70px" }}
       >
         <div className="col-lg-6 col-md-6 order_mbile  ">
@@ -200,7 +200,7 @@ const HomePage = () => {
 
       {/* we keep your data secure section start  */}
 
-      <div style={{ paddingBottom: 90 }}>
+      <div style={{ paddingBottom: "90px" }}>
         <div className="text-center pb-5">
           <div className="we_keep_data">
             <h1>We keep your data secure</h1>
@@ -244,7 +244,7 @@ const HomePage = () => {
 
       {/* what section start  */}
 
-      <div className="col-xl-12  row d-flex align-items-center justify-content-center mt-5 padding_for_div ">
+      <div className="col-xl-12 row d-flex align-items-center justify-content-center mt-5 padding_for_div ">
         <div
           className="col-lg-6 col-md-6 
          text-center "
@@ -275,7 +275,7 @@ const HomePage = () => {
 
             <div>
               <button
-                className="downloadButton mt-3"
+                className="downloadButtons mt-3"
                 onClick={handleDigitalPage}
               >
                 Learn more
@@ -296,7 +296,7 @@ const HomePage = () => {
           <h1>Special offers from brands you love</h1>
         </div>
         <div>
-          <div className="container" style={{ marginBottom: "100px" }}>
+          <div className="container all_band" style={{ marginBottom: "80px" }}>
             <div className="slider_new">
               <Slider {...settings}>
                 {images.map((img, index) => (
@@ -306,76 +306,12 @@ const HomePage = () => {
                 ))}
               </Slider>
             </div>
-
-            {/* <div className="brand-img_all " style={{ width: "" }}>
-              <Slider {...settings}>
-                <img src={IMAGES_PATH + "/Group 575.png"} className=" width " />
-                <img
-                  src={IMAGES_PATH + "/Rectangle 8.png"}
-                  className="img-fluid desktop-tablet"
-                />
-                <img src={IMAGES_PATH + "/Group 572.png"} className=" width" />
-                <img
-                  src={IMAGES_PATH + "/Rectangle 8.png"}
-                  className="img-fluid desktop-tablet"
-                />
-
-                <img
-                  src={IMAGES_PATH + "/Group 576.png"}
-                  className="img-fluid width "
-                />
-                <img
-                  src={IMAGES_PATH + "/Rectangle 8.png"}
-                  className="img-fluid desktop-tablet"
-                />
-
-                <img
-                  src={IMAGES_PATH + "/Group 574.png"}
-                  className="img-fluid width"
-                />
-                <img
-                  src={IMAGES_PATH + "/Rectangle 8.png"}
-                  className="img-fluid desktop-tablet"
-                />
-
-                <img
-                  src={IMAGES_PATH + "/Group 573.png"}
-                  className="img-fluid width"
-                />
-                <img
-                  src={IMAGES_PATH + "/Rectangle 8.png"}
-                  className="img-fluid desktop-tablet "
-                />
-                <img
-                  src={IMAGES_PATH + "/Group (2).png"}
-                  className="img-fluid width "
-                />
-                <img
-                  src={IMAGES_PATH + "/Rectangle 8.png"}
-                  className="img-fluid desktop-tablet"
-                />
-
-                <img
-                  src={IMAGES_PATH + "/Group (1).png"}
-                  className="img-fluid width"
-                />
-                <img
-                  src={IMAGES_PATH + "/Rectangle 8.png"}
-                  className="img-fluid desktop-tablet"
-                />
-
-                <img
-                  src={IMAGES_PATH + "/Group.png"}
-                  className="img-fluid width"
-                />
-              </Slider>
-            </div> */}
           </div>
         </div>
       </div>
 
       {/* premium section start  */}
-      <div className="padding_for_div">
+      <div className="padding_for_premium">
         <div
           className=" col-xl-12 row premimun_secrion_start d-flex align-items-center justify-content-center "
           style={{ marginBottom: "10%" }}
@@ -397,7 +333,7 @@ const HomePage = () => {
               </div>
               <div>
                 <button
-                  className="downloadButton order_button mt-3"
+                  className="downloadButtons order_button mt-3"
                   onClick={handlePremium}
                 >
                   Unlock Premium

@@ -1,3 +1,5 @@
+
+
 .logo_line{
     display: flex;
     flex-direction: row;
@@ -15,8 +17,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-  
-    /* width: 3px; */
 }
 .icons_three{
 display: flex;
@@ -68,6 +68,9 @@ top: 0px;
         justify-content: space-between;
         padding: 10px;
   }
+  .row_padding {
+    --bs-gutter-x: 0rem !important;
+}
 }
 
 /* dash back section start  */
@@ -75,8 +78,7 @@ top: 0px;
 .dash_icon{
     width:100%;
     position: relative;
-    /* top:100px; */
-    /* margin-left: 10%; */
+  
 }
 .phone_icon{
   margin-top: 5%;
@@ -85,7 +87,7 @@ top: 0px;
 .back_icons {
   left:10px;
     width:85%;
-    top:  -89px;
+    bottom:  80px;
     position: relative;
 }
 
@@ -97,7 +99,7 @@ top: 0px;
 .dash_header h1{
 font-style: normal;
 font-weight: 700;
-font-size: 49x;
+font-size: 39px;
 line-height: 68px;
 color: #161616;
 
@@ -119,9 +121,7 @@ color: #161616;
  margin-left: 14%;
 }
 .waht_phone_icon{
-  /* width: 90%;
-  position: relative;
-  margin-top: -24%; */
+
   left: 7%;
 }
 }
@@ -152,7 +152,6 @@ color: #161616;
     padding:5px 20px 5px 20px; 
     background-color:#161616;
     color:  #FFFFFF;
-    /* font-family: 'Montserrat'; */
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
@@ -164,15 +163,14 @@ color: #161616;
 @media only screen and (min-width: 300px) and (max-width: 767px) {
   content {
 
-    margin-left: -50%;
-    background-color: red;
+    margin-left: 50%;
   }
   .padding_for_div{
-    padding-top: 90px;
+    padding: 0px !important;
+    margin: 0px !important;
+    padding-top: 0px !important;
   }
-  .rupeeIcon img{
-    /* width: 50%; */
-  }
+ 
   .dash_icon{
     display: none;
   }
@@ -184,7 +182,6 @@ color: #161616;
 margin-left: 12px;
   }
   .rupeeIcon{
-    /* display: none; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -197,9 +194,11 @@ margin-left: 12px;
   }
   .order_mbile_reverse{
     order: 1;
+  
   }
   .order_mbile_reverse img{
-    margin-left: 10%;
+    margin-left: 8%;
+
    }
   .order_mbile{
     order: 2;
@@ -233,6 +232,9 @@ padding: 8px;
 }
    
 /* data icon start  */
+
+
+
 .text-width{
     align-items: center;
 }
@@ -255,7 +257,6 @@ padding: 8px;
 }
 
 .desktop-tablet{
-/* height: 105px !important; */
   margin-top: 1% !important;
   margin-bottom: 1%;
   padding: 0px !important;
@@ -276,20 +277,20 @@ line-height: 32px;
 text-align: center;
   }
   .text-width{
-    /* width:; */
-    /* padding-left: 310px; */
+
     padding-top: 0 !important;
 }
 .width{
   width: 20% !important;
 }
 
+
 }
 
 .waht_phone_icon{
     width: 92%;
     position: relative;
-    margin-top: -24%;
+    margin-top: -23% !important;
     /* left: 7%; */
 }
 .begin_header{
@@ -304,11 +305,11 @@ text-align: center;
 }
 .digital-text{
 
-    margin-top: -8px;
+    /* margin-top: 8px; */
     font-style: normal;
     font-weight: 500;
     font-size: 22px;
-    line-height: 35px;
+    line-height: 25px;
     color: #161616;
 }
 .begin_header p{
@@ -322,7 +323,7 @@ color: #6D6D6D;
 }
 .we-do-icon{
     position: relative;
-    right:-2%;
+    left:3%;
 }
 .we-do-icon img{
     width: 100%;
@@ -386,38 +387,14 @@ padding-top: 20px;
   .img-small {
     width: 10px !important;
     padding-top: 30px;
-    /* padding-right: 0px !important; */
-    /* padding: 20px; */
+   
   }
   
 }
 
 
 
-.img-small{
-  /* padding-top: 20px; */
-    /* padding: 50px;
-    padding-right: 0px;
-    padding-left: 0px;
-    padding-bottom: 50px; */
-}
-/* .img-large{
-  background-color: green;
-  padding: 0px;
-   width: 0px;
-  height: 0px;
-  margin: 0px;
-} */
 
-.slider___ img{
-  /* padding-top: 10px; */
-  /* gap: 20px; */
-
-}
-
-.slider___ img{
-  /* width: 100%; */
-} 
 .brand-img {
   display: flex;
   flex-wrap: wrap;
@@ -427,35 +404,31 @@ padding-top: 20px;
   border-radius: 20px;
   gap: 10px;
     box-shadow: 0px 0px 40px rgba(230, 230, 230, 0.893);
-   /* margin: 20px; */
 
 }
 .brand-img img {
   max-width: 50% !important;
   height: auto;
   padding-top: 100px;
-  /* margin: -2px; */
 }
 .brand-img_all {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
+  
   justify-content: center;
   align-items: center;
   background-color: white;
   gap: 0px;
   border-radius: 20px;
     box-shadow: 0px 0px 40px rgba(231, 231, 231, 0.893);
-   /* margin: 20px; */
 
 }
 .brand-img_all img {
   max-width: 50% !important;
   height: auto;
   padding-top: 100px;
-  /* margin: -2px; */
 }
-
-
+.all_band{
+--bs-gutter-x: 5rem !important;
+}
 @media only screen and (min-width: 300px) and (max-width: 767px) {
     .we_keep_data h1{
       margin-top: 60px;
@@ -480,13 +453,13 @@ font-size: 20px;
 line-height: 24px;
     } 
     .begin_header{
-  margin-top: -80px;
+  margin-top: 0px;
     }
     .begin_header h1{
       font-style: normal;
       font-weight: 700;
       font-size: 29px;
-      line-height: 0p4x;
+      line-height: 40px;
       text-align: center;
   }
   .digital-text{
@@ -494,13 +467,13 @@ line-height: 24px;
     font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    line-height: 36px;
+    line-height: 30px;
     color: #161616;
 }
 .begin_header p{
   font-weight: 300;
   font-size: 14px;
-  line-height: 24px;
+  line-height: 5px;
   text-align: center;
   color: #6D6D6D;
   }
@@ -535,9 +508,11 @@ margin-top: -40px;
   width: 120%;
 }
 .preimium_last img{
+  position: relative;
   margin-top: -21%;
      width: 130%;
-     margin-left: -27%;
+     /* padding-right: 200px; */
+     margin-left: -30% !important;
     
 }
 .preimium_text h1{
@@ -608,14 +583,14 @@ color: #6D6D6D;
     @media only screen and (min-width: 300px) and (max-width: 767px) {
     .premimun_secrion_start{
       margin-top: -210px !important;
+   --bs-gutter-x: 0rem !important;
+
     }
     .row {
       display: flex;
       flex-direction: column;
     }
-    .col-lg-6 {
-      /* width: 100%; */
-    }
+  
     .preimium_text, .phone-icon_2 {
       padding: 30px;
     }
@@ -648,7 +623,9 @@ line-height: 32px;
 .order_button{
   
 }
-
+.padding_for_premium{
+  padding-top: 120px;
+}
   }
  /* premium model  */
 
@@ -674,7 +651,6 @@ line-height: 32px;
   .content {
     position: absolute;
     top: 100%;
-    /* margin-right:500px; */
     margin-left: -100px;
     padding: 10px;
     opacity: 0;

@@ -142,6 +142,7 @@ color: #FFFFFF;
         .king-text{
             display: none;
         }
+
        .playStore{
             width: 39% !important ;
         }
@@ -212,6 +213,7 @@ color: #FFFFFF;
     }
     .playStore a{
       width:250px;
+      margin-left: 3%;
 
     }
         .navbar__menu li:nth-child(1){

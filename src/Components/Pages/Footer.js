@@ -45,12 +45,12 @@ const Footer = () => {
   }
   return (
     <>
-      <div className="container containerss" style={{ marginTop: 70 }}>
+      <div className="container ">
         <div className="lineWidth"></div>
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6 order-md-1">
-              <div class="FooterHeading">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6 order-md-1">
+              <div className="FooterHeading">
                 <h2 className="FooterHeading_h2">
                   Subscribe to our newsletter
                 </h2>
@@ -60,17 +60,17 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <div class="col-md-6 order-md-2 ">
-              <div class="row flex-column flex-sm-row rowa">
-                <div class="col-sm-8 order-1 order-sm-1 subscribe_btns ">
+            <div className="col-md-6 order-md-2 ">
+              <div className="row flex-column flex-sm-row rowa">
+                <div className="col-sm-8 order-1 order-sm-1 subscribe_btns ">
                   <input
                     type="text"
-                    class=" form-controls"
+                    className=" form-controls"
                     placeholder="Enter your email"
                   />
                 </div>
-                <div class="col-sm-4 subscribe_btns mt-3 mt-sm-0 order-1 order-sm-2">
-                  <button class=" subscribe btn-block">Subscribe</button>
+                <div className="col-sm-4 subscribe_btns mt-3 mt-sm-0 order-1 order-sm-2">
+                  <button className=" subscribe btn-block">Subscribe</button>
                 </div>
               </div>
             </div>
@@ -87,28 +87,27 @@ const Footer = () => {
               <span>DASHBACK</span>
             </div>
           </div>
-          <div class="col-lg-9">
-            <div class=" fotter_detailsss">
-              <div class="">
+          <div className="col-lg-9">
+            <div className=" fotter_detailsss">
+              <div className="">
                 <h3>Company</h3>
                 <p onClick={handleAbout}>About Us</p>
                 <p onClick={handlepartners}>Our Partners</p>
                 <p onClick={handleContect}>Contact Us</p>
               </div>
-              <div class="">
+              <div className="">
                 <h3>Tools</h3>
-                {/* <p>Contact Us</p> */}
                 <p>Cashback Calculator</p>
                 <p>Prosperity Plans</p>
               </div>
-              <div class="">
+              <div className="">
                 <h3>Resources</h3>
                 <p onClick={handleCareer}>Careers</p>
                 <p onClick={handleBlogs}>Blogs</p>
                 <p onClick={handleTutorial}>Tutorials</p>
                 <p onClick={handlesecond}>FAQs</p>
               </div>
-              <div class="">
+              <div className="">
                 <h3>Legal</h3>
                 <p onClick={handleTerms}> Terms & Conditions</p>
                 <p onClick={handlePrivancy}>Privacy Policy</p>
@@ -127,7 +126,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="social_medai me-4">
+          <div className="social_medai m-0">
             <span>
               <img src={IMAGES_PATH_FOOTER + "/Vector (3).png"} />
             </span>
@@ -144,7 +143,7 @@ const Footer = () => {
               <img src={IMAGES_PATH_FOOTER + "/icons8-twitter 1.png"} />
             </span>
           </div>
-        </div>{" "}
+        </div>
       </div>
     </>
   );

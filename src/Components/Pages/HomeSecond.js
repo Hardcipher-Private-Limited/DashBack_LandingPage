@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-import {
-  IMAGES_PATHTWO,
-  IMAGES_PATH,
-  IMAGES_PATH_BLOGS,
-} from "../../Constants/ImagesConst";
+import { IMAGES_PATHTWO, IMAGES_PATH_BLOGS } from "../../Constants/ImagesConst";
 import "../../assets/css/HomeSecond.css";
 import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
@@ -109,20 +105,19 @@ const HomeSecond = () => {
   }
   return (
     <>
-      <div className="background_explor p-5">
-        <div className="row row_between">
+      <div className="background_explor p-5 ">
+        <div className="row ">
           <div className="col-lg-6  col-md-6  d-flex justify-content-center align-items-center Left_row">
             <div className="text_right ">
               <img src={IMAGES_PATHTWO + "/Shopping online.png"} />
             </div>
           </div>
-          <div className="col-lg-6 col-md-6 Right_row  Explore_section ">
+          <div className="col-lg-6 col-md-6 Right_row row_between Explore_section ">
             <div className=" ">
               <h1 className="expore_h1">
                 We offer cashback on <br />
                 every transaction.
               </h1>
-              {/* <button className="botton_Explore">Explore</button> */}
             </div>
           </div>
         </div>
@@ -176,19 +171,19 @@ const HomeSecond = () => {
 
       {/* what our clint say */}
 
-      <div className=" container-fluid mb-5" style={{ marginTop: "8%" }}>
+      <div className="container mb-5">
         <div className="clint_section">
           <div className="Clint_heading">What Our Clients Say</div>
         </div>
-        <div class="container-fluid ">
-          <div class="row " style={{ display: "flex", gap: "0px" }}>
+        <div className="container  container_padding ">
+          <div className="row " style={{ display: "flex", gap: "0px" }}>
             <Slider {...settings}>
               <div>
-                <div class="col mb-4 ">
-                  <div class="card hover " style={{ width: "96%" }}>
+                <div className="col mb-4 ms-1">
+                  <div className="card hover " style={{ width: "96%" }}>
                     <div className="main__card  pt-4 ps-5">
                       <img
-                        class="card-img-top"
+                        className="card-img-top"
                         src={IMAGES_PATHTWO + "/Ellipse 29.png"}
                         style={{ width: "20%" }}
                         alt="Card image cap"
@@ -198,8 +193,8 @@ const HomeSecond = () => {
                         <p className="card_country">India</p>
                       </div>
                     </div>
-                    <div class="card-body ps-5 pe-5">
-                      <p class="card-text">
+                    <div className="card-body ps-5 pe-5 padding_card_responsive">
+                      <p className="card-text">
                         When a friend told me about DashBack and their cashback
                         reward system, I didn’t believe her. Cashback on mobile
                         recharge, online shopping, and even gas booking? It
@@ -208,8 +203,8 @@ const HomeSecond = () => {
                         by using just DashBack rather than any other digital
                         wallet. It's safe, convenient and so rewarding.
                       </p>
-                      <p class="card-text">
-                        <small class="text-muted">
+                      <p className="card-text">
+                        <small className="text-muted">
                           <img src={IMAGES_PATHTWO + "/Group 104 (1).png"} />
                         </small>
                       </p>
@@ -218,11 +213,11 @@ const HomeSecond = () => {
                 </div>
               </div>
               <div>
-                <div class="col mb-4 mt-1">
-                  <div class="card  shadow" style={{ width: "96%" }}>
+                <div className="col mb-4 mt-1">
+                  <div className="card  shadow" style={{ width: "96%" }}>
                     <div className="d-flex pt-4 ps-5">
                       <img
-                        class="card-img-top"
+                        className="card-img-top"
                         src={IMAGES_PATHTWO + "/Ellipse 29.png"}
                         style={{ width: "20%" }}
                         alt="Card image cap"
@@ -232,8 +227,8 @@ const HomeSecond = () => {
                         <p className="card_country">India</p>
                       </div>
                     </div>
-                    <div class="card-body ps-5 pe-5">
-                      <p class="card-text">
+                    <div className="card-body ps-5 pe-5">
+                      <p className="card-text">
                         I was tired of companies sending me cashback that I
                         would never be able to use. Searching for a better
                         alternative, I came across DashBack and I wasn’t
@@ -241,8 +236,8 @@ const HomeSecond = () => {
                         single transaction, but I can use that cashback without
                         spending any more money. Thank you, DashBack!
                       </p>
-                      <p class="card-text">
-                        <small class="text-muted">
+                      <p className="card-text">
+                        <small className="text-muted">
                           <img src={IMAGES_PATHTWO + "/Group 104 (1).png"} />
                         </small>
                       </p>
@@ -251,11 +246,11 @@ const HomeSecond = () => {
                 </div>
               </div>
               <div>
-                <div class="col mb-4 mt-1">
-                  <div class="card hover " style={{ width: "96%" }}>
+                <div className="col mb-4 mt-1">
+                  <div className="card hover " style={{ width: "96%" }}>
                     <div className="d-flex pt-4 ps-5">
                       <img
-                        class="card-img-top"
+                        className="card-img-top"
                         src={IMAGES_PATHTWO + "/Ellipse 29.png"}
                         style={{ width: "20%" }}
                         alt="Card image cap"
@@ -265,8 +260,8 @@ const HomeSecond = () => {
                         <p className="card_country">India</p>
                       </div>
                     </div>
-                    <div class="card-body ps-5 pe-5">
-                      <p class="card-text">
+                    <div className="card-body ps-5 pe-5">
+                      <p className="card-text">
                         DashBack is an awesome app to manage all my online
                         payment needs and even online shopping, which you don’t
                         get in most digital wallets out there. Along with
@@ -275,8 +270,8 @@ const HomeSecond = () => {
                         that too. This is truly the best digital wallet out
                         there.
                       </p>
-                      <p class="card-text">
-                        <small class="text-muted">
+                      <p className="card-text">
+                        <small className="text-muted">
                           <img src={IMAGES_PATHTWO + "/Group 104 (1).png"} />
                         </small>
                       </p>

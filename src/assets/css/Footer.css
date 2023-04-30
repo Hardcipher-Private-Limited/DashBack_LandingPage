@@ -1,8 +1,5 @@
-.containerss{
-    position: relative;
-}
+
 .FooterHeading{
-    position: relative;
     width: 100%;
 }
 .FooterHeading h2{
@@ -35,9 +32,9 @@ margin-left: 10px 10px 10px 10px;
     cursor: pointer;
 }
 .form-controls{
-    width: 400px;
+    width: 100%;
     padding: 10px;
-    margin-left: -40px;
+    margin-left: 0px;
     border: 1px solid #D9D9D9;
     border-radius: 9px;
 }
@@ -59,27 +56,18 @@ margin-left: 10px 10px 10px 10px;
         padding: 10px;
         text-align: center;
     }
-    .fotter_detailsss{
-
-    }
+   
     .detsilsFooter{
         padding: 40px;
     }
-    /* .footer_iconssss{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    } */
+ 
 
   }
   .detsilsFooter{
     display: flex !important;
     flex-wrap: wrap !important;
   }
-.rowa input {
 
-}
 .fOOTER_LOGO{
     display: flex;
 font-style: normal;
@@ -116,14 +104,12 @@ color: #717171;
  .lineWidth_top{
     margin-bottom: 50px;
     margin-top: 5px;
-    height: 0px;
     left: 98.5px;
     border: 1.5px solid #E9E9E9;  
  }
  .lineWidth{
     margin-bottom: 18px;
     margin-top: 50px;
-    height: 0px;
     left: 98.5px;
     border: 1.5px solid #E9E9E9;  
  }
@@ -157,7 +143,7 @@ color: #626060;
     .social_medai{
         bottom: 100px;
      display: flex;
-     left: -30px;
+     right: 5%;
         position: relative;
     }
     .footer_responsive{
@@ -165,7 +151,7 @@ color: #626060;
       position: absolute;
       text-align: center;
       justify-content: center;
-      padding-left: 20%;
+      padding-left: 5%;
     }
     .fotter_detailsss{
         display: flex;
