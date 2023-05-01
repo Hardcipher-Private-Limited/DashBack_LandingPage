@@ -250,7 +250,7 @@ letter-spacing: -0.333333px;
 
 /* wait befor you go  */
 .checkBOxx{
-  margin-right: 190px;
+  margin-right: 160px;
   margin-top: 5px;
   margin-bottom:5px ;
 }
@@ -336,8 +336,8 @@ color: #949494;
 
 .modal-boxs_mobile {
   margin-top: 70px !important;
-  width: 65%;
-  height: 70%;
+  width: 55%;
+  height: 60%;
   position: relative;
   z-index: 1000;
   padding: 5px 0px 0px 5px;

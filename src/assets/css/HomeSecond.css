@@ -324,7 +324,7 @@ font-size: 17px;
     width: 38%;
     border: 1px solid #D1D1D1;
     border-radius: 8px;
-    padding: 10px 40px 10px 40px;
+    padding: 10px 40px 10px 0px;
  }
  @media only screen and (min-width: 300px) and (max-width: 767px) {
     .control {
@@ -416,3 +416,19 @@ color: #161616;
       .swiper-slide {
         width: 300px;
       }
+
+
+      .search-icon {
+        position: relative;
+        top: 100%;
+        left: 2.5rem;
+        transform: translateY(-50%);
+        font-size: 1.25rem;
+        color: #ffffff;
+        
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 5 6'%3E%3Cpath fill='%23999' d='M15.7,14.3l-4-4c1-1.3,1.6-2.9,1.6-4.6C13.3,2.8,10.5,0,6.7,0S0.2,2.8,0.2,6.2s2.8,6.2,6.6,6.2c1.7,0,3.3-0.6,4.6-1.6l4,4c0.2,0.2,0.5,0.2,0.7,0l1.4-1.4C15.9,14.8,15.9,14.5,15.7,14.3z M6.7,10.5C4.5,10.5,2.8,8.8,2.8,6.2S4.5,1.9,6.7,1.9s3.9,1.7,3.9,4.3S8.9,10.5,6.7,10.5z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-size: 1.25rem;
+        padding: 2px 15px 2px  5px;
+      }
+      

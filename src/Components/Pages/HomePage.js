@@ -8,6 +8,7 @@ import AppDownloadPopUP from "../PopUp/AppDownloadPopUP";
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import LeavingPopUP from "../PopUp/LeavingPopUP";
 
 const HomePage = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -25,7 +26,6 @@ const HomePage = () => {
     Navigate("/premium");
   }
   const [showModal, setShowModal] = useState(false);
-  const [cashBackModel, setCashBackModel] = useState(false);
   const [show, setShow] = useState(false);
 
   function toggleModal() {
@@ -45,22 +45,6 @@ const HomePage = () => {
     setShowModal(false);
   };
 
-  useEffect(() => {
-    const handleBeforeUnload = (event) => {
-      event.preventDefault();
-      event.returnValue = "";
-      setCashBackModel(true);
-    };
-    window.addEventListener("beforeunload", handleBeforeUnload);
-
-    return () => {
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, []);
-
-  const cancle = () => {
-    setCashBackModel(false);
-  };
   // Model of PremiumPage
   const [isOpen, setIsOpen] = useState(false);
 
@@ -154,7 +138,6 @@ const HomePage = () => {
   return (
     <>
       <AppDownloadPopUP />
-      {/* {cashBackModel && <LeavingPopUP cancle={cancle} />} */}
       <div className="container pt-2">
         <div className="rupeeIcon">
           <img src={IMAGES_PATH + "/rupee 1.png"} />

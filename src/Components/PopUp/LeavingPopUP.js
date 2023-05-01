@@ -1,20 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../../assets/css/DownloadPopup.css";
 import {
   IMAGES_PATH_DOWNLOAD,
   IMAGES_PATH_POPUP,
 } from "../../Constants/ImagesConst";
-const LeavingPopUP = ({ hideModal }) => {
+const LeavingPopUP = ({ cancle }) => {
   return (
     <>
       <div className="modal-wrapper">
         <div className="modalBackdrop" />
-        <div className="modal-box" onClick={() => hideModal()}>
+        <div className="modal-box" onClick={() => cancle()}>
           <div className="cancle">
             <span>
               <img
                 src={IMAGES_PATH_POPUP + "/Cancle.png"}
-                onClick={() => hideModal()}
+                onClick={() => cancle()}
               />
             </span>
           </div>
@@ -22,21 +22,29 @@ const LeavingPopUP = ({ hideModal }) => {
             <div className="popup_logo">
               <img src={IMAGES_PATH_DOWNLOAD + "/DB_LOGO 1.PNG"} />
             </div>
-            <h1 className="pt-3">Wait, before you go</h1>
-            <p className="newsletter_text">Subscribe to our newsletter</p>
+            <h1 className="pt-3">Wait, before you go,</h1>
+            <p className="newsletter_text">subscribe to our newsletter</p>
             <div className="">
               <input
                 type="email"
                 className="input_for_email"
-                placeholder="Enter Your Email"
+                placeholder="Enter your email"
               />
             </div>
             <div class="checkBOxx ">
               <input type="checkbox" class="form-check-input" />
-              <label class="form-check-label">
-                I accept the{" "}
-                <span style={{ textDecoration: "underline" }}>Terms</span>&
-                <span style={{ textDecoration: "underline" }}> Conditions</span>
+              <label class="form-check-label" style={{ paddingLeft: "5px" }}>
+                I accept the
+                <span
+                  style={{ textDecoration: "underline" }}
+                  className="ps-1 pe-1"
+                >
+                  Terms{" "}
+                </span>{" "}
+                &
+                <span style={{ textDecoration: "underline" }} className="ps-1">
+                  Conditions
+                </span>
               </label>
             </div>
 
@@ -44,7 +52,6 @@ const LeavingPopUP = ({ hideModal }) => {
               <button
                 className="  m-1 Subscribe_button"
                 style={{ width: 370, marginLeft: 0 }}
-                onClick={() => hideModal()}
               >
                 Subscribe
               </button>

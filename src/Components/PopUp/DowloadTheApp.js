@@ -16,7 +16,9 @@ const DowloadTheApp = ({ hideModal }) => {
             </span>
           </div>
           <div className="moadl-content">
-            <h1>Enter your phone number to receive the link via SMS</h1>
+            <h1>
+              Enter your phone number to receive the download link via SMS
+            </h1>
             <div className="mt-4 INputs_responsive">
               <input
                 type="text"
@@ -25,7 +27,7 @@ const DowloadTheApp = ({ hideModal }) => {
               />
             </div>
             <div className="Send_button">
-              <button className="btn bg-dark text-white m-4">Send</button>
+              <button className="btn bg-dark text-white m-4">Get link</button>
             </div>
             <div className="logo">
               <span>

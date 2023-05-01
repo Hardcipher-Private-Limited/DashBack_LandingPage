@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Components/Pages/HomePage";
@@ -18,10 +18,31 @@ import { Helmet } from "react-helmet";
 import HomeSecond from "./Components/Pages/HomeSecond";
 import OurPartner from "./Components/Pages/OurPartner";
 import Card from "./Components/Pages/Card";
+import LeavingPopUP from "./Components/PopUp/LeavingPopUP";
 function App() {
+  const [cashBackModel, setCashBackModel] = useState(false);
+
+  useEffect(() => {
+    const handleBeforeUnload = (event) => {
+      event.preventDefault();
+      event.returnValue = "";
+      setCashBackModel(true);
+    };
+    window.addEventListener("beforeunload", handleBeforeUnload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
+
+  const cancle = () => {
+    setCashBackModel(false);
+  };
+
   return (
     <>
       <BrowserRouter>
+        {cashBackModel && <LeavingPopUP cancle={cancle} />}
         <NavBar />
         <Helmet>
           <title>
@@ -36,7 +57,7 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/downloadapp" element={<DownloadPage />} />
-          <Route path="/contect" element={<ContectUS />} />
+          <Route path="/contact_us" element={<ContectUS />} />
           <Route path="/blogs" element={<BlogsPage />} />
           <Route path="/card/:index" element={<Card />} />
           <Route path="/career" element={<Career />} />

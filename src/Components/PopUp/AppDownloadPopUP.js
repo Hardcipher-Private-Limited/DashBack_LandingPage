@@ -42,7 +42,7 @@ const AppDownloadPopUP = () => {
                 </div>
                 <div className="col-lg-6 text-center right_order_icon">
                   <div className="pupUP-text">
-                    <h1>Download Mobile App</h1>
+                    <h1>Download the mobile app</h1>
                     <div
                     // style={{ marginTop: 29, marginBottom: 29 }}
                     >

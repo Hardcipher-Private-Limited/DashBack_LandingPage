@@ -24,6 +24,26 @@ const BlogsPage = () => {
     const endIndex = startIndex + ITEMS_PER_PAGE;
     setDisplayData(Data.slice(startIndex, endIndex));
   };
+  function handleCardss(index) {
+    window.scrollTo(0, 0);
+    Navigate(`/card/${index}`);
+  }
+  function handleInput(event) {
+    const inputElement = document.getElementById("searchInput");
+
+    if (event.target.value.length > 0) {
+      inputElement.style.backgroundImage = "none";
+      inputElement.style.paddingLeft = "20px";
+    } else {
+      inputElement.style.backgroundImage = `url('/Images/HomeSecond/_Compound Path_.png')`;
+      inputElement.style.backgroundPosition = "left 10px center";
+      inputElement.style.backgroundRepeat = "no-repeat";
+      inputElement.style.paddingLeft = "12px";
+    }
+  }
+
+  // search input
+
   return (
     <>
       <Helmet>
@@ -44,11 +64,24 @@ const BlogsPage = () => {
               <h1>Blogs</h1>
               <div className="input_responsive">
                 <input
-                  type="search"
-                  placeholder="Search"
-                  className="form-control controlss"
+                  type="text"
+                  placeholder="     Search"
+                  className="controlss form-control"
+                  style={{
+                    backgroundImage: `url('/Images/HomeSecond/_Compound Path_.png')`,
+                    backgroundPosition: "left 9px center",
+                    backgroundRepeat: "no-repeat",
+                    backgroundSize: "15px",
+                  }}
+                  id="searchInput"
+                  onInput={handleInput}
                 />
               </div>
+              {/* <ol>
+                {filteredNames.map((name) => (
+                  <li key={name}>{name}</li>
+                ))}
+              </ol> */}
             </div>
           </div>
           <div className="col-lg-3"></div>

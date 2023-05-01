@@ -7,7 +7,6 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Data } from "../MockData/Blogs";
-// import "./styles.css";
 
 const HomeSecond = () => {
   const Navigate = useNavigate();
@@ -102,6 +101,18 @@ const HomeSecond = () => {
   function handleCardss(index) {
     window.scrollTo(0, 0);
     Navigate(`/card/${index}`);
+  }
+  function handleInput(event) {
+    const inputElement = document.getElementById("searchInput");
+    if (event.target.value.length > 0) {
+      inputElement.style.backgroundImage = "none";
+      inputElement.style.paddingLeft = "15px";
+    } else {
+      inputElement.style.backgroundImage = `url('/Images/HomeSecond/_Compound Path_.png')`;
+      inputElement.style.backgroundPosition = "left 10px center";
+      inputElement.style.backgroundRepeat = "no-repeat";
+      inputElement.style.paddingLeft = "5px";
+    }
   }
   return (
     <>
@@ -290,8 +301,22 @@ const HomeSecond = () => {
           <h6>Have questions? We’re here to help.</h6>
         </div>
         <div className="text-center p-4">
-          <input type="text" placeholder="Search" className="control" />
+          {/* <input type="text" placeholder=" 🔍 Search" className="control" /> */}
+          <input
+            type="text"
+            placeholder="        Search"
+            className="control with-icon"
+            style={{
+              backgroundImage: `url('/Images/HomeSecond/_Compound Path_.png')`,
+              backgroundPosition: "left 9px center",
+              backgroundRepeat: "no-repeat",
+              backgroundSize: "15px",
+            }}
+            id="searchInput"
+            onInput={handleInput}
+          />
         </div>
+
         <div className="col-lg-12">
           <div className="Questions_text pt-2">
             <div>

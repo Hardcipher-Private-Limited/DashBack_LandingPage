@@ -6,7 +6,7 @@ const Footer = () => {
   const Navigate = useNavigate();
   function handleContect() {
     window.scrollTo(0, 0);
-    Navigate("./Contect");
+    Navigate("./contact_us");
   }
   function handleCareer() {
     window.scrollTo(0, 0);
