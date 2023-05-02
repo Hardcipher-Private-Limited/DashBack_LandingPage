@@ -3,6 +3,7 @@ import "../../assets/css/singleCard.css";
 
 export const Data = [
   {
+    url_name: "Digital_Payment_Options:_A_Comparison_of_the_Top_Providers",
     name: "Gayatri Singh",
     date: "15 March, 2023",
     text: "Gayatri Singh",
@@ -125,6 +126,9 @@ export const Data = [
       "In conclusion, each of these digital payment providers has its own advantages and disadvantages. Users should choose the one that best suits their needs based on factors such as the services offered, transaction fees, and availability.",
   },
   {
+    url_name:
+      "Why_Digital_Payments_Are_the_Future:_The_Advantages_of_Using_DashBack",
+
     name: " Ankit Kumar",
     date: "  27 March, 2023",
     text: " Ankit Kumar",
@@ -248,6 +252,8 @@ export const Data = [
   },
 
   {
+    url_name:
+      "Transform_Your_Online_Store_into_a_Profitable_Business_with_These_7_E-Commerce_Best_Practices",
     name: " Ankit Kumar",
     date: "  4 April, 2023",
     text: " Ankit Kumar",
@@ -367,6 +373,7 @@ export const Data = [
     ),
   },
   {
+    url_name: "Investment_Strategies_You_Need_to_Know_for_Financial_Success",
     name: " Ankit Kumar",
     date: "  15 April, 2023",
     text: " Ankit Kumar",

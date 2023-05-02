@@ -11,12 +11,11 @@ const BlogsPage = () => {
   const Navigate = useNavigate();
   function handleCard(index) {
     window.scrollTo(0, 0);
-    Navigate(`/card/${index}`);
+    // Navigate(`/card/${displayData[index].name}`);
+    Navigate(`/card/${index}/${displayData[index].url_name}`);
   }
   const [currentPage, setCurrentPage] = useState(1);
   const [displayData, setDisplayData] = useState(Data.slice(0, ITEMS_PER_PAGE));
-
-  // console.log(totalPages);
 
   const handlePageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
@@ -24,25 +23,78 @@ const BlogsPage = () => {
     const endIndex = startIndex + ITEMS_PER_PAGE;
     setDisplayData(Data.slice(startIndex, endIndex));
   };
-  function handleCardss(index) {
-    window.scrollTo(0, 0);
-    Navigate(`/card/${index}`);
-  }
-  function handleInput(event) {
+
+  function handleInput(e) {
     const inputElement = document.getElementById("searchInput");
 
-    if (event.target.value.length > 0) {
+    if (e.target.value.length > 0) {
       inputElement.style.backgroundImage = "none";
       inputElement.style.paddingLeft = "20px";
     } else {
       inputElement.style.backgroundImage = `url('/Images/HomeSecond/_Compound Path_.png')`;
       inputElement.style.backgroundPosition = "left 10px center";
       inputElement.style.backgroundRepeat = "no-repeat";
-      inputElement.style.paddingLeft = "12px";
+      inputElement.style.paddingLeft = "20px";
     }
   }
 
   // search input
+
+  const [query, setQuery] = useState("");
+  const [selectedIdx, setSelectedIdx] = useState(-1);
+
+  const filteredData = Data.filter((item) =>
+    item.name.toLowerCase().includes(query.toLowerCase())
+  );
+
+  // const selectedData = selectedIdx !== -1 ? Data[selectedIdx] : null;
+
+  const suggestion =
+    query.length > 0 ? (
+      <div className="map_for_sarch">
+        {filteredData.map((item, index) => (
+          <div
+            key={index}
+            onClick={() => handleCard(index)}
+            className={index === selectedIdx ? "selected" : ""}
+          >
+            {item.main_head}
+          </div>
+        ))}
+      </div>
+    ) : null;
+
+  // const suggestion =
+  //   query.length > 0 ? (
+  //     <div className="map_for_sarch">
+  //       {filteredData.map((item, index) => {
+  //         const words = item.main_head.split(" ");
+  //         return (
+  //           <div
+  //             key={index}
+  //             onClick={() => handleCard(index)}
+  //             className={index === selectedIdx ? "selected" : ""}
+  //           >
+  //             {words.map((word, i) => {
+  //               const lowerCaseWord = word.toLowerCase();
+  //               if (lowerCaseWord.includes(query.toLowerCase())) {
+  //                 const startIndex = lowerCaseWord.indexOf(query.toLowerCase());
+  //                 const endIndex = startIndex + query.length;
+  //                 const match = word.substring(startIndex, endIndex);
+  //                 return (
+  //                   <span key={i} className="match">
+  //                     {match}
+  //                   </span>
+  //                 );
+  //               } else {
+  //                 return <span key={i}>{word}</span>;
+  //               }
+  //             })}
+  //           </div>
+  //         );
+  //       })}
+  //     </div>
+  //   ) : null;
 
   return (
     <>
@@ -62,7 +114,13 @@ const BlogsPage = () => {
           <div className="col-lg-6 blogs_text_input">
             <div className="blogs-text m-5">
               <h1>Blogs</h1>
-              <div className="input_responsive">
+              <div
+                className="input_responsive"
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  setSelectedIdx(-1);
+                }}
+              >
                 <input
                   type="text"
                   placeholder="     Search"
@@ -75,13 +133,11 @@ const BlogsPage = () => {
                   }}
                   id="searchInput"
                   onInput={handleInput}
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
                 />
               </div>
-              {/* <ol>
-                {filteredNames.map((name) => (
-                  <li key={name}>{name}</li>
-                ))}
-              </ol> */}
+              {suggestion}
             </div>
           </div>
           <div className="col-lg-3"></div>

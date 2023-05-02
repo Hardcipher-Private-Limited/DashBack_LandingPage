@@ -59,7 +59,7 @@ function App() {
           <Route path="/downloadapp" element={<DownloadPage />} />
           <Route path="/contact_us" element={<ContectUS />} />
           <Route path="/blogs" element={<BlogsPage />} />
-          <Route path="/card/:index" element={<Card />} />
+          <Route path="/card/:index/:name" element={<Card />} />
           <Route path="/career" element={<Career />} />
           <Route path="/digitalPayment" element={<DigitalPayment />} />
           <Route path="/premium" element={<PremiumPage />} />

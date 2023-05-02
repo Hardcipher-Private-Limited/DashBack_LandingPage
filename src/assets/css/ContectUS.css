@@ -164,5 +164,18 @@ color: #393939;
   }
   
 
-  
-  
+  .map_for_sarch {
+    font-size: 15px;
+    position: relative;
+    font-weight: 500;
+    color: #393939;
+    cursor: pointer;
+    line-height: 30px;
+ 
+  }
+  .map_for_sarch div{
+    border-bottom: 1px solid rgb(156, 156, 156);
+  }
+  .map_for_sarch div:hover{
+    background-color: rgb(242, 242, 242);
+  }
