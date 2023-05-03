@@ -82,7 +82,7 @@ const Footer = () => {
             <div className="fOOTER_LOGO" onClick={handleHome}>
               <img
                 src={IMAGES_PATH_FOOTER + "/DB_LOGO 1.png"}
-                style={{ width: 50, height: 40 }}
+                style={{ width: "25%" }}
               />
               <span>DASHBACK</span>
             </div>

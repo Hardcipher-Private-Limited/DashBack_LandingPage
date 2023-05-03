@@ -146,12 +146,12 @@ const BlogsPage = () => {
           {displayData.map((Data, index) => (
             <div
               key={index}
-              className="card all_card_blogs"
+              className="card all_card_blogs "
               onClick={() => handleCard(index)}
             >
               <img src={Data.imgSrc} />
-              <div>
-                <span className="pt-0 pb-0 ">{Data.date}</span>
+              <div className="p-3">
+                {/* <span className="pt-0 pb-0 ">{Data.date}</span> */}
                 <div
                   style={{
                     display: "flex",
@@ -159,7 +159,7 @@ const BlogsPage = () => {
                     paddingTop: "5px",
                   }}
                 >
-                  <p className="card_head_text p-0">{Data.text}</p>
+                  <p className="card_head_text ">{Data.main_head}</p>
                   <p>
                     <img
                       src={IMAGES_PATH_BLOGS + "/Line 4 (1).png"}
@@ -172,7 +172,6 @@ const BlogsPage = () => {
             </div>
           ))}
         </div>
-        {/* <div>{Data.paragraph}</div> */}
       </div>
       <div className="text-center">
         {Array.from({ length: totalPages }).map((_, index) => (

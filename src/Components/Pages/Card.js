@@ -9,7 +9,10 @@ const Card = () => {
   const blogPostData = Data[parseInt(index)];
 
   return (
-    <div className="container">
+    <div
+      className="container container_two"
+      // style={{ marginLeft: "150px", marginRight: "150px" }}
+    >
       <div className="text-center pt-5 ">
         <img src={blogPostData?.imgSrc} className="card_imggg" />
       </div>
@@ -63,10 +66,10 @@ const Card = () => {
       <div className="pargram_head">{blogPostData?.Introduction}</div>
       <div className="all_text">{blogPostData?.Introduction_text}</div>
       <div>
-        <span className="pargram_head">{blogPostData?.Paytm}</span>
-        <span>
+        <span className="pargram_head  ">{blogPostData?.Paytm}</span>
+        {/* <span>
           <img src={blogPostData?.PaytmImg} style={{ width: "10%" }} />
-        </span>
+        </span> */}
       </div>
       <div className="all_text">{blogPostData?.payment_text}</div>
       <div className="">{blogPostData?.payment_text1}</div>
@@ -79,9 +82,9 @@ const Card = () => {
       <div className="all_text">{blogPostData?.phonepay_sub}</div>
       <div className="googlepay_text">{blogPostData?.blogs_extra_1}</div>
       <div className="googlepay_text">{blogPostData?.blogs_extra_2}</div>
-      <div className="pargram_head"> {blogPostData?.Advantages}</div>
+      <div className="pargram_head_2"> {blogPostData?.Advantages}</div>
       <div className="all_text">{blogPostData?.Advantages_text1}</div>
-      <div className="pargram_head">{blogPostData?.Disadvantages}</div>
+      <div className="pargram_head_2">{blogPostData?.Disadvantages}</div>
       <div className="all_text pt-0">{blogPostData?.Disadvantages1}</div>
       <div>
         <span className="pargram_head">{blogPostData?.phonepay}</span>
@@ -91,9 +94,9 @@ const Card = () => {
       </div>
 
       <div className="all_text">{blogPostData?.phonepay_text}</div>
-      <div className="pargram_head"> {blogPostData?.Advantages}</div>
+      <div className="pargram_head_2"> {blogPostData?.Advantages}</div>
       <div className="all_text pt-0">{blogPostData?.Advantages_text1}</div>
-      <div className="pargram_head">{blogPostData?.Disadvantages}</div>
+      <div className="pargram_head_2">{blogPostData?.Disadvantages}</div>
       <div className="all_text pt-0">{blogPostData?.Disadvantages1}</div>
 
       <div className="googlepay_text">{blogPostData?.GooglePay_text}</div>
@@ -104,9 +107,9 @@ const Card = () => {
         </span>
       </div>
       <div className="all_text">{blogPostData?.GooglePay_pargrph}</div>
-      <div className="pargram_head">{blogPostData?.GooglePay_Advantages}</div>
+      <div className="pargram_head_2">{blogPostData?.GooglePay_Advantages}</div>
       <div className="all_text pt-0">{blogPostData?.GooglePay_Advantage1}</div>
-      <div className="pargram_head ">
+      <div className="pargram_head_2 ">
         {blogPostData?.GooglePay_Disadvantages}
       </div>
       <div className="all_text pt-0">
@@ -119,37 +122,43 @@ const Card = () => {
         </span>
       </div>
       <div className="all_text">{blogPostData?.AmazonPay_text}</div>
-      <div className="pargram_head"> {blogPostData?.Advantages}</div>
+      <div className="pargram_head_2"> {blogPostData?.Advantages}</div>
       <div className="all_text pt-0">{blogPostData?.Advantages_text1}</div>
-      <div className="pargram_head ">
+      <div className="pargram_head_2 ">
         {blogPostData?.GooglePay_Disadvantages}
       </div>
       <div className="all_text pt-0">
         {blogPostData?.GooglePay_Disadvantages1}
       </div>
       <div
-        style={{
-          // display: "flex",
-          alignItems: "center",
-          gap: "30px",
-          paddingTop: "0px",
-        }}
+        style={
+          {
+            // alignItems: "center",
+            // gap: "30px",
+            // paddingTop: "0px",
+          }
+        }
       >
-        <span className="pargram_head " style={{ float: "left" }}>
+        <span
+          className=""
+          //  style={{ float: "left" }}
+        >
           {blogPostData?.DashBack}
         </span>
         <span className="">
           <img
-            src={blogPostData?.DashBackImg}
-            style={{ width: "10%", paddingTop: "10px", paddingLeft: "20px" }}
+          // src={blogPostData?.DashBackImg}
+          // style={{ width: "10%", paddingTop: "10px", paddingLeft: "20px" }}
           />
         </span>
       </div>
       <div className="all_text">{blogPostData?.DashBack_text}</div>
       <div className="all_text">{blogPostData?.DashBack_text1}</div>
-      <div className="pargram_head">{blogPostData?.DashBack_Advantages}</div>
+      <div className="pargram_head_2">{blogPostData?.DashBack_Advantages}</div>
       <div className="all_text pt-0">{blogPostData?.DashBack_Advantages1}</div>
-      <div className="pargram_head">{blogPostData?.DashBack_Disadvantages}</div>
+      <div className="pargram_head_2">
+        {blogPostData?.DashBack_Disadvantages}
+      </div>
       <div className="all_text pt-0">
         {blogPostData?.DashBack_Disadvantages1}
       </div>

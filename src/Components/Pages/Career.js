@@ -73,7 +73,7 @@ const Career = () => {
                   className="form-control"
                 />
               </div>
-              <div className="col-lg-6 mt-4">
+              {/* <div className="col-lg-6 mt-4">
                 <label>
                   Subject<span>*</span>
                 </label>
@@ -82,7 +82,7 @@ const Career = () => {
                   placeholder="Add subject"
                   className="form-control"
                 />
-              </div>
+              </div> */}
               <div className="col-lg-6 mt-4">
                 <label>
                   Upload file<span>*</span>

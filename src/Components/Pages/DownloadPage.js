@@ -24,7 +24,7 @@ const DownloadPage = () => {
         </title>
         <meta
           name="description"
-          content=" Get cashback on all your purchases with our easy-to-use app. Shop at your favorite stores and earn real cashback. Download our app today."
+          content="Get cashback on all your purchases with our easy-to-use app. Shop at your favorite stores and earn real cashback. Download our app today."
         />
       </Helmet>
       {displayModal && <DowloadTheApp hideModal={hideModal} />}

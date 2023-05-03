@@ -18,9 +18,9 @@ const LeavingPopUP = ({ cancle }) => {
               />
             </span>
           </div>
-          <div className="moadl-content">
+          <div className="moadl-content ">
             <div className="popup_logo">
-              <img src={IMAGES_PATH_DOWNLOAD + "/DB_LOGO 1.PNG"} />
+              <img src={IMAGES_PATH_DOWNLOAD + "/DB_LOGO 1.png"} />
             </div>
             <h1 className="pt-3">Wait, before you go,</h1>
             <p className="newsletter_text">subscribe to our newsletter</p>

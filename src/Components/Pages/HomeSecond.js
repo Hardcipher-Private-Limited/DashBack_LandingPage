@@ -97,10 +97,9 @@ const HomeSecond = () => {
     window.scrollTo(0, 0);
     Navigate("/digitalPayment");
   }
-
   function handleCardss(index) {
     window.scrollTo(0, 0);
-    Navigate(`/card/${index}`);
+    Navigate(`/card/${index}/${Data[index].url_name}`);
   }
   function handleInput(event) {
     const inputElement = document.getElementById("searchInput");
@@ -146,7 +145,7 @@ const HomeSecond = () => {
             >
               <img src={Data.imgSrc} className="images__Card__top" />
               <div className="p-3">
-                <span className="pt-2 pb-2 p-1">{Data.date}</span>
+                {/* <span className="pt-2 pb-2 p-1">{Data.date}</span> */}
                 <div
                   className="p-1"
                   style={{
@@ -155,7 +154,7 @@ const HomeSecond = () => {
                     paddingTop: "10px",
                   }}
                 >
-                  <p className="card_head_text p-0">{Data.name} </p>
+                  <p className="card_head_text p-0">{Data.main_head} </p>
                   <p className="arrow_mark">
                     <img
                       src={IMAGES_PATH_BLOGS + "/Line 4 (1).png"}
@@ -182,16 +181,16 @@ const HomeSecond = () => {
 
       {/* what our clint say */}
 
-      <div className="container mb-5">
+      <div className="container-fluid mb-5">
         <div className="clint_section">
           <div className="Clint_heading">What Our Clients Say</div>
         </div>
-        <div className="container  container_padding ">
-          <div className="row " style={{ display: "flex", gap: "0px" }}>
+        <div className="container-fluid  container_padding ">
+          <div className="row " style={{ display: "flex", gap: "10px" }}>
             <Slider {...settings}>
               <div>
-                <div className="col mb-4 ms-1">
-                  <div className="card hover " style={{ width: "96%" }}>
+                <div className="col mb-4 ms-1 mt-1">
+                  <div className="card hover " style={{ width: "97%" }}>
                     <div className="main__card  pt-4 ps-5">
                       <img
                         className="card-img-top"
@@ -234,39 +233,6 @@ const HomeSecond = () => {
                         alt="Card image cap"
                       />
                       <div className="card_name ps-3">
-                        <span>Shivank Varshney</span>
-                        <p className="card_country">India</p>
-                      </div>
-                    </div>
-                    <div className="card-body ps-5 pe-5">
-                      <p className="card-text">
-                        I was tired of companies sending me cashback that I
-                        would never be able to use. Searching for a better
-                        alternative, I came across DashBack and I wasn’t
-                        disappointed. Not only do I get cash back on every
-                        single transaction, but I can use that cashback without
-                        spending any more money. Thank you, DashBack!
-                      </p>
-                      <p className="card-text">
-                        <small className="text-muted">
-                          <img src={IMAGES_PATHTWO + "/Group 104 (1).png"} />
-                        </small>
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className="col mb-4 mt-1">
-                  <div className="card hover " style={{ width: "96%" }}>
-                    <div className="d-flex pt-4 ps-5">
-                      <img
-                        className="card-img-top"
-                        src={IMAGES_PATHTWO + "/Ellipse 29.png"}
-                        style={{ width: "20%" }}
-                        alt="Card image cap"
-                      />
-                      <div className="card_name ps-3">
                         <span>Sagar Dhama</span>
                         <p className="card_country">India</p>
                       </div>
@@ -290,6 +256,39 @@ const HomeSecond = () => {
                   </div>
                 </div>
               </div>
+              <div>
+                <div className="col mb-4 mt-1">
+                  <div className="card hover " style={{ width: "96%" }}>
+                    <div className="d-flex pt-4 ps-5">
+                      <img
+                        className="card-img-top"
+                        src={IMAGES_PATHTWO + "/Ellipse 29.png"}
+                        style={{ width: "20%" }}
+                        alt="Card image cap"
+                      />
+                      <div className="card_name ps-3">
+                        <span> Shivank Varshney</span>
+                        <p className="card_country">India</p>
+                      </div>
+                    </div>
+                    <div className="card-body ps-5 pe-5">
+                      <p className="card-text">
+                        I was tired of companies sending me cashback that I
+                        would never be able to use. Searching for a better
+                        alternative, I came across DashBack and I wasn’t
+                        disappointed. Not only do I get cash back on every
+                        single transaction, but I can use that cashback without
+                        spending any more money. Thank you, DashBack!
+                      </p>
+                      <p className="card-text">
+                        <small className="text-muted">
+                          <img src={IMAGES_PATHTWO + "/Group 104 (1).png"} />
+                        </small>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </Slider>
           </div>
         </div>
@@ -301,7 +300,6 @@ const HomeSecond = () => {
           <h6>Have questions? We’re here to help.</h6>
         </div>
         <div className="text-center p-4">
-          {/* <input type="text" placeholder=" 🔍 Search" className="control" /> */}
           <input
             type="text"
             placeholder="        Search"

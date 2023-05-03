@@ -34,13 +34,13 @@ const AppDownloadPopUP = () => {
               </span>
             </div>
             <div className="moadl-content ">
-              <div className="col-lg-12 pt-4 row">
-                <div className="col-lg-6 left_order_icon">
+              <div className="col-md-12 pt-4 row">
+                <div className="col-md-6 left_order_icon">
                   <div className="popup_phone">
                     <img src={IMAGES_PATH_DOWNLOAD + "/popup 1.png"} />
                   </div>
                 </div>
-                <div className="col-lg-6 text-center right_order_icon">
+                <div className="col-md-6 text-center right_order_icon ">
                   <div className="pupUP-text">
                     <h1>Download the mobile app</h1>
                     <div

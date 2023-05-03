@@ -19,8 +19,10 @@ import HomeSecond from "./Components/Pages/HomeSecond";
 import OurPartner from "./Components/Pages/OurPartner";
 import Card from "./Components/Pages/Card";
 import LeavingPopUP from "./Components/PopUp/LeavingPopUP";
+import DowloadTheApp from "./Components/PopUp/DowloadTheApp";
+import AppDownloadPopUP from "./Components/PopUp/AppDownloadPopUP";
 function App() {
-  const [cashBackModel, setCashBackModel] = useState(false);
+  const [cashBackModel, setCashBackModel] = useState(true);
 
   useEffect(() => {
     const handleBeforeUnload = (event) => {
@@ -44,6 +46,7 @@ function App() {
       <BrowserRouter>
         {cashBackModel && <LeavingPopUP cancle={cancle} />}
         <NavBar />
+        {/* <AppDownloadPopUP /> */}
         <Helmet>
           <title>
             Shop Smarter and Save More with DashBack: The Cashback App

@@ -3,19 +3,22 @@ import "../../assets/css/singleCard.css";
 
 export const Data = [
   {
-    url_name: "Digital_Payment_Options:_A_Comparison_of_the_Top_Providers",
+    url_name: "Digital_Payment_Options",
     name: "Gayatri Singh",
     date: "15 March, 2023",
     text: "Gayatri Singh",
     paragraph:
       "This article compares the top digital payment providers, including Paytm, PhonePe, Google Pay, and DashBack.",
-    imgSrc: IMAGES_PATH_BLOGS + "/blog.png",
+    imgSrc: IMAGES_PATH_BLOGS + "/DashBack_digital_payment.png",
     main_head: "Digital Payment Options: A Comparison of the Top Providers",
     Introduction: "Introduction :",
     Introduction_text:
       "In recent years, digital payment options have become increasingly popular in India, with many providers offering users a variety of services. In this article, we will compare some of the top digital payment providers in India and explore their features, advantages, and disadvantages. The features we explore will be broadly categorized under digital payment, cashback, and eCommerce.",
-    Paytm: "Paytm:",
-    PaytmImg: IMAGES_PATH_BLOGS + "/4.png",
+    Paytm: <div style={{ paddingTop: "20px" }}>Paytm:</div>,
+
+    // PaytmImg: IMAGES_PATH_BLOGS + "/www.dashack.in.png",
+    // PaytmImg: IMAGES_PATH_BLOGS + "/4.png",
+
     payment_text:
       "The first to disrupt the digital payment market, Paytm is one of the most popular digital payment providers in India, with over 350 million registered users. It offers a wide range of services including mobile recharges, bill payments, and online shopping. Paytm also offers users a digital wallet that allows users to store money and make transactions easily.Paytm’s user interface is basic and to the point, with little to no regard given to user experience. It does have fast and secure transactions and offers cashback to its users, but the cashback offered is almost negligible and has too many strings attached. Along with that, it charges platform and transaction fees, thereby increasing the cost of transactions. Reaching out to customer service is also difficult; the representatives are too slow to respond.",
     Advantages: "Advantages",
@@ -36,7 +39,7 @@ export const Data = [
       </ul>
     ),
     phonepay: "PhonePe",
-    PhonepayImg: IMAGES_PATH_BLOGS + "/2.png",
+    // PhonepayImg: IMAGES_PATH_BLOGS + "/2.png",
     phonepay_text: (
       <div>
         "PhonePe is another popular digital payment provider in India, with over
@@ -51,7 +54,7 @@ export const Data = [
       </div>
     ),
     GooglePay_text: (
-      <div>
+      <div className="mt-4 mb-4">
         Get cashback on all your purchases with Dashback!{" "}
         <a style={{ color: "blue", textDecoration: "underline" }}>
           Download the app now
@@ -60,7 +63,7 @@ export const Data = [
       </div>
     ),
     GooglePay: "Google Pay:",
-    GooglePayImg: IMAGES_PATH_BLOGS + "/1.png",
+    // GooglePayImg: IMAGES_PATH_BLOGS + "/1.png",
     GooglePay_pargrph: (
       <div>
         Google Pay is a digital payment provider that has gained popularity in
@@ -96,15 +99,20 @@ export const Data = [
     ),
 
     AmazonPay: "Amazon Pay:",
-    AmazonPayImg: IMAGES_PATH_BLOGS + "/3.png",
+    // AmazonPayImg: IMAGES_PATH_BLOGS + "/3.png",
     AmazonPay_text:
       "Amazon Pay is a digital payment provider offered by Amazon, one of the world's largest e-commerce companies. It offers a variety of services, including mobile recharges, bill payments, and online shopping. Amazon Pay also offers a digital wallet that allows users to store money and make transactions easily. It boasts features no different than what the other providers offer, and much like the other providers, the transaction fees charged by Amazon Pay are not conducive to the growth of savings",
 
     DashBack: (
-      <div style={{ color: "blue", textDecoration: "underline" }}>DashBack</div>
+      <div
+        style={{ color: "blue", textDecoration: "underline" }}
+        className="dashback_head"
+      >
+        DashBack
+      </div>
     ),
-    DashBackImg: IMAGES_PATH_BLOGS + "/DB_LOGO 1.png",
-    DashBack_text: "DashBack digital payment",
+    // DashBackImg: IMAGES_PATH_BLOGS + "/DB_LOGO 1.png",
+    // DashBack_text: "DashBack digital payment",
     DashBack_text1:
       "As the latest to storm the digital payments market, DashBack has been quick to overthrow its competitors in terms of cashback offered. This platform offers its users real, usable cashback on every transaction. The in-app services rival those of any other platform, giving DashBack an edge over its competitors. The app also does not charge any platform fees, and the founders claim that it never will. So, this platform does indeed promote savings.",
     DashBack_Advantages: "Advantages:",
@@ -126,8 +134,7 @@ export const Data = [
       "In conclusion, each of these digital payment providers has its own advantages and disadvantages. Users should choose the one that best suits their needs based on factors such as the services offered, transaction fees, and availability.",
   },
   {
-    url_name:
-      "Why_Digital_Payments_Are_the_Future:_The_Advantages_of_Using_DashBack",
+    url_name: "Why_Digital_Payments",
 
     name: " Ankit Kumar",
     date: "  27 March, 2023",
@@ -136,7 +143,7 @@ export const Data = [
       "Why Digital Payments Are the Future: The Advantages of Using DashBack",
     paragraph:
       "Digital payments are the future of transactions, and DashBack offers a range of advantages to those who use it.",
-    imgSrc: IMAGES_PATH_BLOGS + "/digital payment in india.png",
+    imgSrc: IMAGES_PATH_BLOGS + "/Digital_payments_are_the_future.png",
     Introduction_text:
       "Digital payments offer numerous advantages over traditional payment methods. This makes them the future of payments all over the world. ",
     Paytm: "Why are digital payments the future?",
@@ -252,14 +259,13 @@ export const Data = [
   },
 
   {
-    url_name:
-      "Transform_Your_Online_Store_into_a_Profitable_Business_with_These_7_E-Commerce_Best_Practices",
+    url_name: "E-Commerce_Best_Practices",
     name: " Ankit Kumar",
     date: "  4 April, 2023",
     text: " Ankit Kumar",
     paragraph:
       "Looking to turn your online store into a profitable business? Check out these e-commerce best practices to help boost your sales and grow.",
-    imgSrc: IMAGES_PATH_BLOGS + "/boost your sales.png",
+    imgSrc: IMAGES_PATH_BLOGS + "/E Commerce.png",
     main_head:
       "Transform Your Online Store into a Profitable Business with These 7  E-Commerce Best Practices",
     Introduction_text:
@@ -373,13 +379,13 @@ export const Data = [
     ),
   },
   {
-    url_name: "Investment_Strategies_You_Need_to_Know_for_Financial_Success",
+    url_name: "Investment_Strategies",
     name: " Ankit Kumar",
     date: "  15 April, 2023",
     text: " Ankit Kumar",
     paragraph:
       "Looking to achieve financial success through investments? Here are 10 investment strategies that you should know.",
-    imgSrc: IMAGES_PATH_BLOGS + "/financial success.png",
+    imgSrc: IMAGES_PATH_BLOGS + "/Investment Strategies.png",
     main_head: " Investment Strategies You Need to Know for Financial Success",
     Introduction_text:
       "Investing some of your earnings is a crucial aspect of achieving financial success. However, with so many investment strategies available, it can be overwhelming to determine which one is the best for you.",
