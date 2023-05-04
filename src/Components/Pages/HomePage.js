@@ -19,7 +19,7 @@ const HomePage = () => {
   }
   function handleDigitalPage() {
     window.scrollTo(0, 0);
-    Navigate("/digitalPayment");
+    Navigate("/digital_payment_options");
   }
   function handlePremium() {
     window.scrollTo(0, 0);

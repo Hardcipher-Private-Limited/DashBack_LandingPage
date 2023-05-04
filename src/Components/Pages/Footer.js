@@ -14,15 +14,15 @@ const Footer = () => {
   }
   function handlePrivancy() {
     window.scrollTo(0, 0);
-    Navigate("/privacy");
+    Navigate("/privacy_policy");
   }
   function handleTerms() {
     window.scrollTo(0, 0);
-    Navigate("/terms&condition");
+    Navigate("/terms_condition");
   }
   function handleAbout() {
     window.scrollTo(0, 0);
-    Navigate("/aboutus");
+    Navigate("/about_us");
   }
   function handleTutorial() {
     window.scrollTo(0, 0);
@@ -41,7 +41,7 @@ const Footer = () => {
   }
   function handlepartners() {
     window.scrollTo(0, 0);
-    Navigate("/ourpartners");
+    Navigate("/our_partners");
   }
   return (
     <>

@@ -64,13 +64,13 @@ function App() {
           <Route path="/blogs" element={<BlogsPage />} />
           <Route path="/card/:index/:name" element={<Card />} />
           <Route path="/career" element={<Career />} />
-          <Route path="/digitalPayment" element={<DigitalPayment />} />
+          <Route path="/digital_payment_options" element={<DigitalPayment />} />
           <Route path="/premium" element={<PremiumPage />} />
-          <Route path="/privacy" element={<PrivacyPolicy />} />
-          <Route path="/terms&condition" element={<TermsAndCondition />} />
-          <Route path="/aboutus" element={<AboutUS />} />
+          <Route path="/privacy_policy" element={<PrivacyPolicy />} />
+          <Route path="/terms_condition" element={<TermsAndCondition />} />
+          <Route path="/about_us" element={<AboutUS />} />
           <Route path="/tutorial" element={<Tutorial />} />
-          <Route path="/ourpartners" element={<OurPartner />} />
+          <Route path="/our_partners" element={<OurPartner />} />
         </Routes>
         <Footer />
       </BrowserRouter>
