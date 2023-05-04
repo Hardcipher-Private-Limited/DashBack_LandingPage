@@ -8,10 +8,10 @@ const NavBar = () => {
   const Navigate = useNavigate();
   const [showMenu, setShowMenu] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
-
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -39,6 +39,7 @@ const NavBar = () => {
   function handlePremium() {
     window.scrollTo(0, 0);
     Navigate("/premium");
+    setShowMenu(!showMenu);
   }
 
   return (

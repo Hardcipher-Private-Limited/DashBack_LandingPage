@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { IMAGES_PATHTWO, IMAGES_PATH_BLOGS } from "../../Constants/ImagesConst";
 import "../../assets/css/HomeSecond.css";
 import { useNavigate } from "react-router-dom";
@@ -10,6 +10,8 @@ import { Data } from "../MockData/Blogs";
 
 const HomeSecond = () => {
   const Navigate = useNavigate();
+  const blogSectionRef = useRef(null);
+
   const [showAnswer, setShowAnswer] = useState(false);
   const [showAnswer1, setShowAnswer1] = useState(false);
   const [showAnswer2, setShowAnswe2] = useState(false);
@@ -95,7 +97,7 @@ const HomeSecond = () => {
 
   function handleDigital() {
     window.scrollTo(0, 0);
-    Navigate("/digitalPayment");
+    Navigate("/digital_payment_options");
   }
   function handleCardss(index) {
     window.scrollTo(0, 0);
@@ -181,11 +183,11 @@ const HomeSecond = () => {
 
       {/* what our clint say */}
 
-      <div className="container-fluid mb-5">
+      <div className="container-fluid container_padding mb-5">
         <div className="clint_section">
           <div className="Clint_heading">What Our Clients Say</div>
         </div>
-        <div className="container-fluid  container_padding ">
+        <div className="container-fluid   ">
           <div className="row " style={{ display: "flex", gap: "10px" }}>
             <Slider {...settings}>
               <div>
@@ -294,7 +296,7 @@ const HomeSecond = () => {
         </div>
       </div>
       {/* Frequently Asked Questions start  */}
-      <div className="container pb-5">
+      <div className="container pb-5" id="/faqs">
         <div className="Frequent_text">
           <h1>Frequently Asked Questions</h1>
           <h6>Have questions? We’re here to help.</h6>

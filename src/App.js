@@ -15,12 +15,10 @@ import TermsAndCondition from "./Components/Pages/TermsAndCondition";
 import AboutUS from "./Components/Pages/AboutUS";
 import Tutorial from "./Components/Pages/Tutorial";
 import { Helmet } from "react-helmet";
-import HomeSecond from "./Components/Pages/HomeSecond";
 import OurPartner from "./Components/Pages/OurPartner";
 import Card from "./Components/Pages/Card";
 import LeavingPopUP from "./Components/PopUp/LeavingPopUP";
-import DowloadTheApp from "./Components/PopUp/DowloadTheApp";
-import AppDownloadPopUP from "./Components/PopUp/AppDownloadPopUP";
+import HomeSecond from "./Components/Pages/HomeSecond";
 function App() {
   const [cashBackModel, setCashBackModel] = useState(true);
 
@@ -46,7 +44,6 @@ function App() {
       <BrowserRouter>
         {cashBackModel && <LeavingPopUP cancle={cancle} />}
         <NavBar />
-        {/* <AppDownloadPopUP /> */}
         <Helmet>
           <title>
             Shop Smarter and Save More with DashBack: The Cashback App
@@ -59,6 +56,7 @@ function App() {
         </Helmet>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
+          {/* <Route path="/faqs" element={<HomeSecond />} /> */}
           <Route path="/downloadapp" element={<DownloadPage />} />
           <Route path="/contact_us" element={<ContectUS />} />
           <Route path="/blogs" element={<BlogsPage />} />

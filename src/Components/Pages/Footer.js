@@ -1,7 +1,9 @@
 import React from "react";
 import "../../assets/css/Footer.css";
 import { IMAGES_PATH_FOOTER } from "../../Constants/ImagesConst";
-import { useNavigate } from "react-router-dom";
+import { animateScroll as scroll } from "react-scroll";
+import { Link, useNavigate } from "react-router-dom";
+
 const Footer = () => {
   const Navigate = useNavigate();
   function handleContect() {
@@ -36,13 +38,20 @@ const Footer = () => {
     window.scrollTo(0, 0);
     Navigate("/");
   }
-  function handlesecond() {
-    // Navigate("/SecondHome");
-  }
+
   function handlepartners() {
     window.scrollTo(0, 0);
     Navigate("/our_partners");
   }
+  // function handleScrollToBlogs() {
+  //   Navigate("/#faqs");
+  // }
+  // const handleScrollToBlogs = () => {
+  //   window.scrollTo({
+  //     top: document.getElementById("faqs").offsetTop,
+  //     behavior: "smooth",
+  //   });
+  // };
   return (
     <>
       <div className="container ">
@@ -105,7 +114,8 @@ const Footer = () => {
                 <p onClick={handleCareer}>Careers</p>
                 <p onClick={handleBlogs}>Blogs</p>
                 <p onClick={handleTutorial}>Tutorials</p>
-                <p onClick={handlesecond}>FAQs</p>
+                {/* <p to="/#blogs">FAQs</p> */}
+                <p>FAQs</p>
               </div>
               <div className="">
                 <h3>Legal</h3>

@@ -12,7 +12,10 @@ const PrivacyPolicy = () => {
           content="At DashBack, we take your privacy seriously. Our privacy policy outlines how we collect, use, and protect your personal information, so you can shop and earn with confidence. Learn more about our commitment to your privacy today."
         />
       </Helmet>
-      <div className="container " style={{ paddingTop: 10 }}>
+      <div
+        className="container container_for_justfy "
+        style={{ paddingTop: 10 }}
+      >
         <div className="privacy_header text-center ">Privacy Policy</div>
         <div className="privacy_text">
           We, HardCipher Private Limited, are registered at B-3/17, First Floor,
@@ -28,7 +31,7 @@ const PrivacyPolicy = () => {
           use or access Dashback.
         </div>
         <div className="privacy_text">
-          Note: Our privacy policy may change at any time without prior
+          <b>Note:</b> Our privacy policy may change at any time without prior
           notification. To make sure that you are aware of any changes, kindly
           review the policy periodically. This Privacy Policy shall apply
           uniformly to Dashback applications, desktop website & mobile WAP site.

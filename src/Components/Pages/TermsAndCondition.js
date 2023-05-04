@@ -12,7 +12,7 @@ const TermsAndCondition = () => {
           content=" Learn about DashBack's terms & conditions and the use of our top-rated cashback app. Stay informed and understand your rights and responsibilities as a user. Check out our terms & conditions page now!"
         />
       </Helmet>
-      <div className="container ">
+      <div className="container container_for_justfy">
         <div className="privacy_header text-center">Terms & Conditions</div>
 
         <div className="privacy_text_header">Demat Account</div>
@@ -37,8 +37,8 @@ const TermsAndCondition = () => {
           referrals will not count as active users and in such case you will not
           be able to get the benefits of that user.
         </div>
-        <div className="privacy_text">
-          Special Demat account benefits <br />
+        <div className="privacy_text pt-4">
+          <b className="">Special Demat account benefits</b> <br />
           This feature is only provided within the PREMIUM Membership.
         </div>
         <div className="privacy_text">
@@ -103,8 +103,7 @@ const TermsAndCondition = () => {
           <br />
           Share market trading as subjects to the market risks. DashBack is
           providing the opportunity to its Users to learn the tricks of its
-          <br />
-          Experienced Team Traders. DashBack does not promise any 100%
+          experienced Team Traders. DashBack does not promise any 100%
           successful incomes from the share trading. It all depends upon on your
           own learning from those tricks and investing carefully.
         </div>
@@ -158,9 +157,9 @@ const TermsAndCondition = () => {
           <br />
           (ii) Any charge/debit made on a card that has been listed as a hot
           listed card or otherwise listed on the card association warning
-          <br /> bulletins
+          bulletins.
           <br />
-          (iii) Duplicate processing of the transaction; <br />
+          (iii) Duplicate processing of the transaction. <br />
           (iv) Any amount required to be refunded due to, denial of the
           transaction by the Customer/valid card holder as wrongly charged
           payment/ extra payments and/or due to the fraudulent use/misuse of the
