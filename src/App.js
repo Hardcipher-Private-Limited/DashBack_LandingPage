@@ -20,30 +20,10 @@ import Card from "./Components/Pages/Card";
 import LeavingPopUP from "./Components/PopUp/LeavingPopUP";
 import HomeSecond from "./Components/Pages/HomeSecond";
 function App() {
-  // const [cashBackModel, setCashBackModel] = useState(true);
-
-  // useEffect(() => {
-  //   const handleBeforeUnload = (event) => {
-  //     event.preventDefault();
-  //     event.returnValue = "";
-  //     setCashBackModel(true);
-  //   };
-  //   window.addEventListener("beforeunload", handleBeforeUnload);
-
-  //   return () => {
-  //     window.removeEventListener("beforeunload", handleBeforeUnload);
-  //   };
-  // }, []);
-
-  // const cancle = () => {
-  //   setCashBackModel(false);
-  // };
-
   return (
     <>
       <BrowserRouter>
-        {/* {cashBackModel && <LeavingPopUP cancle={cancle} />} */}
-        {/* <LeavingPopUP /> */}
+        <LeavingPopUP />
         <NavBar />
         <Helmet>
           <title>
