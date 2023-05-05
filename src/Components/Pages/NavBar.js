@@ -39,7 +39,9 @@ const NavBar = () => {
   function handlePremium() {
     window.scrollTo(0, 0);
     Navigate("/premium");
-    setShowMenu(!showMenu);
+    if (window.innerWidth <= 767) {
+      setShowMenu(!showMenu);
+    }
   }
 
   return (

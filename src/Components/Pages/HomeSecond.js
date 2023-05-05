@@ -99,9 +99,9 @@ const HomeSecond = () => {
     window.scrollTo(0, 0);
     Navigate("/digital_payment_options");
   }
-  function handleCardss(index) {
+  function handleCardss(url_name) {
     window.scrollTo(0, 0);
-    Navigate(`/card/${index}/${Data[index].url_name}`);
+    Navigate(`/blogs/${Data[url_name].url_name}`);
   }
   function handleInput(event) {
     const inputElement = document.getElementById("searchInput");
@@ -140,14 +140,13 @@ const HomeSecond = () => {
       <div className="container">
         <div className="bolgs_text text-center">Blogs</div>
         <div className="home_blogss">
-          {Data.slice(0, 3).map((Data, index) => (
+          {Data.slice(0, 3).map((Data, url_name) => (
             <div
               className="card p-0 cardssss pb-4"
-              onClick={() => handleCardss(index)}
+              onClick={() => handleCardss(url_name)}
             >
               <img src={Data.imgSrc} className="images__Card__top" />
               <div className="p-3">
-                {/* <span className="pt-2 pb-2 p-1">{Data.date}</span> */}
                 <div
                   className="p-1"
                   style={{
@@ -161,7 +160,7 @@ const HomeSecond = () => {
                     <img
                       src={IMAGES_PATH_BLOGS + "/Line 4 (1).png"}
                       style={{ width: "25px" }}
-                      onClick={() => handleCardss(index)}
+                      onClick={() => handleCardss(url_name)}
                     />
                   </p>
                 </div>

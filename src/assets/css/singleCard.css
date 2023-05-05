@@ -28,7 +28,8 @@ height: auto !important;
     font-weight: 700;
     font-size: 20px;
     color: #161616;
-    padding-top: 35px;
+    padding-top: 35px auto;
+    /* margin-top: 35px auto; */
     height: auto !important;
 }
 .pargram_head_2{
@@ -57,6 +58,7 @@ height: auto !important;
     font-weight: 700;
     font-size: 18px;
     color: #161616;
+    height: auto !important;
 }
 
 .blogs_3_text h5{
@@ -66,12 +68,13 @@ height: auto !important;
     font-weight: 700;
     font-size: 20px;
     color: #161616;
+    height: auto !important;
 }
 .blogs_3_text p{
     font-style: normal;
 font-weight: 400;
 font-size: 15px;
-
+height: auto !important;
 color: #606060;
 }
 .blogs3_summery{
@@ -79,6 +82,7 @@ color: #606060;
     font-weight: 600;
     font-size: 20px;
     color: #161616;
+    height: auto !important;
 } 
 .dashback_head{
     line-height: 0%;
@@ -87,5 +91,5 @@ color: #606060;
     font-size: 20px;
     color: #161616;
     padding-top: 30px;
-
+height: auto !important;
 }

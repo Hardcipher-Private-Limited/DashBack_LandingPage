@@ -60,7 +60,7 @@ const AppDownloadPopUP = () => {
                           IMAGES_PATH_DOWNLOAD +
                           "/app-store-png-logo-33116 1.png"
                         }
-                        style={{ width: 120 }}
+                        // style={{ width: 10 }}
                       />
                     </span>
                     <span>
@@ -69,7 +69,7 @@ const AppDownloadPopUP = () => {
                           IMAGES_PATH_DOWNLOAD +
                           "/google-play-png-logo-3799 1.png"
                         }
-                        style={{ width: 120 }}
+                        // style={{ width: 10 }}
                       />
                     </span>
                   </div>

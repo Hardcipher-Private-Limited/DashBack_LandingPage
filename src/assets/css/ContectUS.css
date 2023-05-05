@@ -134,9 +134,18 @@ color: #393939;
     border: none;
     background-color: white;
 }
+@media only screen and (min-width: 767px) and (max-width: 1010px) {
+    .all_card_blogs{
+        /* width: 400px; */
+        height: auto !important;
+        /* margin-bottom: 5%; */
+    }
+}
 @media only screen and (min-width: 300px) and (max-width: 767px) {
     .all_card_blogs{
         width: 100%;
+        height: auto !important;
+        margin-bottom: 5%;
     }
     .lable-text{
         /* width: 20px; */

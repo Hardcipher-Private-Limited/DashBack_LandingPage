@@ -9,10 +9,9 @@ const ITEMS_PER_PAGE = 6;
 const totalPages = Math.ceil(Data.length / ITEMS_PER_PAGE);
 const BlogsPage = () => {
   const Navigate = useNavigate();
-  function handleCard(index) {
+  function handleCard(url_name) {
     window.scrollTo(0, 0);
-    // Navigate(`/card/${displayData[index].name}`);
-    Navigate(`/card/${index}/${displayData[index].url_name}`);
+    Navigate(`/blogs/${Data[url_name].url_name}`);
   }
   const [currentPage, setCurrentPage] = useState(1);
   const [displayData, setDisplayData] = useState(Data.slice(0, ITEMS_PER_PAGE));
@@ -47,8 +46,6 @@ const BlogsPage = () => {
     item.name.toLowerCase().includes(query.toLowerCase())
   );
 
-  // const selectedData = selectedIdx !== -1 ? Data[selectedIdx] : null;
-
   const suggestion =
     query.length > 0 ? (
       <div className="map_for_sarch">
@@ -63,38 +60,6 @@ const BlogsPage = () => {
         ))}
       </div>
     ) : null;
-
-  // const suggestion =
-  //   query.length > 0 ? (
-  //     <div className="map_for_sarch">
-  //       {filteredData.map((item, index) => {
-  //         const words = item.main_head.split(" ");
-  //         return (
-  //           <div
-  //             key={index}
-  //             onClick={() => handleCard(index)}
-  //             className={index === selectedIdx ? "selected" : ""}
-  //           >
-  //             {words.map((word, i) => {
-  //               const lowerCaseWord = word.toLowerCase();
-  //               if (lowerCaseWord.includes(query.toLowerCase())) {
-  //                 const startIndex = lowerCaseWord.indexOf(query.toLowerCase());
-  //                 const endIndex = startIndex + query.length;
-  //                 const match = word.substring(startIndex, endIndex);
-  //                 return (
-  //                   <span key={i} className="match">
-  //                     {match}
-  //                   </span>
-  //                 );
-  //               } else {
-  //                 return <span key={i}>{word}</span>;
-  //               }
-  //             })}
-  //           </div>
-  //         );
-  //       })}
-  //     </div>
-  //   ) : null;
 
   return (
     <>
@@ -143,15 +108,13 @@ const BlogsPage = () => {
           <div className="col-lg-3"></div>
         </div>
         <div className="main_handle">
-          {displayData.map((Data, index) => (
+          {displayData.map((Data, url_name) => (
             <div
-              key={index}
               className="card all_card_blogs "
-              onClick={() => handleCard(index)}
+              onClick={() => handleCard(url_name)}
             >
               <img src={Data.imgSrc} />
               <div className="p-3">
-                {/* <span className="pt-0 pb-0 ">{Data.date}</span> */}
                 <div
                   style={{
                     display: "flex",

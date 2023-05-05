@@ -20,29 +20,30 @@ import Card from "./Components/Pages/Card";
 import LeavingPopUP from "./Components/PopUp/LeavingPopUP";
 import HomeSecond from "./Components/Pages/HomeSecond";
 function App() {
-  const [cashBackModel, setCashBackModel] = useState(true);
+  // const [cashBackModel, setCashBackModel] = useState(true);
 
-  useEffect(() => {
-    const handleBeforeUnload = (event) => {
-      event.preventDefault();
-      event.returnValue = "";
-      setCashBackModel(true);
-    };
-    window.addEventListener("beforeunload", handleBeforeUnload);
+  // useEffect(() => {
+  //   const handleBeforeUnload = (event) => {
+  //     event.preventDefault();
+  //     event.returnValue = "";
+  //     setCashBackModel(true);
+  //   };
+  //   window.addEventListener("beforeunload", handleBeforeUnload);
 
-    return () => {
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("beforeunload", handleBeforeUnload);
+  //   };
+  // }, []);
 
-  const cancle = () => {
-    setCashBackModel(false);
-  };
+  // const cancle = () => {
+  //   setCashBackModel(false);
+  // };
 
   return (
     <>
       <BrowserRouter>
-        {cashBackModel && <LeavingPopUP cancle={cancle} />}
+        {/* {cashBackModel && <LeavingPopUP cancle={cancle} />} */}
+        {/* <LeavingPopUP /> */}
         <NavBar />
         <Helmet>
           <title>
@@ -56,11 +57,10 @@ function App() {
         </Helmet>
         <Routes>
           <Route exact path="/" element={<HomePage />} />
-          {/* <Route path="/faqs" element={<HomeSecond />} /> */}
           <Route path="/downloadapp" element={<DownloadPage />} />
           <Route path="/contact_us" element={<ContectUS />} />
           <Route path="/blogs" element={<BlogsPage />} />
-          <Route path="/card/:index/:name" element={<Card />} />
+          <Route path="/blogs/:url_name" element={<Card />} />
           <Route path="/career" element={<Career />} />
           <Route path="/digital_payment_options" element={<DigitalPayment />} />
           <Route path="/premium" element={<PremiumPage />} />

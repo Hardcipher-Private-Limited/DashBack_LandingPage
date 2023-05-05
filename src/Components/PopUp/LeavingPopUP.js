@@ -4,17 +4,22 @@ import {
   IMAGES_PATH_DOWNLOAD,
   IMAGES_PATH_POPUP,
 } from "../../Constants/ImagesConst";
-const LeavingPopUP = ({ cancle }) => {
+// const LeavingPopUP = ({ cancle }) => {
+const LeavingPopUP = () => {
   return (
     <>
-      <div className="modal-wrapper">
+      <div
+        className="modal-wrapper"
+        // onClick={() => cancle()}
+      >
         <div className="modalBackdrop" />
-        <div className="modal-box" onClick={() => cancle()}>
+        <div className="modal-box">
           <div className="cancle">
             <span>
               <img
                 src={IMAGES_PATH_POPUP + "/Cancle.png"}
-                onClick={() => cancle()}
+                // onClick={() => cancle()}
+                // onClick={handleLeaveClick}
               />
             </span>
           </div>

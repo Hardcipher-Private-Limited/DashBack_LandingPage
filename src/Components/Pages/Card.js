@@ -5,9 +5,12 @@ import { useParams } from "react-router-dom";
 import { Data } from "../MockData/Blogs";
 
 const Card = () => {
-  const { index } = useParams();
-  const blogPostData = Data[parseInt(index)];
-
+  const { url_name } = useParams();
+  // const blogPostData = Data[parseInt(url_name)];
+  const blogPostData = Data.find((Data) => Data.url_name === url_name);
+  if (!blogPostData) {
+    return <div>Blog post not found</div>;
+  }
   return (
     <div
       className="container container_two"
@@ -162,7 +165,6 @@ const Card = () => {
       <div className="all_text pt-0">
         {blogPostData?.DashBack_Disadvantages1}
       </div>
-      <div className="all_text">{blogPostData?.summery}</div>
       <div className="blogs3_summery">{blogPostData?.blog_summery}</div>
       <div className="">{blogPostData?.payment_text8}</div>
       <div className="">{blogPostData?.payment_text9}</div>
@@ -200,6 +202,8 @@ const Card = () => {
       </div>
       <div className="all_text">{blogPostData?.InvestmentOptions_text}</div>
       <div className="pargram_head">{blogPostData?.summery_head}</div>
+      <div className="all_text">{blogPostData?.summery}</div>
+
       {/* <div className="blogs3_summery">{blogPostData?.blog_summery}</div> */}
     </div>
   );

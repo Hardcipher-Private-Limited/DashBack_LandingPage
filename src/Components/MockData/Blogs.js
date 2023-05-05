@@ -3,13 +3,15 @@ import "../../assets/css/singleCard.css";
 
 export const Data = [
   {
-    url_name: "Digital_Payment_Options",
+    url_name: "digital_payment_options",
     name: "Gayatri Singh",
     date: "15 March, 2023",
     text: "Gayatri Singh",
     paragraph:
       "This article compares the top digital payment providers, including Paytm, PhonePe, Google Pay, and DashBack.",
-    imgSrc: IMAGES_PATH_BLOGS + "/DashBack_digital_payment.png",
+    imgSrc:
+      IMAGES_PATH_BLOGS +
+      "/Digital Payment Options A Comparison of the Top Providers.png",
     main_head: "Digital Payment Options: A Comparison of the Top Providers",
     Introduction: "Introduction :",
     Introduction_text:
@@ -134,7 +136,7 @@ export const Data = [
       "In conclusion, each of these digital payment providers has its own advantages and disadvantages. Users should choose the one that best suits their needs based on factors such as the services offered, transaction fees, and availability.",
   },
   {
-    url_name: "Why_Digital_Payments",
+    url_name: "why_digital_payments",
 
     name: " Ankit Kumar",
     date: "  27 March, 2023",
@@ -143,7 +145,9 @@ export const Data = [
       "Why Digital Payments Are the Future: The Advantages of Using DashBack",
     paragraph:
       "Digital payments are the future of transactions, and DashBack offers a range of advantages to those who use it.",
-    imgSrc: IMAGES_PATH_BLOGS + "/Digital_payments_are_the_future.png",
+    imgSrc:
+      IMAGES_PATH_BLOGS +
+      "/Why Digital Payments Are The Future The Advantages of Using DB.png",
     Introduction_text:
       "Digital payments offer numerous advantages over traditional payment methods. This makes them the future of payments all over the world. ",
     Paytm: "Why are digital payments the future?",
@@ -259,13 +263,15 @@ export const Data = [
   },
 
   {
-    url_name: "E-Commerce_Best_Practices",
+    url_name: "e-commerce_best_practices",
     name: " Ankit Kumar",
     date: "  4 April, 2023",
     text: " Ankit Kumar",
     paragraph:
       "Looking to turn your online store into a profitable business? Check out these e-commerce best practices to help boost your sales and grow.",
-    imgSrc: IMAGES_PATH_BLOGS + "/E Commerce.png",
+    imgSrc:
+      IMAGES_PATH_BLOGS +
+      "/Transform Your Online Store into a Profitable Business with These 7 E-Commerce Best Practices.png",
     main_head:
       "Transform Your Online Store into a Profitable Business with These 7  E-Commerce Best Practices",
     Introduction_text:
@@ -379,13 +385,15 @@ export const Data = [
     ),
   },
   {
-    url_name: "Investment_Strategies",
+    url_name: "investment_strategies",
     name: " Ankit Kumar",
     date: "  15 April, 2023",
     text: " Ankit Kumar",
     paragraph:
       "Looking to achieve financial success through investments? Here are 10 investment strategies that you should know.",
-    imgSrc: IMAGES_PATH_BLOGS + "/Investment Strategies.png",
+    imgSrc:
+      IMAGES_PATH_BLOGS +
+      "/10 Investment Strategies You Need to Know for Financial Success.png",
     main_head: " Investment Strategies You Need to Know for Financial Success",
     Introduction_text:
       "Investing some of your earnings is a crucial aspect of achieving financial success. However, with so many investment strategies available, it can be overwhelming to determine which one is the best for you.",
