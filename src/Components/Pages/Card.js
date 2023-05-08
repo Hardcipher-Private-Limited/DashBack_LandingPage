@@ -6,14 +6,13 @@ import { Data } from "../MockData/Blogs";
 
 const Card = () => {
   const { url_name } = useParams();
-  // const blogPostData = Data[parseInt(url_name)];
   const blogPostData = Data.find((Data) => Data.url_name === url_name);
   if (!blogPostData) {
     return <div>Blog post not found</div>;
   }
   return (
     <div
-      className="container container_two"
+      className=" container_two"
       // style={{ marginLeft: "150px", marginRight: "150px" }}
     >
       <div className="text-center pt-5 ">

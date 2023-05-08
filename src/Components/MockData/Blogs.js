@@ -61,7 +61,7 @@ export const Data = [
         <a style={{ color: "blue", textDecoration: "underline" }}>
           Download the app now
         </a>
-        and start earning money back every time you shop.
+        {""} and start earning money back every time you shop.
       </div>
     ),
     GooglePay: "Google Pay:",

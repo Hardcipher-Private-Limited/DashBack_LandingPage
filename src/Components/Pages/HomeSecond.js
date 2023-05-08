@@ -17,17 +17,17 @@ const HomeSecond = () => {
   const [showAnswer2, setShowAnswe2] = useState(false);
   const [showAnswer3, setShowAnswer3] = useState(false);
   const [showAnswer4, setShowAnswer4] = useState(false);
-  const [imgSrc, setImgSrc] = useState(IMAGES_PATHTWO + "/Group 74.png");
-  const [imgSrc1, setImgSrc1] = useState(IMAGES_PATHTWO + "/Group 74.png");
-  const [imgSrc2, setImgSrc2] = useState(IMAGES_PATHTWO + "/Group 74.png");
-  const [imgSrc3, setImgSrc3] = useState(IMAGES_PATHTWO + "/Group 74.png");
-  const [imgSrc4, setImgSrc4] = useState(IMAGES_PATHTWO + "/Group 74.png");
+  const [imgSrc, setImgSrc] = useState(IMAGES_PATHTWO + "/Group 74 (1).png");
+  const [imgSrc1, setImgSrc1] = useState(IMAGES_PATHTWO + "/Group 74 (1).png");
+  const [imgSrc2, setImgSrc2] = useState(IMAGES_PATHTWO + "/Group 74 (1).png");
+  const [imgSrc3, setImgSrc3] = useState(IMAGES_PATHTWO + "/Group 74 (1).png");
+  const [imgSrc4, setImgSrc4] = useState(IMAGES_PATHTWO + "/Group 74 (1).png");
 
   const handleClick = () => {
     setShowAnswer(!showAnswer);
     setImgSrc(
       showAnswer
-        ? IMAGES_PATHTWO + "/Group 74.png"
+        ? IMAGES_PATHTWO + "/Group 74 (1).png"
         : IMAGES_PATHTWO + "/Group 74 copy.png"
     );
   };
@@ -35,7 +35,7 @@ const HomeSecond = () => {
     setShowAnswer1(!showAnswer1);
     setImgSrc1(
       showAnswer1
-        ? IMAGES_PATHTWO + "/Group 74.png"
+        ? IMAGES_PATHTWO + "/Group 74 (1).png"
         : IMAGES_PATHTWO + "/Group 74 copy.png"
     );
   };
@@ -43,7 +43,7 @@ const HomeSecond = () => {
     setShowAnswe2(!showAnswer2);
     setImgSrc2(
       showAnswer2
-        ? IMAGES_PATHTWO + "/Group 74.png"
+        ? IMAGES_PATHTWO + "/Group 74 (1).png"
         : IMAGES_PATHTWO + "/Group 74 copy.png"
     );
   };
@@ -51,7 +51,7 @@ const HomeSecond = () => {
     setShowAnswer3(!showAnswer3);
     setImgSrc3(
       showAnswer3
-        ? IMAGES_PATHTWO + "/Group 74.png"
+        ? IMAGES_PATHTWO + "/Group 74 (1).png"
         : IMAGES_PATHTWO + "/Group 74 copy.png"
     );
   };
@@ -59,7 +59,7 @@ const HomeSecond = () => {
     setShowAnswer4(!showAnswer4);
     setImgSrc4(
       showAnswer4
-        ? IMAGES_PATHTWO + "/Group 74.png"
+        ? IMAGES_PATHTWO + "/Group 74 (1).png"
         : IMAGES_PATHTWO + "/Group 74 copy.png"
     );
   };

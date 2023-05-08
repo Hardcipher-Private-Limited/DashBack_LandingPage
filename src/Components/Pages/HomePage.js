@@ -150,7 +150,7 @@ const HomePage = () => {
         className="col-xl-12 row row_padding   d-flex align-items-center justify-content-center "
         style={{ marginBottom: "70px" }}
       >
-        <div className="col-lg-6 col-md-6 order_mbile  ">
+        <div className="col-lg-6  order_mbile  ">
           <div className="dash_text d-none d-lg-block">
             <img src={IMAGES_PATH + "/DASH.png"} className="dash_icon" />
           </div>
@@ -171,7 +171,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-6 col-md-6 order_mbile_reverse  ">
+        <div className="col-lg-6  order_mbile_reverse  ">
           <div>
             <img src={IMAGES_PATH + "/1 673388.png"} className="phone_icon" />
           </div>
@@ -191,8 +191,8 @@ const HomePage = () => {
         </div>
         <div className="container">
           <div
-            className="row "
-            style={{ marginLeft: "10%", marginRight: "10%" }}
+            className="row padding_for_4card"
+            // style={{ marginLeft: "18%", marginRight: "18%" }}
           >
             <div className="brand-img  ">
               <img src={IMAGES_PATH + "/Group 905.png"} className="img-fluid" />
@@ -229,8 +229,8 @@ const HomePage = () => {
 
       <div className="col-xl-12 row d-flex align-items-center justify-content-center mt-5 padding_for_div ">
         <div
-          className="col-lg-6 col-md-6 
-         text-center "
+          className="col-lg-6  
+         text-center order-lg-1 order-1 "
         >
           <div className="d-none d-lg-block">
             <img src={IMAGES_PATH + "/WHAT.png"} className="dash_icon" />
@@ -243,7 +243,7 @@ const HomePage = () => {
             />
           </div>
         </div>
-        <div className="col-lg-6 col-md-5 text-center padding_for_div">
+        <div className="col-lg-6  text-center padding_for_div order-lg-2 order-2">
           <div className="begin_header text-center  pt-lg-2 ">
             <h1>
               Begin your journey

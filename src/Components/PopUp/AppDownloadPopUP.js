@@ -10,7 +10,7 @@ const AppDownloadPopUP = () => {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setIsVisible(true);
-    }, 8000);
+    }, 10000);
 
     return () => {
       clearTimeout(timeoutId);

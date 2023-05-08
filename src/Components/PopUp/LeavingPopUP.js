@@ -4,14 +4,13 @@ import {
   IMAGES_PATH_DOWNLOAD,
   IMAGES_PATH_POPUP,
 } from "../../Constants/ImagesConst";
-// const LeavingPopUP = ({ cancle }) => {
 const LeavingPopUP = () => {
   const [leaving, setLeaving] = useState(false);
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setLeaving(true);
-    }, 20000);
+    }, 30000);
 
     return () => {
       clearTimeout(timeoutId);
@@ -20,6 +19,7 @@ const LeavingPopUP = () => {
   const cancle = () => {
     setLeaving(false);
   };
+
   return (
     <>
       {leaving && (
@@ -31,7 +31,6 @@ const LeavingPopUP = () => {
                 <img
                   src={IMAGES_PATH_POPUP + "/Cancle.png"}
                   onClick={() => cancle()}
-                  // onClick={handleLeaveClick}
                 />
               </span>
             </div>

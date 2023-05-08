@@ -89,10 +89,14 @@ height: 49.83px;
 }
 .all_card_blogs{
     width: 32%;
-    height: 400px !important;
+    height: 410px !important;
     cursor: pointer;
     box-shadow: 0 0 5px 1px #e5e5e5;
     margin-bottom: 2%;
+    border-radius: 10px !important; 
+}
+.all_card_blogs img{
+    border-radius: 10px 10px 0 0;
 }
 .all_card_blogs:hover{
     opacity: 0.8;

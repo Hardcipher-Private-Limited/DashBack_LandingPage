@@ -6,6 +6,7 @@
   }
 .db_logo_icon{
   width: 20%;
+  cursor: pointer;
   }
  
   .cancle_icon{
@@ -49,8 +50,8 @@ text-align: center;
   }
   .navbar__menu a img{
     padding: 1px;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
   }
   .navbar__menu a span{
     padding-left: 5px;
@@ -132,6 +133,9 @@ color: #FFFFFF;
     width: 100%;
     z-index: 1;
     }
+    .playStore a{
+      cursor: pointer;
+    }
     @media (min-width:769px) {
       ._ul_alignmate{
         display: flex;
@@ -149,18 +153,17 @@ color: #FFFFFF;
         .playStore a{
           padding-top: 0px;
           padding-bottom: 8px;
-          padding-right: 12px;
+          padding-right: 15px;
           padding-left: 12px;
         }
         .playStore a img{
           width: 20%;
         }
         .king_icon{
-
           width: 50% !important;
         }
         .King_icon a img{
-          width: 60%;
+          width: 60% ;
         }
     }
     @media only screen and (min-width: 300px) and (max-width: 767px) {

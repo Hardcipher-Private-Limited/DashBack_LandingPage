@@ -113,12 +113,14 @@ line-height: 17px;
   align-items: center;
   height: 420px !important;
   cursor: pointer;
+  border-radius: 10px !important;
 }
 .cardssss:hover{
   opacity: 0.8;
 }
 .images__Card__top{
   width: 100%;
+  border-radius: 10px 10px 0 0;
   
 }
 .home_blogss{
@@ -349,6 +351,9 @@ font-size: 17px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+ }
+ .flex_direction img{
+  cursor: pointer;
  }
  .Questions_text h5{
 font-style: normal;
