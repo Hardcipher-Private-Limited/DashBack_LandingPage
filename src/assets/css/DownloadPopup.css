@@ -97,10 +97,8 @@ text-align: center;
   .closeBtn {
     width: 150px;
     padding: 0px 5px;
-    /* background-color: rgb(241, 43, 43); */
     color: black;
     height: 35px;
-    /* border: none; */
     border-radius: 6px;
     cursor: pointer;
     border: 1px solid #ffffffee;
@@ -113,7 +111,10 @@ text-align: center;
   }
 .INputs_responsive input {
   width: 60%;
-  margin-left: 80px;
+  /* margin-left: 80px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {
     .modal-box,

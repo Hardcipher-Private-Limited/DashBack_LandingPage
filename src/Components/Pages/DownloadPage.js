@@ -28,7 +28,7 @@ const DownloadPage = () => {
         />
       </Helmet>
       {displayModal && <DowloadTheApp hideModal={hideModal} />}
-      <div className="container pt-5" style={{ marginBottom: 150 }}>
+      <div className="container_dowloadPage pt-5" style={{ marginBottom: 150 }}>
         <div className="col-lg-12 row ">
           <div
             className="col-lg-6 order_of_left text-center "

@@ -1,4 +1,7 @@
-
+.container_footer{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .FooterHeading{
     width: 100%;
 }

@@ -394,7 +394,8 @@ export const Data = [
     imgSrc:
       IMAGES_PATH_BLOGS +
       "/10 Investment Strategies You Need to Know for Financial Success.png",
-    main_head: " Investment Strategies You Need to Know for Financial Success",
+    main_head:
+      "10 Investment Strategies You Need to Know for Financial Success",
     Introduction_text:
       "Investing some of your earnings is a crucial aspect of achieving financial success. However, with so many investment strategies available, it can be overwhelming to determine which one is the best for you.",
     Paytm:

@@ -66,7 +66,7 @@ const HomeSecond = () => {
 
   function handleBlogs() {
     window.scrollTo(0, 0);
-    Navigate("/blogs");
+    Navigate("/blog");
   }
 
   const settings = {
@@ -101,7 +101,7 @@ const HomeSecond = () => {
   }
   function handleCardss(url_name) {
     window.scrollTo(0, 0);
-    Navigate(`/blogs/${Data[url_name].url_name}`);
+    Navigate(`/blog/${Data[url_name].url_name}`);
   }
   function handleInput(event) {
     const inputElement = document.getElementById("searchInput");
@@ -137,8 +137,8 @@ const HomeSecond = () => {
 
       {/* Blogs start  */}
 
-      <div className="container">
-        <div className="bolgs_text text-center">Blogs</div>
+      <div className="container_blog">
+        <div className="bolgs_text text-center">Blog</div>
         <div className="home_blogss">
           {Data.slice(0, 3).map((Data, url_name) => (
             <div
@@ -174,7 +174,7 @@ const HomeSecond = () => {
             Read more
             <img
               src={IMAGES_PATHTWO + "/Vector.png"}
-              style={{ width: 8, height: 12, marginLeft: 5 }}
+              style={{ width: 8, height: 12, marginLeft: 10 }}
             />
           </button>
         </div>
@@ -295,7 +295,7 @@ const HomeSecond = () => {
         </div>
       </div>
       {/* Frequently Asked Questions start  */}
-      <div className="container pb-5" id="/faqs">
+      <div className="container_faq pb-5" id="/faqs">
         <div className="Frequent_text">
           <h1>Frequently Asked Questions</h1>
           <h6>Have questions? We’re here to help.</h6>

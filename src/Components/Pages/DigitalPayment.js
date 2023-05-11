@@ -16,7 +16,7 @@ const DigitalPayment = () => {
           content="DashBack is the ultimate digital payment, online shopping, and wealth-building solution. Our top-rated app offers cashback at hundreds of stores and lucrative investment plans, helping you save money and build wealth while you shop. Discover the power of DashBack now!"
         />
       </Helmet>
-      <div className="container mb-5">
+      <div className="container_digital mb-5">
         <div className="digital_header text-center p-5">
           <h1>Digital Payments. Online Shopping. Wealth-Building</h1>
         </div>

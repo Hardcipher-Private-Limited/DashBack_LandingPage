@@ -17,7 +17,7 @@ const PremiumPage = () => {
             "
         />
       </Helmet>
-      <div className="container">
+      <div className="container_premium">
         <div className="premium_header text-center">
           <h1>More benefits, more rewards</h1>
         </div>

@@ -1,3 +1,7 @@
+.container_dowloadPage{
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .order_of_left{
     padding-top: 120px;
 }
@@ -19,6 +23,7 @@ text-align: center;
 color: #6D6D6D;
 }
 .logo_play_store{
+    justify-content: center;
     display: flex;
     gap: 22px;
     margin-top: 30px;

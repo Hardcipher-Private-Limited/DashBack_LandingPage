@@ -11,7 +11,7 @@ const BlogsPage = () => {
   const Navigate = useNavigate();
   function handleCard(url_name) {
     window.scrollTo(0, 0);
-    Navigate(`/blogs/${Data[url_name].url_name}`);
+    Navigate(`/blog/${Data[url_name].url_name}`);
   }
   const [currentPage, setCurrentPage] = useState(1);
   const [displayData, setDisplayData] = useState(Data.slice(0, ITEMS_PER_PAGE));
@@ -73,12 +73,12 @@ const BlogsPage = () => {
           content="Stay up-to-date with the latest trends in saving money and earning cashback with DashBack's insightful and informative blogs! Our top-rated app offers exclusive cashback at hundreds of stores, and our blogs provide tips and tricks to help you get the most out of your earnings. Check out our blogs now."
         />
       </Helmet>
-      <div className="container p-5 mb-5">
+      <div className="container_blogs  mb-5">
         <div className="col-lg-12 row">
           <div className="col-lg-3"></div>
           <div className="col-lg-6 blogs_text_input">
             <div className="blogs-text m-5">
-              <h1>Blogs</h1>
+              <h1>Blog</h1>
               <div
                 className="input_responsive"
                 onSubmit={(e) => {

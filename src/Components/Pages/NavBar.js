@@ -117,7 +117,6 @@ const NavBar = () => {
                               <button
                                 className="model_button"
                                 onClick={handlePremium}
-                                // onMouseLeave={handleMouseLeave}
                               >
                                 Try now
                               </button>

@@ -1,11 +1,13 @@
+.container_blogs, .container_career, .container_contact{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
 .contect-text{
     align-items: center;
     margin: 50px;
 }
-.card_head_text{
-    /* padding-top: 50px; */
-    /* padding-bottom: 50px; */
-}
+
 
 .contect-text h1{
 font-style: normal;
@@ -89,7 +91,7 @@ height: 49.83px;
 }
 .all_card_blogs{
     width: 32%;
-    height: 410px !important;
+    height: 410px  !important;
     cursor: pointer;
     box-shadow: 0 0 5px 1px #e5e5e5;
     margin-bottom: 2%;
@@ -138,11 +140,14 @@ color: #393939;
     border: none;
     background-color: white;
 }
+@media only screen and (min-width: 1450px) and (max-width: 2000px) {
+    .all_card_blogs{
+        height: 500px !important;
+    }
+}
 @media only screen and (min-width: 767px) and (max-width: 1010px) {
     .all_card_blogs{
-        /* width: 400px; */
-        height: auto !important;
-        /* margin-bottom: 5%; */
+        height: 460px !important;
     }
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {

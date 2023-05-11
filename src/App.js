@@ -39,8 +39,8 @@ function App() {
           <Route exact path="/" element={<HomePage />} />
           <Route path="/downloadapp" element={<DownloadPage />} />
           <Route path="/contact_us" element={<ContectUS />} />
-          <Route path="/blogs" element={<BlogsPage />} />
-          <Route path="/blogs/:url_name" element={<Card />} />
+          <Route path="/blog" element={<BlogsPage />} />
+          <Route path="/blog/:url_name" element={<Card />} />
           <Route path="/career" element={<Career />} />
           <Route path="/digital_payment_options" element={<DigitalPayment />} />
           <Route path="/premium" element={<PremiumPage />} />

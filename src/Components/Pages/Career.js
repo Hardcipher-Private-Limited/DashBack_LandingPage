@@ -16,7 +16,7 @@ const Career = () => {
           content="Join the DashBack team and help us revolutionize the world of cashback and rewards! Our growing company is seeking talented individuals to join our team and drive innovation. Explore our career opportunities now and take the first step towards a rewarding career with DashBack."
         />
       </Helmet>
-      <div className="container">
+      <div className="container_career">
         <div className="contect-text text-center">
           <h1>Careers</h1>
           <p>

@@ -32,7 +32,7 @@ const Footer = () => {
   }
   function handleBlogs() {
     window.scrollTo(0, 0);
-    Navigate("/blogs");
+    Navigate("/blog");
   }
   function handleHome() {
     window.scrollTo(0, 0);
@@ -43,44 +43,31 @@ const Footer = () => {
     window.scrollTo(0, 0);
     Navigate("/our_partners");
   }
-  // function handleScrollToBlogs() {
-  //   Navigate("/#faqs");
-  // }
-  // const handleScrollToBlogs = () => {
-  //   window.scrollTo({
-  //     top: document.getElementById("faqs").offsetTop,
-  //     behavior: "smooth",
-  //   });
-  // };
   return (
     <>
-      <div className="container ">
+      <div className="container_footer ">
         <div className="lineWidth"></div>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-6 order-md-1">
-              <div className="FooterHeading">
-                <h2 className="FooterHeading_h2">
-                  Subscribe to our newsletter
-                </h2>
-                <p className="FooterHeading_h2">
-                  Stay up to date with the latest news, announcements, and
-                  articles.
-                </p>
-              </div>
+        <div className="row">
+          <div className="col-md-6 order-md-1">
+            <div className="FooterHeading">
+              <h2 className="FooterHeading_h2">Subscribe to our newsletter</h2>
+              <p className="FooterHeading_h2">
+                Stay up to date with the latest news, announcements, and
+                articles.
+              </p>
             </div>
-            <div className="col-md-6 order-md-2 ">
-              <div className="row flex-column flex-sm-row rowa">
-                <div className="col-sm-8 order-1 order-sm-1 subscribe_btns ">
-                  <input
-                    type="text"
-                    className=" form-controls"
-                    placeholder="Enter your email"
-                  />
-                </div>
-                <div className="col-sm-4 subscribe_btns mt-3 mt-sm-0 order-1 order-sm-2">
-                  <button className=" subscribe btn-block">Subscribe</button>
-                </div>
+          </div>
+          <div className="col-md-6 order-md-2 ">
+            <div className="row flex-column flex-sm-row rowa">
+              <div className="col-sm-8 order-1 order-sm-1 subscribe_btns ">
+                <input
+                  type="text"
+                  className=" form-controls"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div className="col-sm-4 subscribe_btns mt-3 mt-sm-0 order-1 order-sm-2">
+                <button className=" subscribe btn-block">Subscribe</button>
               </div>
             </div>
           </div>
@@ -112,7 +99,7 @@ const Footer = () => {
               <div className="">
                 <h3>Resources</h3>
                 <p onClick={handleCareer}>Careers</p>
-                <p onClick={handleBlogs}>Blogs</p>
+                <p onClick={handleBlogs}>Blog</p>
                 <p onClick={handleTutorial}>Tutorials</p>
                 {/* <p to="/#blogs">FAQs</p> */}
                 <p>FAQs</p>
