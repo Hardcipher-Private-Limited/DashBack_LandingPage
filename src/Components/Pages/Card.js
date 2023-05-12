@@ -25,18 +25,18 @@ const Card = () => {
           paddingTop: "10px",
         }}
       >
-        <p>{blogPostData?.date}</p>
+        <p className="date_in_blog">{blogPostData?.date}</p>
         <p style={{ display: "flex", gap: "20px" }}>
           <img
             src={IMAGES_PATH_BLOGS + "/Vector (1).png"}
             className="social_iconss"
           />
           <img
-            src={IMAGES_PATH_BLOGS + "/Vector (1).png"}
+            src={IMAGES_PATH_BLOGS + "/Vector (4).png"}
             className="social_iconss"
           />
           <img
-            src={IMAGES_PATH_BLOGS + "/Vector (1).png"}
+            src={IMAGES_PATH_BLOGS + "/Vector (2).png"}
             className="social_iconss"
           />
         </p>
@@ -77,6 +77,15 @@ const Card = () => {
       <div className="">{blogPostData?.payment_text1}</div>
       <div className="">{blogPostData?.payment_text2}</div>
       <div className="">{blogPostData?.payment_text3}</div>
+      <div className="blog6_midlle_section">
+        <div className="blog6_midlle_section_main_head">
+          {blogPostData?.blog7secrity}
+        </div>
+        <div className="blog6_img_middle">
+          <img src={blogPostData?.blog7secrityImg} />
+        </div>
+      </div>
+      <div className="all_text">{blogPostData?.blog7secrityText}</div>
       <div className="">{blogPostData?.payment_text4}</div>
       <div className="">{blogPostData?.payment_text5}</div>
       <div className="">{blogPostData?.payment_text6}</div>

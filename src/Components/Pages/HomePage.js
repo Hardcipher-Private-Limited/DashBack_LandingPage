@@ -138,6 +138,7 @@ const HomePage = () => {
   return (
     <>
       <AppDownloadPopUP />
+      <LeavingPopUP />
       <div className="container pt-2">
         <div className="rupeeIcon">
           <img src={IMAGES_PATH + "/rupee 1.png"} />

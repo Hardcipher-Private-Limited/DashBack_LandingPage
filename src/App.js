@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./Components/Pages/HomePage";
 import DownloadPage from "./Components/Pages/DownloadPage";
@@ -17,13 +16,11 @@ import Tutorial from "./Components/Pages/Tutorial";
 import { Helmet } from "react-helmet";
 import OurPartner from "./Components/Pages/OurPartner";
 import Card from "./Components/Pages/Card";
-import LeavingPopUP from "./Components/PopUp/LeavingPopUP";
-import HomeSecond from "./Components/Pages/HomeSecond";
+
 function App() {
   return (
     <>
       <BrowserRouter>
-        <LeavingPopUP />
         <NavBar />
         <Helmet>
           <title>
