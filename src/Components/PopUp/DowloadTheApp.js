@@ -2,9 +2,14 @@ import React from "react";
 import "../../assets/css/DownloadPopup.css";
 import { IMAGES_PATH_POPUP } from "../../Constants/ImagesConst";
 const DowloadTheApp = ({ hideModal }) => {
+  function handlePlayStore() {
+    window.open(
+      "https://play.google.com/store/apps/details?id=in.dashback.app"
+    );
+  }
   return (
     <>
-      <div className="modal-wrapper" onClick={() => hideModal()}>
+      <div className="modal-wrapper">
         <div className="modalBackdrop" />
         <div className="modal-box">
           <div className="cancle">
@@ -33,7 +38,7 @@ const DowloadTheApp = ({ hideModal }) => {
               <span>
                 <img src={IMAGES_PATH_POPUP + "/apple 1.png"} />
               </span>
-              <span>
+              <span onClick={handlePlayStore}>
                 <img src={IMAGES_PATH_POPUP + "/Vector.png"} />
               </span>
             </div>

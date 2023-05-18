@@ -1,70 +1,67 @@
-.containerss{
-    padding-left: 6%;
-    padding-right: 6%;
+.containerss {
+  padding-left: 6%;
+  padding-right: 6%;
 }
-.AboutUs_header{
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 49px;
-margin-top: 40px;
-color: #161616;
-text-align: center;
+.AboutUs_header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 49px;
+  margin-top: 40px;
+  color: #161616;
+  text-align: center;
 }
-.About_text{
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 28px;
-text-align: center;
-/* padding-left: 90px; */
-/* padding-right: 90px; */
-color: #6C6C6C;
-/* text-align: center; */
+.About_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #6c6c6c;
 }
-.about_read{
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 25px;
-color: #6C6C6C;
-margin-top: 20px;
+.about_read {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #6c6c6c;
+  margin-top: 20px;
 }
-.about_last_line{
-font-style: normal;
-font-weight: 600;
-font-size: 19px;
-line-height: 170.9%;
-color: #6C6C6C;
+.about_last_line {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 170.9%;
+  color: #6c6c6c;
 
-margin-top: 20px;
+  margin-top: 20px;
 }
-.img_{
-    width: 35%;
+.img_ {
+  width: 35%;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
-    .AboutUs_header{
-        font-weight: 700;
-        font-size: 26px;
-        line-height: 32px;
-    }
-    .About_text{
-        font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 200.9%;
-text-align: center;
-padding-left: 45px;
-padding-right: 45px;
-    }
-    .about_read{
-        font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 200.9%;
-padding: 15px;
-text-align: center;
-margin-top: 8px;
-    }
+  .AboutUs_header {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+  }
+  .About_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 200.9%;
+    text-align: center;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .about_read {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 200.9%;
+    padding: 15px;
+    text-align: center;
+    margin-top: 8px;
+  }
 }

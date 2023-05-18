@@ -19,10 +19,15 @@ const AppDownloadPopUP = () => {
   const hideModal = () => {
     setIsVisible(false);
   };
+  function handlePlayStore() {
+    window.open(
+      "https://play.google.com/store/apps/details?id=in.dashback.app"
+    );
+  }
   return (
     <>
       {isVisible && (
-        <div className="modal-wrapper" onClick={() => hideModal()}>
+        <div className="modal-wrapper">
           <div className="modalBackdrop" />
           <div className="modal-boxs_mobile">
             <div className="cancle">
@@ -63,7 +68,7 @@ const AppDownloadPopUP = () => {
                         // style={{ width: 10 }}
                       />
                     </span>
-                    <span>
+                    <span onClick={handlePlayStore}>
                       <img
                         src={
                           IMAGES_PATH_DOWNLOAD +

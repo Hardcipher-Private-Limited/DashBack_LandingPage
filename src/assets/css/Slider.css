@@ -1,9 +1,8 @@
-.file > input[type='file'] {
-  display: none
+.file > input[type="file"] {
+  display: none;
 }
 
 .file > label {
-  
   font-size: 1rem;
   font-weight: 300;
   cursor: pointer;
@@ -35,10 +34,9 @@
   padding-right: 5px;
 }
 
-.UploadFilr{
+.UploadFilr {
   display: flex;
   justify-content: space-around;
-
 }
 .file--upload > label:hover {
   background-color: hsl(0, 0%, 97%);

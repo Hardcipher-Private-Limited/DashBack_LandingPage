@@ -4,33 +4,31 @@ import {
   IMAGES_PATH_DOWNLOAD,
   IMAGES_PATH_POPUP,
 } from "../../Constants/ImagesConst";
-const LeavingPopUP = () => {
-  const [leaving, setLeaving] = useState(false);
+import { useNavigate } from "react-router-dom";
+const LeavingPopUP = ({ showPopup, setShowPopup }) => {
+  const Navigate = useNavigate();
 
-  useEffect(() => {
-    const timeoutId = setTimeout(() => {
-      setLeaving(true);
-    }, 30000);
+  const handleStay = () => {
+    setShowPopup(false);
+  };
 
-    return () => {
-      clearTimeout(timeoutId);
-    };
-  }, []);
-  const cancle = () => {
-    setLeaving(false);
+  const handleLeave = (event) => {
+    event.preventDefault();
+    setShowPopup(false);
+    Navigate("/");
   };
 
   return (
     <>
-      {leaving && (
-        <div className="modal-wrapper" onClick={() => cancle()}>
+      {showPopup && (
+        <div className="modal-wrapper">
           <div className="modalBackdrop" />
           <div className="modal-box">
             <div className="cancle">
               <span>
                 <img
                   src={IMAGES_PATH_POPUP + "/Cancle.png"}
-                  onClick={() => cancle()}
+                  onClick={handleLeave}
                 />
               </span>
             </div>

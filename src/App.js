@@ -16,12 +16,28 @@ import Tutorial from "./Components/Pages/Tutorial";
 import { Helmet } from "react-helmet";
 import OurPartner from "./Components/Pages/OurPartner";
 import Card from "./Components/Pages/Card";
+import LeavingPopUP from "./Components/PopUp/LeavingPopUP";
 
 function App() {
+  const [showPopup, setShowPopup] = useState(false);
+  const handleBeforeUnload = (event) => {
+    event.preventDefault();
+    event.returnValue = "";
+    setShowPopup(true);
+    return;
+  };
+
+  useEffect(() => {
+    window.addEventListener("beforeunload", handleBeforeUnload);
+    return () => {
+      window.removeEventListener("beforeunload", handleBeforeUnload);
+    };
+  }, []);
   return (
     <>
       <BrowserRouter>
         <NavBar />
+
         <Helmet>
           <title>
             Shop Smarter and Save More with DashBack: The Cashback App
@@ -33,7 +49,13 @@ function App() {
           />
         </Helmet>
         <Routes>
-          <Route exact path="/" element={<HomePage />} />
+          <Route
+            exact
+            path="/"
+            element={
+              <HomePage showPopup={showPopup} setShowPopup={setShowPopup} />
+            }
+          />
           <Route path="/downloadapp" element={<DownloadPage />} />
           <Route path="/contact_us" element={<ContectUS />} />
           <Route path="/blog" element={<BlogsPage />} />

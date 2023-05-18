@@ -15,6 +15,12 @@ const DownloadPage = () => {
     }, 30000);
     return () => clearTimeout(timer);
   }, []);
+
+  function handlePlayStore() {
+    window.open(
+      "https://play.google.com/store/apps/details?id=in.dashback.app"
+    );
+  }
   return (
     <>
       <Helmet>
@@ -51,7 +57,7 @@ const DownloadPage = () => {
                     }
                   />
                 </span>
-                <span>
+                <span onClick={handlePlayStore}>
                   <img
                     src={
                       IMAGES_PATH_DOWNLOAD + "/google-play-png-logo-3799 1.png"

@@ -39,6 +39,10 @@ const Card = () => {
             src={IMAGES_PATH_BLOGS + "/Vector (2).png"}
             className="social_iconss"
           />
+          <img
+            src={IMAGES_PATH_BLOGS + "/icons8-instagram 1.png"}
+            className="social_iconss"
+          />
         </p>
       </div>
       <div

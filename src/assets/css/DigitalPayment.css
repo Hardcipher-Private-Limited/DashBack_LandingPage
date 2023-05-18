@@ -1,115 +1,114 @@
-.container_digital{
-    padding-left: 5%;
-    padding-right: 5%;
+.container_digital {
+  padding-left: 5%;
+  padding-right: 5%;
 }
-.digital_header h1{
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 49px;
-color: #161616;
+.digital_header h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 49px;
+  color: #161616;
 }
-.fill_dash_text h2{
-font-style: normal;
-font-weight: 600;
-font-size: 40px;
-line-height: 49px;
+.fill_dash_text h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
 
-color: #161616;
+  color: #161616;
 }
-.line{
-    background: linear-gradient(to right, #ffffff,  #222222);
-    border: none;
-    height: 2px;
-    position: relative;
-width: 82%;
-margin-left: 200px;
-top: -20px;   
+.line {
+  background: linear-gradient(to right, #ffffff, #222222);
+  border: none;
+  height: 2px;
+  position: relative;
+  width: 82%;
+  margin-left: 200px;
+  top: -20px;
 }
-.digital_card_text h1{
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 44px;
-color: #161616;
+.digital_card_text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #161616;
 }
-.digital_card_text h3{
-    padding-top: 5px;
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 32px;
-color: #161616;
+.digital_card_text h3 {
+  padding-top: 5px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #161616;
 }
-.digital_card_text p{
-font-style: normal;
-font-weight: 400;
-font-size: 17px;
-line-height: 24px;
-color: #6C6C6C;
+.digital_card_text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 24px;
+  color: #6c6c6c;
 }
-.sub_pargram{
-    font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-color: #504f4f;
+.sub_pargram {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  color: #504f4f;
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {
-    .arrow_marks{
-        display: none;
-    }
-    .line{
-        background: linear-gradient(to right, #ffffff,  #222222);
-        border: none;
-        height: 2px;
-        /* position: relative; */
+  .arrow_marks {
+    display: none;
+  }
+  .line {
+    background: linear-gradient(to right, #ffffff, #222222);
+    border: none;
+    height: 2px;
     width: 60%;
     margin-left: 140px;
-    top: -20px;   
-    }
-    .fill_dash_text h2{
-        font-style: normal;
-        font-weight: 600;
-        font-size: 30px;
-        line-height: 49px;
-        }
-    .digital_card_text h1{
-         align-items: center;
-         text-align: center;
+    top: -20px;
   }
-        .digital_card_text h3{
-        text-align: center;
-     }
-     .digital_card_text p{
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 15px;
-        color: #6C6C6C;
-        padding-bottom: 0px;
-    }
-    .padding_for_texts{
-        position: relative;
-            padding-top:10px;
-    }
-    .padding_for_texts {
-        margin-top: -100px;
-        margin-bottom: -80px;
-    }
-    .padding_for_textss{
-        margin-top: -60px !important;
-    }
-    .section_second{
-        margin-top: -80px !important;
-    }
-    .section_third{
-        margin-top: -80px !important;
-    }
-    .onlining_shopping{
-        order: 2;
-    }
-    .Onling_textsss{
-        order: 1;
-    }
+  .fill_dash_text h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 49px;
+  }
+  .digital_card_text h1 {
+    align-items: center;
+    text-align: center;
+  }
+  .digital_card_text h3 {
+    text-align: center;
+  }
+  .digital_card_text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #6c6c6c;
+    padding-bottom: 0px;
+  }
+  .padding_for_texts {
+    position: relative;
+    padding-top: 10px;
+  }
+  .padding_for_texts {
+    margin-top: -100px;
+    margin-bottom: -80px;
+  }
+  .padding_for_textss {
+    margin-top: -60px !important;
+  }
+  .section_second {
+    margin-top: -80px !important;
+  }
+  .section_third {
+    margin-top: -80px !important;
+  }
+  .onlining_shopping {
+    order: 2;
+  }
+  .Onling_textsss {
+    order: 1;
+  }
 }

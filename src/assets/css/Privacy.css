@@ -1,47 +1,45 @@
-.container_for_justfy{
-    padding-left: 10% !important;
-    padding-right: 10% !important;
+.container_for_justfy {
+  padding-left: 10% !important;
+  padding-right: 10% !important;
 }
-.privacy_header{
-    
-font-style: normal;
-font-weight: 700;
-font-size: 40px;
-line-height: 49px;
-margin: 40px;
-color: #161616;
+.privacy_header {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  margin: 40px;
+  color: #161616;
 }
-.privacy_text{
-font-style: normal;
-font-weight: 300;
-font-size: 18px;
-line-height: 30px;
-color: #6C6C6C;
-
+.privacy_text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  color: #6c6c6c;
 }
-.privacy_text_header{
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 34px;
-margin-top: 25px;
-color: #6C6C6C;
+.privacy_text_header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  margin-top: 25px;
+  color: #6c6c6c;
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {
-    .privacy_text{
-font-weight: 400;
-font-size: 12px;
-line-height: 15px;
-    }
-    .privacy_header{
-        font-weight: 700;
-font-size: 26px;
-line-height: 32px;
-text-align: center;
-    }
-    .privacy_text_header{
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 15px;
-    }
+  .privacy_text {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .privacy_header {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+  }
+  .privacy_text_header {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+  }
 }

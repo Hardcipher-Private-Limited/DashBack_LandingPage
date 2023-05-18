@@ -43,10 +43,15 @@ const NavBar = () => {
       setShowMenu(!showMenu);
     }
   }
+  function handlePlayStore() {
+    window.open(
+      "https://play.google.com/store/apps/details?id=in.dashback.app"
+    );
+  }
 
   return (
     <>
-      <div className=" " style={{ marginBottom: 10, marginTop: 80 }}>
+      <div className=" " style={{ marginBottom: 0, marginTop: 65 }}>
         <nav
           className={`navbar fixed-top   navbar-dark d-flex justify-content-between pt-3 pb-3 pe-5 ps-5 ${
             scrollPosition > 0 ? "navbar--shadow" : ""
@@ -135,7 +140,7 @@ const NavBar = () => {
                 </a>
               </li>
               <li className="playStore">
-                <a href="#">
+                <a href="#" onClick={handlePlayStore}>
                   <img src={IMAGES_PATH + "/Vector (1).png"} />
                   <span>Play Store</span>
                 </a>

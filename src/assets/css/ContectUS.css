@@ -1,212 +1,205 @@
-.container_blogs, .container_career, .container_contact{
-    padding-left: 5%;
-    padding-right: 5%;
+.container_blogs,
+.container_career,
+.container_contact {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.contect-text{
-    align-items: center;
-    margin: 50px;
+.contect-text {
+  align-items: center;
+  margin: 50px;
 }
 
-
-.contect-text h1{
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 44px;
-color: #161616;
+.contect-text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #161616;
 }
-.contect-text p{
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 17px;
-text-align: center;
-color: #565656;
-  
+.contect-text p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #565656;
 }
 
-.contect_button button{
-margin-left: 35% ;
-    width: 115px;
-height: 38px;
-border: none;
-border-radius: 20px;
-background-color: #161616;
-color: aliceblue;
+.contect_button button {
+  margin-left: 35%;
+  width: 115px;
+  height: 38px;
+  border: none;
+  border-radius: 20px;
+  background-color: #161616;
+  color: aliceblue;
 }
-.lable-text{
-    border-radius: 20px;
+.lable-text {
+  border-radius: 20px;
 }
-.lable-text label{
-    margin: 0px 0px 5px 10px;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.25px;
-    color: #161616;
+.lable-text label {
+  margin: 0px 0px 5px 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.25px;
+  color: #161616;
 }
-.lable-text textarea{
-height: 120px;
+.lable-text textarea {
+  height: 120px;
 }
-.lable-text span{
-    color: red;
+.lable-text span {
+  color: red;
 }
-.Form-text_head{
-    padding-bottom: 10px;
+.Form-text_head {
+  padding-bottom: 10px;
 }
-.Form-text_head h1{
-font-style: normal;
-font-weight: 600;
-font-size: 22px;
-line-height: 27px;
-text-align: center;
-color: #161616;
+.Form-text_head h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  color: #161616;
 }
 /* Blogs section start  */
 
-.blogs-text h1{
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 44px;
+.blogs-text h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
 
-text-align: center;
+  text-align: center;
 
-color: #161616;
+  color: #161616;
 }
-.blogs-text input{
-height: 49.83px;
+.blogs-text input {
+  height: 49.83px;
 }
 
-.main_handle{
+.main_handle {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 2%;
 }
 
-.all_card_blogs{
-    width: 32%;
-    height: 420px  !important;
-    cursor: pointer;
-    box-shadow: 0 0 5px 1px #e5e5e5;
-    margin-bottom: 2%;
-    border-radius: 10px !important; 
+.all_card_blogs {
+  width: 32%;
+  height: 420px !important;
+  cursor: pointer;
+  box-shadow: 0 0 5px 1px #e5e5e5;
+  margin-bottom: 2%;
+  border-radius: 10px !important;
 }
-.all_card_blogs img{
-    border-radius: 10px 10px 0 0;
+.all_card_blogs img {
+  border-radius: 10px 10px 0 0;
 }
-.all_card_blogs:hover{
-    opacity: 0.8;
+.all_card_blogs:hover {
+  opacity: 0.8;
 }
-.small_imgs{
-    width:310px;
+.small_imgs {
+  width: 310px;
 }
-.cardbodys h5{
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-text-align: center;
-color: #161616;
+.cardbodys h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #161616;
 }
-.dateofCards{
-    margin-top: 10px;
-    margin-bottom: -1px;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 180.4%;
-color: #393939;
+.dateofCards {
+  margin-top: 10px;
+  margin-bottom: -1px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 180.4%;
+  color: #393939;
 }
-.textsss{
-    margin-top: 5px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 180.4%;
-    color: #7A7A7A;
+.textsss {
+  margin-top: 5px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 180.4%;
+  color: #7a7a7a;
 }
-.Small_card{
-    display: flex !important;
-    padding-top: 25px;
+.Small_card {
+  display: flex !important;
+  padding-top: 25px;
 }
 
-.page-number-button{
-    border: none;
-    background-color: white;
+.page-number-button {
+  border: none;
+  background-color: white;
 }
 @media only screen and (min-width: 1450px) and (max-width: 2000px) {
-    .all_card_blogs{
-        height: 500px !important;
-    }
+  .all_card_blogs {
+    height: 500px !important;
+  }
 }
 @media only screen and (min-width: 767px) and (max-width: 1010px) {
-    .all_card_blogs{
-        height: 460px !important;
-    }
+  .all_card_blogs {
+    height: 460px !important;
+  }
 }
 @media only screen and (min-width: 300px) and (max-width: 767px) {
-    .all_card_blogs{
-        width: 100%;
-        height: auto !important;
-        margin-bottom: 5%;
-    }
-    .lable-text{
-        /* width: 20px; */
-      padding: 0px;
-      margin: 0px;
-      height: 100%;
-      width: 90%;
-    }
-    .small_imgs{
-        width:120px;
-        margin: 0px;
-    }
-    .Small_card{
-        display: flex !important;
-        flex-wrap: wrap !important;
-        gap: 0px;
-    }
-    .cardss{
-        width: 100px !important;
-       
-    }
-    .cardbodys{
-        display: none;
-    }
-   
-   
-    }
-  
-    .cardss{
-        width: 310px;
-     
-    }
-     
-  .card-deck {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  .all_card_blogs {
+    width: 100%;
+    height: auto !important;
+    margin-bottom: 5%;
   }
-  
+  .lable-text {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+    width: 90%;
+  }
+  .small_imgs {
+    width: 120px;
+    margin: 0px;
+  }
+  .Small_card {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0px;
+  }
+  .cardss {
+    width: 100px !important;
+  }
+  .cardbodys {
+    display: none;
+  }
+}
 
-  .map_for_sarch {
-    font-size: 15px;
-    position: relative;
-    font-weight: 500;
-    color: #393939;
-    cursor: pointer;
-    line-height: 30px;
- 
-  }
-  .map_for_sarch div{
-    border-bottom: 1px solid rgb(156, 156, 156);
-  }
-  .map_for_sarch div:hover{
-    background-color: rgb(242, 242, 242);
-  }
+.cardss {
+  width: 310px;
+}
+
+.card-deck {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.map_for_sarch {
+  font-size: 15px;
+  position: relative;
+  font-weight: 500;
+  color: #393939;
+  cursor: pointer;
+  line-height: 30px;
+}
+.map_for_sarch div {
+  border-bottom: 1px solid rgb(156, 156, 156);
+}
+.map_for_sarch div:hover {
+  background-color: rgb(242, 242, 242);
+}

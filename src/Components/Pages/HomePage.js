@@ -10,8 +10,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import LeavingPopUP from "../PopUp/LeavingPopUP";
 
-const HomePage = () => {
-  const [thumbsSwiper, setThumbsSwiper] = useState(null);
+const HomePage = ({ showPopup, setShowPopup }) => {
   const Navigate = useNavigate();
   function handleDowload() {
     window.scrollTo(0, 0);
@@ -135,11 +134,12 @@ const HomePage = () => {
     : isTablet
     ? tabletSettings
     : desktopSettings;
+
   return (
     <>
       <AppDownloadPopUP />
-      <LeavingPopUP />
-      <div className="container pt-2">
+      <LeavingPopUP showPopup={showPopup} setShowPopup={setShowPopup} />
+      <div className="container ">
         <div className="rupeeIcon">
           <img src={IMAGES_PATH + "/rupee 1.png"} />
         </div>
@@ -191,10 +191,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="container">
-          <div
-            className="row padding_for_4card"
-            // style={{ marginLeft: "18%", marginRight: "18%" }}
-          >
+          <div className="row padding_for_4card">
             <div className="brand-img  ">
               <img src={IMAGES_PATH + "/Group 905.png"} className="img-fluid" />
               <img
