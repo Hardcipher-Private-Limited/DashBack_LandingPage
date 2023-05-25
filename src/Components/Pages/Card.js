@@ -68,7 +68,7 @@ const Card = () => {
           {blogPostData?.main_head}
         </div>
       </div>
-
+      <div className="name_auther">{blogPostData?.name}</div>
       <div className="pargram_head">{blogPostData?.Introduction}</div>
       <div className="all_text">{blogPostData?.Introduction_text}</div>
       <div>

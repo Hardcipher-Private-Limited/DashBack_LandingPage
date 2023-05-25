@@ -35,8 +35,8 @@
 .King_icon:hover + .drop_down {
   border: 1px solid black;
 }
-.King_icon,
-.playStore img {
+.King_icon  
+{
   width: 100%;
 }
 .King_icon:hover {

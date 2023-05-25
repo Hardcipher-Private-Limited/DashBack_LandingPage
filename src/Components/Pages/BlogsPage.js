@@ -43,7 +43,7 @@ const BlogsPage = () => {
   const [selectedIdx, setSelectedIdx] = useState(-1);
 
   const filteredData = Data.filter((item) =>
-    item.name.toLowerCase().includes(query.toLowerCase())
+    item.main_head.toLowerCase().includes(query.toLowerCase())
   );
 
   const suggestion =
