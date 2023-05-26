@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { IMAGES_PATH } from "../../Constants/ImagesConst";
+import {
+  IMAGES_PATH,
+  IMAGES_PATH_OURPARTNERS,
+} from "../../Constants/ImagesConst";
 import "../../assets/css/Home.css";
 import HomeSecond from "./HomeSecond";
 import { useNavigate } from "react-router-dom";
@@ -72,6 +75,102 @@ const HomePage = ({ showPopup, setShowPopup }) => {
     { src: "/Rectangle 8.png", class: "img-large" },
     { src: "/Group.png", class: "img-small" },
     { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group 575.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group 572.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group 576.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group (1).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group (2).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group 574.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group 573.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group (3).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group (4).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group 1072.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Mivi-Logo-768x246.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Libas.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group 1074.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group 1075.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // {
+    //   src: "/SUGAR_Cosmetics_logo_PNG1.png",
+    //   class: "img-small",
+    // },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/happilo.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Vector.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Vector (1).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/the-wildcraft-logo-.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/manyavar-logo-.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group 1078.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Vector (2).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Vector (3).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/path2.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/layer1.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group (5).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/_x23_010101ff.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+
+    // {
+    //   src: "/urbanic-com-logos-id8T0lrnY3.png",
+    //   class: "img-small",
+    // },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group (6).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/red-chief-logo.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Vector (4).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Vector (5).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group (7).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/puma-logo.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Vector (6).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group (8).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group (9).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/VijaySale-Logo.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/surface1.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/layer1%20(1).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group 1082.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/layer1 (2).png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Daco_4448340.png", class: "img-small" },
+    // { src: "/Rectangle 8.png", class: "img-large" },
+    // { src: "/Group 1221.png", class: "img-small" },
   ];
 
   const [isMobile, setIsMobile] = useState(false);
@@ -95,10 +194,10 @@ const HomePage = ({ showPopup, setShowPopup }) => {
   }, []);
 
   const desktopSettings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 15,
+    slidesToShow: 14,
     infiniteLoop: true,
     slidesToScroll: 2,
     autoplay: true,
@@ -107,7 +206,7 @@ const HomePage = ({ showPopup, setShowPopup }) => {
     cssEase: "linear",
   };
   const tabletSettings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 10,
@@ -120,7 +219,7 @@ const HomePage = ({ showPopup, setShowPopup }) => {
   };
 
   const mobileSettings = {
-    dots: true,
+    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 5,
@@ -283,6 +382,10 @@ const HomePage = ({ showPopup, setShowPopup }) => {
                 {images.map((img, index) => (
                   <div key={index} className={`slider-image ${img.class}`}>
                     <img src={IMAGES_PATH + img.src} alt={`img-${index}`} />
+                    {/* <img
+                      src={IMAGES_PATH_OURPARTNERS + img.src}
+                      alt={`img-${index}`}
+                    /> */}
                   </div>
                 ))}
               </Slider>

@@ -27,39 +27,30 @@ const BlogsPage = () => {
     const inputElement = document.getElementById("searchInput");
 
     if (e.target.value.length > 0) {
-      inputElement.style.backgroundImage = "none";
-      inputElement.style.paddingLeft = "20px";
+      inputElement.style.backgroundImage = `url('/Images/HomeSecond/_Compound Path_.png')`;
+      inputElement.style.paddingLeft = "35px";
     } else {
       inputElement.style.backgroundImage = `url('/Images/HomeSecond/_Compound Path_.png')`;
       inputElement.style.backgroundPosition = "left 10px center";
       inputElement.style.backgroundRepeat = "no-repeat";
-      inputElement.style.paddingLeft = "20px";
+      inputElement.style.paddingLeft = "35px";
     }
   }
 
   // search input
 
-  const [query, setQuery] = useState("");
   const [selectedIdx, setSelectedIdx] = useState(-1);
-
-  const filteredData = Data.filter((item) =>
-    item.main_head.toLowerCase().includes(query.toLowerCase())
-  );
-
-  const suggestion =
-    query.length > 0 ? (
-      <div className="map_for_sarch">
-        {filteredData.map((item, index) => (
-          <div
-            key={index}
-            onClick={() => handleCard(index)}
-            className={index === selectedIdx ? "selected" : ""}
-          >
-            {item.main_head}
-          </div>
-        ))}
-      </div>
-    ) : null;
+  const changeData = (e) => {
+    const getChangeData = e.toLowerCase();
+    if (getChangeData === "") {
+      setDisplayData(Data.slice(0, ITEMS_PER_PAGE));
+    } else {
+      const filteredData = Data.filter((ele) => {
+        return ele.main_head.toLowerCase().includes(getChangeData);
+      });
+      setDisplayData(filteredData);
+    }
+  };
 
   return (
     <>
@@ -88,21 +79,20 @@ const BlogsPage = () => {
               >
                 <input
                   type="text"
-                  placeholder="     Search"
+                  placeholder="Search"
                   className="controlss form-control"
                   style={{
                     backgroundImage: `url('/Images/HomeSecond/_Compound Path_.png')`,
                     backgroundPosition: "left 9px center",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "15px",
+                    paddingLeft: "35px",
                   }}
                   id="searchInput"
                   onInput={handleInput}
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
+                  onChange={(e) => changeData(e.target.value)}
                 />
               </div>
-              {suggestion}
             </div>
           </div>
           <div className="col-lg-3"></div>
