@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../assets/css/Footer.css";
 import { IMAGES_PATH_FOOTER } from "../../Constants/ImagesConst";
 import { animateScroll as scroll } from "react-scroll";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 const Footer = () => {
   const Navigate = useNavigate();
@@ -43,6 +44,44 @@ const Footer = () => {
     window.scrollTo(0, 0);
     Navigate("/our_partners");
   }
+
+  const [email, setEmail] = useState("");
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
+  const webId = "HCWEB77459";
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!emailRegex.test(email)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    try {
+      const response = await axios.post(
+        "http://backend.hardcipher.in/api/add_newsletter",
+        {
+          email: email,
+          web_id: webId,
+        }
+      );
+
+      console.log(response.data);
+      setSuccess(true);
+      setError(false);
+      setEmail("");
+    } catch (error) {
+      setError("You have already subscribed.");
+      setSuccess(false);
+    }
+  };
+
+  const handleEmailChange = (event) => {
+    setEmail(event.target.value);
+  };
   return (
     <>
       <div className="container_footer ">
@@ -61,13 +100,24 @@ const Footer = () => {
             <div className="row flex-column flex-sm-row rowa">
               <div className="col-sm-8 order-1 order-sm-1 subscribe_btns ">
                 <input
-                  type="text"
+                  type="email"
                   className=" form-controls"
                   placeholder="Enter your email"
+                  value={email}
+                  onChange={handleEmailChange}
                 />
+                <p className="new_latter_input">
+                  {error && <p className="newlatter_error">{error}</p>}
+                  {success && (
+                    <p style={{ color: "green" }}>Successfully subscribed!</p>
+                  )}
+                </p>
               </div>
+
               <div className="col-sm-4 subscribe_btns mt-3 mt-sm-0 order-1 order-sm-2">
-                <button className=" subscribe btn-block">Subscribe</button>
+                <button className=" subscribe btn-block" onClick={handleSubmit}>
+                  Subscribe
+                </button>
               </div>
             </div>
           </div>

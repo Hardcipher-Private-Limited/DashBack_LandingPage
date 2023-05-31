@@ -106,13 +106,13 @@ const HomeSecond = () => {
   function handleInput(event) {
     const inputElement = document.getElementById("searchInput");
     if (event.target.value.length > 0) {
-      inputElement.style.backgroundImage = "none";
-      inputElement.style.paddingLeft = "15px";
+      inputElement.style.backgroundImage = `url('/Images/HomeSecond/_Compound Path_.png')`;
+      inputElement.style.paddingLeft = "35px";
     } else {
       inputElement.style.backgroundImage = `url('/Images/HomeSecond/_Compound Path_.png')`;
       inputElement.style.backgroundPosition = "left 10px center";
       inputElement.style.backgroundRepeat = "no-repeat";
-      inputElement.style.paddingLeft = "5px";
+      inputElement.style.paddingLeft = "35px";
     }
   }
   return (
@@ -303,13 +303,14 @@ const HomeSecond = () => {
         <div className="text-center p-4">
           <input
             type="text"
-            placeholder="        Search"
+            placeholder="Search"
             className="control with-icon"
             style={{
               backgroundImage: `url('/Images/HomeSecond/_Compound Path_.png')`,
-              backgroundPosition: "left 9px center",
+              backgroundPosition: "left 15px center",
               backgroundRepeat: "no-repeat",
               backgroundSize: "15px",
+              paddingLeft: "35px",
             }}
             id="searchInput"
             onInput={handleInput}

@@ -203,3 +203,6 @@
 .map_for_sarch div:hover {
   background-color: rgb(242, 242, 242);
 }
+.error_css{
+  position: fixed;
+}
